@@ -58,7 +58,7 @@ def sec_ent(a,b,c):
         p_beta_denom=str(int(beta_denom))
         print('beta=('+p_beta_num+')/('+p_beta_denom+')')
     if delta<0:
-        print('L’équation n’admet pas de racine')
+        print("L'équation n'admet pas de racine")
     if delta==0:
         x0_num=-b
         x0_denom=2*a
@@ -74,9 +74,14 @@ def sec_ent(a,b,c):
                     x0_denom=x0_denom//div_x0
                 else:
                     div_x0=div_x0+1
-            p_x0_num=str(int(x0_num))
-            p_x0_denom=str(int(x0_denom))
-            print('x_0=('+p_x0_num+')/('+p_x0_denom+')')
+            if x0_num<0 and x0_denom<0:
+                p_x0_num=str(int(-x0_num))
+                p_x0_denom=str(int(-x0_denom))
+                print('L’équation admet une racine double en x_0=('+p_x0_num+')/('+p_x0_denom+')')
+            else:
+                p_x0_num=str(int(x0_num))
+                p_x0_denom=str(int(x0_denom))
+                print('L’équation admet une racine double en x_0=('+p_x0_num+')/('+p_x0_denom+')')
     if delta>0:
         if delta**0.5==int(delta**0.5):
             x1_num=-b-delta**0.5
@@ -93,9 +98,14 @@ def sec_ent(a,b,c):
                         x1_denom=x1_denom//div_x1
                     else:
                         div_x1=div_x1+1
-                p_x1_num=str(int(x1_num))
-                p_x1_denom=str(int(x1_denom))
-                print('x_1=('+p_x1_num+')/('+p_x1_denom+')')
+                if x1_num<0 and x1_denom<0:
+                    p_x1_num=str(int(-x1_num))
+                    p_x1_denom=str(int(-x1_denom))
+                    print('x_1=('+p_x1_num+')/('+p_x1_denom+')')
+                else:
+                    p_x1_num=str(int(x1_num))
+                    p_x1_denom=str(int(x1_denom))
+                    print('x_1=('+p_x1_num+')/('+p_x1_denom+')')
         else:
             x1_num_int=-b
             x1_num_rt=delta
@@ -108,10 +118,15 @@ def sec_ent(a,b,c):
                     x1_num_rt=x1_num_rt//div_x1**2
                 else:
                     div_x1=div_x1+1
-            p_x1_num_int=str(x1_num_int)
             p_x1_num_rt=str(x1_num_rt)
-            p_x1_denom=str(x1_denom)
-            print('x_1=('+p_x1_num_int+'-racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
+            if x1_num_int<0 and x1_denom<0:
+                p_x1_num_int=str(int(-x1_num_int))
+                p_x1_denom=str(int(-x1_denom))
+                print('x_1=('+p_x1_num_int+'+racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
+            else:
+                p_x1_num_int=str(int(x1_num_int))
+                p_x1_denom=str(int(x1_denom))
+                print('x_1=('+p_x1_num_int+'-racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
         if delta**0.5==int(delta**0.5):
             x2_num=-b+delta**0.5
             x2_denom=2*a
@@ -127,9 +142,14 @@ def sec_ent(a,b,c):
                         x2_denom=x2_denom//div_x2
                     else:
                         div_x2=div_x2+1
-                p_x2_num=str(int(x2_num))
-                p_x2_denom=str(int(x2_denom))
-                print('x_2=('+p_x2_num+')/('+p_x2_denom+')')
+                if x2_num<0 and x2_denom<0:
+                    p_x2_num=str(int(-x2_num))
+                    p_x2_denom=str(int(-x2_denom))
+                    print('x_2=('+p_x2_num+')/('+p_x2_denom+')')
+                else:
+                    p_x2_num=str(int(x2_num))
+                    p_x2_denom=str(int(x2_denom))
+                    print('x_2=('+p_x2_num+')/('+p_x2_denom+')')
         else:
             x2_num_int=-b
             x2_num_rt=delta
@@ -142,10 +162,15 @@ def sec_ent(a,b,c):
                     x2_num_rt=x2_num_rt//div_x2**2
                 else:
                     div_x2=div_x2+1
-            p_x2_num_int=str(x2_num_int)
             p_x2_num_rt=str(x2_num_rt)
-            p_x2_denom=str(x2_denom)
-            print('x_2=('+p_x2_num_int+'+racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
+            if x2_num_int<0 and x2_denom<0:
+                p_x2_num_int=str(int(-x2_num_int))
+                p_x2_denom=str(int(-x2_denom))
+                print('x_2=('+p_x2_num_int+'-racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
+            else:
+                p_x2_num_int=str(int(x2_num_int))
+                p_x2_denom=str(int(x2_denom))
+                print('x_2=('+p_x2_num_int+'+racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
 
 print('Calcul des équations du second degré par Théo')
 
