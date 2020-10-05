@@ -39,9 +39,14 @@ def sec_ent(a,b,c):
                 alpha_denom=alpha_denom//div_alpha
             else:
                 div_alpha=div_alpha+1
-        p_alpha_num=str(int(alpha_num))
-        p_alpha_denom=str(int(alpha_denom))
-        print('alpha=('+p_alpha_num+')/('+p_alpha_denom+')')
+            if alpha_num<0 and alpha_denom<0:
+                p_alpha_num=str(int(-alpha_num))
+                p_alpha_denom=str(int(-alpha_denom))
+                print('alpha=('+p_alpha_num+')/('+p_alpha_denom+')')
+            else:
+                p_alpha_num=str(int(alpha_num))
+                p_alpha_denom=str(int(alpha_denom))
+                print('alpha=('+p_alpha_num+')/('+p_alpha_denom+')')
     if beta_num/beta_denom==beta_num//beta_denom:
         beta=beta_num//beta_denom
         p_beta=str(beta)
@@ -54,9 +59,14 @@ def sec_ent(a,b,c):
                 beta_denom=beta_denom//div_beta
             else:
                 div_beta=div_beta+1
-        p_beta_num=str(int(beta_num))
-        p_beta_denom=str(int(beta_denom))
-        print('beta=('+p_beta_num+')/('+p_beta_denom+')')
+            if beta_num<0 and beta_denom<0:
+                p_beta_num=str(int(-beta_num))
+                p_beta_denom=str(int(-beta_denom))
+                print('beta=('+p_beta_num+')/('+p_beta_denom+')')
+            else:
+                p_beta_num=str(int(beta_num))
+                p_beta_denom=str(int(beta_denom))
+                print('beta=('+p_beta_num+')/('+p_beta_denom+')')
     if delta<0:
         print("L'équation n'admet pas de racine")
     if delta==0:
