@@ -7,3 +7,5 @@
 3. Faire un clic-droit sur le nom de la calculatrice et sélectionner "Envoter l'OS/Bundle à la calculatrice ..."
 4. Sélectionner le fichier téléchargé à l'étape 1
 ## Envoyer le fichier python
+1. Télécharger le fichier python (cliquer sur "Raw" puis Ctrl+S)
+2. Faire glisser le fichier .py sur le nom de la calculatrice
