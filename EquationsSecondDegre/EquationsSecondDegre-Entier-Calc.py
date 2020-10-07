@@ -87,11 +87,11 @@ def sec_ent(a,b,c):
             if x0_num<0 and x0_denom<0:
                 p_x0_num=str(int(-x0_num))
                 p_x0_denom=str(int(-x0_denom))
-                print('L’équation admet une racine double en x_0=('+p_x0_num+')/('+p_x0_denom+')')
+                print('x_0=('+p_x0_num+')/('+p_x0_denom+')')
             else:
                 p_x0_num=str(int(x0_num))
                 p_x0_denom=str(int(x0_denom))
-                print('L’équation admet une racine double en x_0=('+p_x0_num+')/('+p_x0_denom+')')
+                print('x_0=('+p_x0_num+')/('+p_x0_denom+')')
     if delta>0:
         if delta**0.5==int(delta**0.5):
             x1_num=-b-delta**0.5
