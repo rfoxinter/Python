@@ -132,11 +132,17 @@ def sec_ent(a,b,c):
             if x1_num_int<0 and x1_denom<0:
                 p_x1_num_int=str(int(-x1_num_int))
                 p_x1_denom=str(int(-x1_denom))
-                print('x_1=('+p_x1_num_int+'+racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
+                if x1_denom==1:
+                    print('x_1='+p_x1_num_int+'+racine('+p_x1_num_rt+')')
+                else:
+                    print('x_1=('+p_x1_num_int+'+racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
             else:
                 p_x1_num_int=str(int(x1_num_int))
                 p_x1_denom=str(int(x1_denom))
-                print('x_1=('+p_x1_num_int+'-racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
+                if x1_denom==1:
+                    print('x_1='+p_x1_num_int+'-racine('+p_x1_num_rt+')')
+                else:
+                    print('x_1=('+p_x1_num_int+'-racine('+p_x1_num_rt+'))/('+p_x1_denom+')')
         if delta**0.5==int(delta**0.5):
             x2_num=-b+delta**0.5
             x2_denom=2*a
@@ -176,11 +182,17 @@ def sec_ent(a,b,c):
             if x2_num_int<0 and x2_denom<0:
                 p_x2_num_int=str(int(-x2_num_int))
                 p_x2_denom=str(int(-x2_denom))
-                print('x_2=('+p_x2_num_int+'-racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
+                if x2_denom==1:
+                    print('x_2='+p_x2_num_int+'-racine('+p_x2_num_rt+')')
+                else:
+                    print('x_2=('+p_x2_num_int+'-racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
             else:
                 p_x2_num_int=str(int(x2_num_int))
                 p_x2_denom=str(int(x2_denom))
-                print('x_2=('+p_x2_num_int+'+racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
+                if x2_denom==1:
+                    print('x_2='+p_x2_num_int+'+racine('+p_x2_num_rt+')')
+                else:
+                    print('x_2=('+p_x2_num_int+'+racine('+p_x2_num_rt+'))/('+p_x2_denom+')')
 
 print('Calcul des équations du second degré par Théo')
 
