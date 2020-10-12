@@ -11,6 +11,6 @@
 3. Renommer le fichier (cliquer sur "Personalisé") ![](https://education.ti.com/html/webhelp/EG_TI83PremCE/FR/Subsystems/EG_83TIC-CE_FR/Content/EG_83_TIConnect/_Images/M_UsePython/SendtoCalc.png)
 ## Lancer le pregramme
 1. Cliquez sur "prgm"
-2. sélectionner "2: Python App"
+2. Sélectionner "2: Python App"
 3. Sélectionner le fichier python
 4. Cliquer sur "Exéc" (f(x))
