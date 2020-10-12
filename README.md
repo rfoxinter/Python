@@ -1,3 +1,4 @@
+# Comment mettre des fichiers Python sur la calculatrice
 ## Installer TI Connect CE
 [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
 ## Mettre à jour la calculatrice
