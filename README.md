@@ -14,4 +14,4 @@
 1. Cliquez sur "prgm"
 2. Sélectionner "2: Python App"
 3. Sélectionner le fichier python
-4. Cliquer sur "Exéc" (f(x))
+4. Cliquer sur "Exéc" (_f(x)_)
