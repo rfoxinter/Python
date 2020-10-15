@@ -109,11 +109,11 @@ def sec_ent(a,b,c):
                 if x1_n<0 and x1_d<0:
                     p_x1_n=str(int(-x1_n))
                     p_x1_d=str(int(-x1_d))
-                    print('x_1=('+p_x1_n+')/('+p_x1_d+')')
+                    print('x_1=('+p_x1_n+')/('+p_x1_d+')\nx_1='+str(x1_n/x1_d))
                 else:
                     p_x1_n=str(int(x1_n))
                     p_x1_d=str(int(x1_d))
-                    print('x_1=('+p_x1_n+')/('+p_x1_d+')')
+                    print('x_1=('+p_x1_n+')/('+p_x1_d+')\nx_1='+str(x1_n/x1_d))
         else:
             x1_n_int=-b
             x1_n_rt=delta
@@ -131,16 +131,16 @@ def sec_ent(a,b,c):
                 p_x1_n_int=str(int(-x1_n_int))
                 p_x1_d=str(int(-x1_d))
                 if abs(x1_d)==1:
-                    print('x_1='+p_x1_n_int+'+racine('+p_x1_n_rt+')')
+                    print('x_1='+p_x1_n_int+'+racine('+p_x1_n_rt+')\nx_1='+str(x1_n_int+x1_n_rt**0.5))
                 else:
-                    print('x_1=('+p_x1_n_int+'+racine('+p_x1_n_rt+'))/('+p_x1_d+')')
+                    print('x_1=('+p_x1_n_int+'+racine('+p_x1_n_rt+'))/('+p_x1_d+')\nx_1='+str((x1_n_int+x1_n_rt**0.5)/x1_d))
             else:
                 p_x1_n_int=str(int(x1_n_int))
                 p_x1_d=str(int(x1_d))
                 if abs(x1_d)==1:
-                    print('x_1='+p_x1_n_int+'-racine('+p_x1_n_rt+')')
+                    print('x_1='+p_x1_n_int+'-racine('+p_x1_n_rt+')\nx_1='+str(x1_n_int-x1_n_rt**0.5))
                 else:
-                    print('x_1=('+p_x1_n_int+'-racine('+p_x1_n_rt+'))/('+p_x1_d+')')
+                    print('x_1=('+p_x1_n_int+'-racine('+p_x1_n_rt+'))/('+p_x1_d+')\nx_1='+str((x1_n_int-x1_n_rt**0.5)/x1_d))
         if delta**0.5==int(delta**0.5):
             x2_n=-b+delta**0.5
             x2_d=2*a
@@ -159,11 +159,11 @@ def sec_ent(a,b,c):
                 if x2_n<0 and x2_d<0:
                     p_x2_n=str(int(-x2_n))
                     p_x2_d=str(int(-x2_d))
-                    print('x_2=('+p_x2_n+')/('+p_x2_d+')')
+                    print('x_2=('+p_x2_n+')/('+p_x2_d+')\nx_2='+str(x2_n/x2_d))
                 else:
                     p_x2_n=str(int(x2_n))
                     p_x2_d=str(int(x2_d))
-                    print('x_2=('+p_x2_n+')/('+p_x2_d+')')
+                    print('x_2=('+p_x2_n+')/('+p_x2_d+')\nx_2='+str(x2_n/x2_d))
         else:
             x2_n_int=-b
             x2_n_rt=delta
@@ -181,15 +181,15 @@ def sec_ent(a,b,c):
                 p_x2_n_int=str(int(-x2_n_int))
                 p_x2_d=str(int(-x2_d))
                 if abs(x2_d)==1:
-                    print('x_2='+p_x2_n_int+'-racine('+p_x2_n_rt+')')
+                    print('x_2='+p_x2_n_int+'-racine('+p_x2_n_rt+')\nx_2='+str(x2_n_int-x2_n_rt**0.5))
                 else:
-                    print('x_2=('+p_x2_n_int+'-racine('+p_x2_n_rt+'))/('+p_x2_d+')')
+                    print('x_2=('+p_x2_n_int+'-racine('+p_x2_n_rt+'))/('+p_x2_d+')\nx_2='+str((x2_n_int-x2_n_rt**0.5)/x2_d))
             else:
                 p_x2_n_int=str(int(x2_n_int))
                 p_x2_d=str(int(x2_d))
                 if abs(x2_d)==1:
-                    print('x_2='+p_x2_n_int+'+racine('+p_x2_n_rt+')')
+                    print('x_2='+p_x2_n_int+'+racine('+p_x2_n_rt+')\nx_2='+str(x2_n_int+x2_n_rt**0.5))
                 else:
-                    print('x_2=('+p_x2_n_int+'+racine('+p_x2_n_rt+'))/('+p_x2_d+')')
+                    print('x_2=('+p_x2_n_int+'+racine('+p_x2_n_rt+'))/('+p_x2_d+')\nx_2='+str((x2_n_int+x2_n_rt**0.5)/x2_d))
 print('Calcul des équations du second degré par Théo')
 main_sec()
