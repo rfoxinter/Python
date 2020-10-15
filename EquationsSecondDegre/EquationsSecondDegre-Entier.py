@@ -57,13 +57,13 @@ def sec_ent(a,b,c):
         else:
             print('\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')')
     if delta<0:
-        print('L’équation n’admet pas de racine')
+        print('L\u2019\u00E9quation n\u2019admet pas de racine')
     if delta==0:
         x0_num=-b
         x0_denom=2*a
         if x0_num%x0_denom==0:
             x0=x0_num//x0_denom
-            print('L’équation admet une racine double en x\u2080='+str(int(x0)))
+            print('L\u2019\u00E9quation admet une racine double en x\u2080='+str(int(x0)))
         else:
             div_x0=2
             while div_x0<=abs(x0_num) and div_x0<=abs(x0_denom):
@@ -73,16 +73,16 @@ def sec_ent(a,b,c):
                 else:
                     div_x0=div_x0+1
             if x0_num<0 and x0_denom<0:
-                print('L’équation admet une racine double en x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
+                print('L\u2019\u00E9quation admet une racine double en x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
             else:
-                print('L’équation admet une racine double en x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
+                print('L\u2019\u00E9quation admet une racine double en x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
     if delta>0:
         if delta**0.5==int(delta**0.5):
             x1_num=-b-delta**0.5
             x1_denom=2*a
             if x1_num%x1_denom==0:
                 x1=x1_num//x1_denom
-                print('L’équation admet une première racine en x\u2081='+str(int(x1)))
+                print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081='+str(int(x1)))
             else:
                 div_x1=2
                 while div_x1<=abs(x1_num) and div_x1<=abs(x1_denom):
@@ -92,9 +92,9 @@ def sec_ent(a,b,c):
                     else:
                         div_x1=div_x1+1
                 if x1_num<0 and x1_denom<0:
-                    print('L’équation admet une première racine en x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
                 else:
-                    print('L’équation admet une première racine en x\u2081=('+str(int(x1_num))+')/('+str(int(x1_denom))+')='+str(x1_num/x1_denom))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=('+str(int(x1_num))+')/('+str(int(x1_denom))+')='+str(x1_num/x1_denom))
         else:
             x1_num_int=-b
             x1_num_rt=delta
@@ -109,20 +109,20 @@ def sec_ent(a,b,c):
                     div_x1=div_x1+1
             if x1_num_int<0 and x1_denom<0:
                 if abs(x1_denom)==1:
-                    print('L’équation admet une première racine en x\u2081='+str(int(-x1_num_int))+'+racine('+str(x1_num_rt)+')='+str(x1_num_int+x1_num_rt**0.5))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081='+str(int(-x1_num_int))+'+racine('+str(x1_num_rt)+')='+str(x1_num_int+x1_num_rt**0.5))
                 else:
-                    print('L’équation admet une première racine en x\u2081=('+str(int(-x1_num_int))+'+racine('+str(x1_num_rt)+'))/('+str(int(-x1_denom))+')='+str((x1_num_int+x1_num_rt**0.5)/x1_denom))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=('+str(int(-x1_num_int))+'+racine('+str(x1_num_rt)+'))/('+str(int(-x1_denom))+')='+str((x1_num_int+x1_num_rt**0.5)/x1_denom))
             else:
                 if abs(x1_denom)==1:
-                    print('L’équation admet une première racine en x\u2081='+str(int(x1_num_int))+'-racine('+str(x1_num_rt)+')='+str(x1_num_int-x1_num_rt**0.5))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081='+str(int(x1_num_int))+'-racine('+str(x1_num_rt)+')='+str(x1_num_int-x1_num_rt**0.5))
                 else:
-                    print('L’équation admet une première racine en x\u2081=('+str(int(x1_num_int))+'-racine('+str(x1_num_rt)+'))/('+str(int(x1_denom))+')='+str((x1_num_int-x1_num_rt**0.5)/x1_denom))
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=('+str(int(x1_num_int))+'-racine('+str(x1_num_rt)+'))/('+str(int(x1_denom))+')='+str((x1_num_int-x1_num_rt**0.5)/x1_denom))
         if delta**0.5==int(delta**0.5):
             x2_num=-b+delta**0.5
             x2_denom=2*a
             if x2_num%x2_denom==0:
                 x2=x2_num//x2_denom
-                print('L’équation admet une deuxième racine en x\u2082='+str(int(x2)))
+                print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082='+str(int(x2)))
             else:
                 div_x2=2
                 while div_x2<=abs(x2_num) and div_x2<=abs(x2_denom):
@@ -132,9 +132,9 @@ def sec_ent(a,b,c):
                     else:
                         div_x2=div_x2+1
                 if x2_num<0 and x2_denom<0:
-                    print('L’équation admet une deuxième racine en x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
                 else:
-                    print('L’équation admet une deuxième racine en x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
         else:
             x2_num_int=-b
             x2_num_rt=delta
@@ -149,15 +149,15 @@ def sec_ent(a,b,c):
                     div_x2=div_x2+1
             if x2_num_int<0 and x2_denom<0:
                 if abs(x2_denom)==1:
-                    print('L’équation admet une deuxième racine en x\u2082='+str(int(-x2_num_int))+'-racine('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082='+str(int(-x2_num_int))+'-racine('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 else:
-                    print('L’équation admet une deuxième racine en x\u2082=('+str(int(-x2_num_int))+'-racine('+str(x2_num_rt)+'))/('+str(int(-x2_denom))+')='+str((x2_num_int-x2_num_rt**0.5)/x2_denom))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=('+str(int(-x2_num_int))+'-racine('+str(x2_num_rt)+'))/('+str(int(-x2_denom))+')='+str((x2_num_int-x2_num_rt**0.5)/x2_denom))
             else:
                 if abs(x2_denom)==1:
-                    print('L’équation admet une deuxième racine en x\u2082='+str(int(x2_num_int))+'+racine('+str(x2_num_rt)+')='+str(x2_num_int+x2_num_rt**0.5))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082='+str(int(x2_num_int))+'+racine('+str(x2_num_rt)+')='+str(x2_num_int+x2_num_rt**0.5))
                 else:
-                    print('L’équation admet une deuxième racine en x\u2082=('+str(int(x2_num_int))+'+racine('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=('+str(int(x2_num_int))+'+racine('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
 
-print('Calcul des équations du second degré par Théo')
+print('Calcul des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 
 main_sec()
