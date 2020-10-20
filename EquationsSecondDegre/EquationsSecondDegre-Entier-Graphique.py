@@ -77,7 +77,7 @@ def sec_ent(a,b,c):
         x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         plt.plot(x,y,c='blue')
-        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+')
+        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+',label="(\u03B1;\u03B2)")
         plt.xlabel("x")
         plt.ylabel("y=f(x)")
         pltymin=0
@@ -91,6 +91,7 @@ def sec_ent(a,b,c):
         plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         plt.axhline(y=0,c='black')
         plt.axvline(x=0,c='black')
+        plt.legend()
         plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
         plt.show()
     elif delta==0:
@@ -127,7 +128,7 @@ def sec_ent(a,b,c):
         x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         plt.plot(x,y,c='blue')
-        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+')
+        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+',label="x\u2080=(\u03B1;\u03B2)")
         plt.xlabel("x")
         plt.ylabel("y=f(x)")
         pltymin=0
@@ -141,6 +142,7 @@ def sec_ent(a,b,c):
         plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         plt.axhline(y=0,c='black')
         plt.axvline(x=0,c='black')
+        plt.legend()
         plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
         plt.show()
     else:
@@ -244,9 +246,9 @@ def sec_ent(a,b,c):
         x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         plt.plot(x,y,c='blue')
-        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+')
-        plt.scatter((-b-(delta**0.5))/(2*a),0,c='red',marker='+')
-        plt.scatter((-b+(delta**0.5))/(2*a),0,c='red',marker='+')
+        plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='+',label="(\u03B1;\u03B2)")
+        plt.scatter((-b-(delta**0.5))/(2*a),0,c='green',marker='+',label="x\u2081=(((-b-\u221A(\u0394))/2a);0)")
+        plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='+',label="x\u2082=(((-b+\u221A(\u0394))/2a);0)")
         plt.xlabel("x")
         plt.ylabel("y=f(x)")
         pltymin=0
@@ -260,11 +262,10 @@ def sec_ent(a,b,c):
         plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         plt.axhline(y=0,c='black')
         plt.axvline(x=0,c='black')
+        plt.legend()
         plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
         plt.show()
 
 print('Calcul des \u00E9quations du second degr\u00E9 par Th\u00E9o')
-
-
 
 main_sec()
