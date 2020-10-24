@@ -273,6 +273,6 @@ def x1_dec(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
 def x2_dec(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     print('racine 2')
 
-print('Calcul des \u00E9quations du second degr\u00E9 par Th\u00E9o')
+print('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 
 main_sec()
