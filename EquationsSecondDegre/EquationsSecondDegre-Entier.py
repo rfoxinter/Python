@@ -158,6 +158,6 @@ def sec_ent(a,b,c):
                 else:
                     print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=('+str(int(x2_num_int))+'+racine('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
 
-print('Calcul des \u00E9quations du second degr\u00E9 par Th\u00E9o')
+print('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 
 main_sec()
