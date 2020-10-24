@@ -266,6 +266,6 @@ def sec_ent(a,b,c):
         plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
         plt.show()
 
-print('Calcul des \u00E9quations du second degr\u00E9 par Th\u00E9o')
+print('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 
 main_sec()
