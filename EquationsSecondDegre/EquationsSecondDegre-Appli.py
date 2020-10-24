@@ -11,14 +11,14 @@ def quitter():
 
 def main_ent():
     plt.close()
-    sec_ent(ValeurA.get(),ValeurB.get(),ValeurC.get())
-
-def sec_ent(a,b,c):
     for label in Fen.grid_slaves():
         if int(label.grid_info()["column"])==6:
             label.destroy()
     Col7=Label(Fen,width=40)
     Col7.grid(column=6,row=5)
+    sec_ent(ValeurA.get(),ValeurB.get(),ValeurC.get())
+
+def sec_ent(a,b,c):
     delta=b**2-4*a*c+(int(a/a)-1)
     alpha_num=-b
     alpha_denom=2*a
@@ -103,7 +103,6 @@ def sec_ent(a,b,c):
         x0_denom=2*a
         if x0_num%x0_denom==0:
             x0=x0_num//x0_denom
-            print('x\u2080='+str(int(x0)))
             L4=Label(Fen,text='x\u2080='+str(int(x0)))
             L4.grid(column=6,row=3,sticky='w')
         else:
@@ -174,7 +173,6 @@ def sec_ent(a,b,c):
                     else:
                         div_x1=div_x1+1
                 if x1_num<0 and x1_denom<0:
-                    print()
                     L4=Label(Fen,text='x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
                     L4.grid(column=6,row=3,sticky='w')
                 else:
@@ -213,7 +211,6 @@ def sec_ent(a,b,c):
                 x2=x2_num//x2_denom
                 L5=Label(Fen,text='x\u2082='+str(int(x2)))
                 L5.grid(column=6,row=4,sticky='w')
-                print()
             else:
                 div_x2=2
                 while div_x2<=abs(x2_num) and div_x2<=abs(x2_denom):
@@ -223,12 +220,10 @@ def sec_ent(a,b,c):
                     else:
                         div_x2=div_x2+1
                 if x2_num<0 and x2_denom<0:
-                    print('x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
-                    L5=Label(Fen,text='x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
+                    L5=Label(Fen,text='x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
                 else:
-                    print('x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
-                    L5=Label(Fen,text='x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
+                    L5=Label(Fen,text='x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
         else:
             x2_num_int=-b
@@ -293,8 +288,14 @@ def sec_ent(a,b,c):
         plt.show()
 
 def main_frac():
+    plt.close()
+    for label in Fen.grid_slaves():
+        if int(label.grid_info()["column"])==6:
+            label.destroy()
+    Col7=Label(Fen,width=40)
+    Col7.grid(column=6,row=5)
     L1=Label(Fen,text='Fonction actuellement indisponible.')
-    L1.grid(column=6,row=0)
+    L1.grid(column=6,row=0,sticky='w')
 
 Label(Fen,text='Coefficients entiers').grid(column=0,row=0,columnspan=2)
 Label(Fen,text='a=').grid(column=0,row=1,sticky='e')
