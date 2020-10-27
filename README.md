@@ -1,3 +1,5 @@
+* [Comment mettre des fichiers Python sur la calculatrice](#Comment mettre des fichiers Python sur la calculatrice)
+* [Comment mettre des fichiers Python sur la calculatrice](#Comment installer python et lancer les programmes)
 # Comment mettre des fichiers Python sur la calculatrice
 ## Installer TI Connect CE
 [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
@@ -15,3 +17,4 @@
 2. Sélectionner "2: Python App"
 3. Sélectionner le fichier python
 4. Cliquer sur "Exéc" (f(x))
+# Comment installer python et lancer les programmes
