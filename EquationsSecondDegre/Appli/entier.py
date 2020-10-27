@@ -1,7 +1,6 @@
 from tkinter import *
 import matplotlib.pyplot as plt
 import numpy as np
-from math import *
 import __main__
 
 def main_ent():
@@ -60,34 +59,34 @@ def sec_ent(a,b,c):
     if delta<0:
         L4=Label(__main__.Fen,text='L\u2019\u00E9quation n\u2019admet pas de racine')
         L4.grid(column=6,row=3,sticky='w')
-        __main__.pltxmin=alpha_num/alpha_denom-10
-        __main__.pltxmax=alpha_num/alpha_denom+10
+        pltxmin=alpha_num/alpha_denom-10
+        pltxmax=alpha_num/alpha_denom+10
         ymax=0
-        if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c:
-            if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>0:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
+        if a*(pltxmin)**2+b*(pltxmin)+c>a*(pltxmax)**2+b*(pltxmax)+c:
+            if a*(pltxmin)**2+b*(pltxmin)+c>0:
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
             else:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
         else:
-            if a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c>0:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+            if a*(pltxmax)**2+b*(pltxmax)+c>0:
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
             else:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
-        x=np.linspace(__main__.pltxmin,__main__.pltxmax,1000)
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
+        x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         __main__.plt.plot(x,y,c='blue')
         __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="(\u03B1;\u03B2)")
         __main__.plt.xlabel("x")
         __main__.plt.ylabel("y=f(x)")
-        __main__.pltymin=0
-        __main__.pltymax=0
+        pltymin=0
+        pltymax=0
         if beta_num/beta_denom-ymax/100<ymax:
-            __main__.pltymin=beta_num/beta_denom-ymax/100
-            __main__.pltymax=ymax
+            pltymin=beta_num/beta_denom-ymax/100
+            pltymax=ymax
         else:
-            __main__.pltymin=ymax
-            __main__.pltymax=beta_num/beta_denom-ymax/100
-        __main__.plt.axis([__main__.pltxmin,__main__.pltxmax,__main__.pltymin,__main__.pltymax])
+            pltymin=ymax
+            pltymax=beta_num/beta_denom-ymax/100
+        __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         __main__.plt.axhline(y=0,c='black')
         __main__.plt.axvline(x=0,c='black')
         __main__.plt.legend()
@@ -114,34 +113,34 @@ def sec_ent(a,b,c):
             else:
                 L4=Label(__main__.Fen,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
                 L4.grid(column=6,row=3,sticky='w')
-        __main__.pltxmin=alpha_num/alpha_denom-10
-        __main__.pltxmax=alpha_num/alpha_denom+10
+        pltxmin=alpha_num/alpha_denom-10
+        pltxmax=alpha_num/alpha_denom+10
         ymax=0
-        if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c:
-            if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>0:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
+        if a*(pltxmin)**2+b*(pltxmin)+c>a*(pltxmax)**2+b*(pltxmax)+c:
+            if a*(pltxmin)**2+b*(pltxmin)+c>0:
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
             else:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
         else:
-            if a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c>0:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+            if a*(pltxmax)**2+b*(pltxmax)+c>0:
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
             else:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
-        x=np.linspace(__main__.pltxmin,__main__.pltxmax,1000)
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
+        x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         __main__.plt.plot(x,y,c='blue')
         __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="x\u2080=(\u03B1;\u03B2)")
         __main__.plt.xlabel("x")
         __main__.plt.ylabel("y=f(x)")
-        __main__.pltymin=0
-        __main__.pltymax=0
+        pltymin=0
+        pltymax=0
         if beta_num/beta_denom-ymax/100<ymax:
-            __main__.pltymin=beta_num/beta_denom-ymax/100
-            __main__.pltymax=ymax
+            pltymin=beta_num/beta_denom-ymax/100
+            pltymax=ymax
         else:
-            __main__.pltymin=ymax
-            __main__.pltymax=beta_num/beta_denom-ymax/100
-        __main__.plt.axis([__main__.pltxmin,__main__.pltxmax,__main__.pltymin,__main__.pltymax])
+            pltymin=ymax
+            pltymax=beta_num/beta_denom-ymax/100
+        __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         __main__.plt.axhline(y=0,c='black')
         __main__.plt.axvline(x=0,c='black')
         __main__.plt.legend()
@@ -276,20 +275,20 @@ def sec_ent(a,b,c):
                 else:
                     L5=Label(__main__.Fen,text='x\u2082=('+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
-        __main__.pltxmin=alpha_num/alpha_denom-10
-        __main__.pltxmax=alpha_num/alpha_denom+10
+        pltxmin=alpha_num/alpha_denom-10
+        pltxmax=alpha_num/alpha_denom+10
         ymax=0
-        if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c:
-            if a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c>0:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
+        if a*(pltxmin)**2+b*(pltxmin)+c>a*(pltxmax)**2+b*(pltxmax)+c:
+            if a*(pltxmin)**2+b*(pltxmin)+c>0:
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
             else:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
         else:
-            if a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c>0:
-                ymax=a*(__main__.pltxmax)**2+b*(__main__.pltxmax)+c
+            if a*(pltxmax)**2+b*(pltxmax)+c>0:
+                ymax=a*(pltxmax)**2+b*(pltxmax)+c
             else:
-                ymax=a*(__main__.pltxmin)**2+b*(__main__.pltxmin)+c
-        x=np.linspace(__main__.pltxmin,__main__.pltxmax,1000)
+                ymax=a*(pltxmin)**2+b*(pltxmin)+c
+        x=np.linspace(pltxmin,pltxmax,1000)
         y=a*x**2+b*x+c
         __main__.plt.plot(x,y,c='blue')
         __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="(\u03B1;\u03B2)")
@@ -297,15 +296,15 @@ def sec_ent(a,b,c):
         __main__.plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='x',label="x\u2082=(((-b+\u221A(\u0394))/2a);0)")
         __main__.plt.xlabel("x")
         __main__.plt.ylabel("y=f(x)")
-        __main__.pltymin=0
-        __main__.pltymax=0
+        pltymin=0
+        pltymax=0
         if beta_num/beta_denom-ymax/100<ymax:
-            __main__.pltymin=beta_num/beta_denom-ymax/100
-            __main__.pltymax=ymax
+            pltymin=beta_num/beta_denom-ymax/100
+            pltymax=ymax
         else:
-            __main__.pltymin=ymax
-            __main__.pltymax=beta_num/beta_denom-ymax/100
-        __main__.plt.axis([__main__.pltxmin,__main__.pltxmax,__main__.pltymin,__main__.pltymax])
+            pltymin=ymax
+            pltymax=beta_num/beta_denom-ymax/100
+        __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
         __main__.plt.axhline(y=0,c='black')
         __main__.plt.axvline(x=0,c='black')
         __main__.plt.legend()
