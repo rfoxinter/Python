@@ -99,15 +99,27 @@ def sec_ent(a,b,c):
             x1_num_int=-b
             x1_num_rt=delta
             x1_denom=2*a
+            x1_num_int_div=x1_num_int
+            if x1_num_int_div==0:
+                x1_num_int_div=x1_denom
             div_x1=2
-            while div_x1<=abs(x1_num_int) and div_x1<=abs(x1_denom):
+            while div_x1<=abs(x1_num_int_div) and div_x1<=abs(x1_denom):
                 if x1_num_int%div_x1==0 and x1_denom%div_x1==0 and x1_num_rt%div_x1**2==0:
                     x1_num_int=x1_num_int//div_x1
                     x1_denom=x1_denom//div_x1
                     x1_num_rt=x1_num_rt//div_x1**2
+                    x1_num_int_div=x1_num_int_div//div_x1
                 else:
                     div_x1=div_x1+1
-            if x1_num_int<0 and x1_denom<0:
+            if x1_num_int==0:
+                if abs(x1_denom)==1:
+                    print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=racine('+str(x1_num_rt)+')='+str(x1_num_rt**0.5))
+                else:
+                    if x1_denom<0:
+                        print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=racine('+str(x1_num_rt)+')/('+str(int(-x1_denom))+')='+str((x1_num_rt**0.5)/-x1_denom))
+                    else:
+                        print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081=-racine('+str(x1_num_rt)+')/('+str(int(x1_denom))+')='+str(-(x1_num_rt**0.5)/x1_denom))
+            elif x1_num_int<0 and x1_denom<0:
                 if abs(x1_denom)==1:
                     print('L\u2019\u00E9quation admet une premi\u00E8re racine en x\u2081='+str(int(-x1_num_int))+'+racine('+str(x1_num_rt)+')='+str(x1_num_int+x1_num_rt**0.5))
                 else:
@@ -139,15 +151,27 @@ def sec_ent(a,b,c):
             x2_num_int=-b
             x2_num_rt=delta
             x2_denom=2*a
+            x2_num_int_div=x2_num_int
+            if x2_num_int_div==0:
+                x2_num_int_div=x2_denom
             div_x2=2
-            while div_x2<=abs(x2_num_int) and div_x2<=abs(x2_denom):
+            while div_x2<=abs(x2_num_int_div) and div_x2<=abs(x2_denom):
                 if x2_num_int%div_x2==0 and x2_denom%div_x2==0 and x2_num_rt%div_x2**2==0:
                     x2_num_int=x2_num_int//div_x2
                     x2_denom=x2_denom//div_x2
                     x2_num_rt=x2_num_rt//div_x2**2
+                    x2_num_int_div=x2_num_int_div//div_x2
                 else:
                     div_x2=div_x2+1
-            if x2_num_int<0 and x2_denom<0:
+            if x2_num_int==0:
+                if abs(x2_denom)==1:
+                    print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=-racine('+str(x2_num_rt)+')='+str(x2_num_rt**0.5))
+                else:
+                    if x2_denom<0:
+                        print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=-racine('+str(x2_num_rt)+')/('+str(int(-x2_denom))+')='+str(-(x2_num_rt**0.5)/-x2_denom))
+                    else:
+                        print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082=racine('+str(x2_num_rt)+')/('+str(int(x2_denom))+')='+str((x2_num_rt**0.5)/x2_denom))
+            elif x2_num_int<0 and x2_denom<0:
                 if abs(x2_denom)==1:
                     print('L\u2019\u00E9quation admet une deuxi\u00E8me racine en x\u2082='+str(int(-x2_num_int))+'-racine('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 else:
