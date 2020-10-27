@@ -1,8 +1,9 @@
+# Table des matières
 * [Comment mettre des fichiers Python sur la calculatrice](#Comment-mettre-des-fichiers-Python-sur-la-calculatrice)
 * [Comment mettre des fichiers Python sur la calculatrice](#Comment-installer-python-et-lancer-les-programmes)
 # Comment mettre des fichiers Python sur la calculatrice
 ## Installer TI Connect CE
-[Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
+* [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
 ## Mettre à jour la calculatrice
 1. [Télécharger la dernière mise à jour](https://education.ti.com/83ce/downloads/osappsbundle)
 2. Brancher la calculatrice
@@ -18,3 +19,8 @@
 3. Sélectionner le fichier python
 4. Cliquer sur "Exéc" (f(x))
 # Comment installer python et lancer les programmes
+## Télécharger et installer python
+1. Télécharger [python](https://www.python.org/downloads/) (python 3.9 n'est pas compatible)
+ 1. Sélectionner la version la plus récente depuis
+2. Lancer le fichier télécharger à l'étape 1
+3. Cocher "Add python 3.x to PATH" puis sélectionner "Customize installation" ![](https://www.zupimages.net/up/20/44/hul8.jpg)
