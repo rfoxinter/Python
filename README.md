@@ -7,6 +7,7 @@
 * [Comment mettre des fichiers Python sur la calculatrice](#Comment-installer-python-et-lancer-les-programmes)
     * [Télécharger et installer python](#Télécharger-et-installer-python)
     * [Lancer un programme python](#Lancer-un-programme-python)
+    * [Lancer une application python](#Lancer-une-application-python)
 # Comment mettre des fichiers Python sur la calculatrice
 ## Installer TI Connect CE
 * [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
@@ -38,3 +39,7 @@
 2. Télécharger le fichier .bat du dossier
 3. Lancer le .bat téléchargé à l'étape 2
 4. Lancer le programme python
+## Lancer une application python
+1. Télécharger le fichier Appli.zip du dossier
+2. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
+3. Lancer le fichier &#95;&#95;main&#95;&#95;.py du dossier
