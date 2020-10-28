@@ -1,29 +1,30 @@
 from tkinter import *
-import matplotlib.pyplot as plt
-import numpy as np
 import __main__
+import fraction_pas_racine
+import fraction_x0
 import fraction_x1
 import fraction_x2
+import fraction_deux_racines_plt
 
 def main_frac():
     __main__.plt.close()
     for label in __main__.Fen.grid_slaves():
         if int(label.grid_info()["column"])==6:
             label.destroy()
-    Col7=Label(__main__.Fen,width=40)
+    Col7=Label(__main__.Fen,width=100)
     Col7.grid(column=6,row=5)
     sec_frac(__main__.ValeurA_n.get(),__main__.ValeurA_d.get(),__main__.ValeurB_n.get(),__main__.ValeurB_d.get(),__main__.ValeurC_n.get(),__main__.ValeurC_d.get())
 
 def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
-    delta_num=b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2+((a_num/a_num)-1)
-    delta_denom=a_denom*b_denom**2*c_denom
+    delta_num=int(b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2+((a_num/a_num)-1))
+    delta_denom=int(a_denom*b_denom**2*c_denom)
     if delta_num>0 and delta_denom<0:
         delta_num=-delta_num
         delta_denom=-delta_denom
-    alpha_num=-b_num*a_denom
-    alpha_denom=2*a_num*b_denom
-    beta_num=-delta_num*a_denom
-    beta_denom=4*a_num*delta_denom
+    alpha_num=int(-b_num*a_denom)
+    alpha_denom=int(2*a_num*b_denom)
+    beta_num=int(-delta_num*a_denom)
+    beta_denom=int(4*a_num*delta_denom)
     if delta_num%delta_denom==0:
         delta_num=delta_num//delta_denom
         L1=Label(__main__.Fen,text='\u0394='+str(delta_num))
@@ -73,102 +74,17 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_beta=div_beta+1
         if beta_num<0 and beta_denom<0:
-            L3=Label(__main__.Fen,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')')
+            L3=Label(__main__.Fen,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
         else:
-            L3=Label(__main__.Fen,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')')
+            L3=Label(__main__.Fen,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
     if delta_num<0:
-        L4=Label(__main__.Fen,text='L\u2019\u00E9quation n\u2019admet pas de racine')
-        L4.grid(column=6,row=3,sticky='w')
-        pltxmin=alpha_num/alpha_denom-10
-        pltxmax=alpha_num/alpha_denom+10
-        ymax=0
-        if (a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)>(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom):
-            if (a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)>0:
-                ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
-            else:
-                ymax=(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)
-        else:
-            if (a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)>0:
-                ymax=(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)
-            else:
-                ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
-        x=np.linspace(pltxmin,pltxmax,1000)
-        y=(a_num/a_denom)*x**2+(b_num/b_denom)*x+(c_num/c_denom)
-        __main__.plt.plot(x,y,c='blue')
-        __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="(\u03B1;\u03B2)")
-        __main__.plt.xlabel("x")
-        __main__.plt.ylabel("y=f(x)")
-        pltymin=0
-        pltymax=0
-        if beta_num/beta_denom-ymax/100<ymax:
-            pltymin=beta_num/beta_denom-ymax/100
-            pltymax=ymax
-        else:
-            pltymin=ymax
-            pltymax=beta_num/beta_denom-ymax/100
-        __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
-        __main__.plt.axhline(y=0,c='black')
-        __main__.plt.axvline(x=0,c='black')
-        __main__.plt.legend()
-        __main__.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
-        __main__.plt.show()
-    if delta_num==0:
-        x0_num=-b_num*a_denom
-        x0_denom=2*a_num*b_denom
-        if x0_num%x0_denom==0:
-            x0=x0_num//x0_denom
-            L4=Label(__main__.Fen,text='x\u2080='+str(int(x0)))
-            L4.grid(column=6,row=3,sticky='w')
-        else:
-            div_x0=2
-            while div_x0<=abs(x0_num) and div_x0<=abs(x0_denom):
-                if x0_num%div_x0==0 and x0_denom%div_x0==0:
-                    x0_num=x0_num//div_x0
-                    x0_denom=x0_denom//div_x0
-                else:
-                    div_x0=div_x0+1
-            if x0_num<0 and x0_denom<0:
-                L4=Label(__main__.Fen,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
-                L4.grid(column=6,row=3,sticky='w')
-            else:
-                L4=Label(__main__.Fen,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
-                L4.grid(column=6,row=3,sticky='w')
-        pltxmin=alpha_num/alpha_denom-10
-        pltxmax=alpha_num/alpha_denom+10
-        ymax=0
-        if (a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)>(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom):
-            if (a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)>0:
-                ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
-            else:
-                ymax=(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)
-        else:
-            if (a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)>0:
-                ymax=(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)
-            else:
-                ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
-        x=np.linspace(pltxmin,pltxmax,1000)
-        y=(a_num/a_denom)*x**2+(b_num/b_denom)*x+(c_num/c_denom)
-        __main__.plt.plot(x,y,c='blue')
-        __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="x\u2080=(\u03B1;\u03B2)")
-        __main__.plt.xlabel("x")
-        __main__.plt.ylabel("y=f(x)")
-        pltymin=0
-        pltymax=0
-        if beta_num/beta_denom-ymax/100<ymax:
-            pltymin=beta_num/beta_denom-ymax/100
-            pltymax=ymax
-        else:
-            pltymin=ymax
-            pltymax=beta_num/beta_denom-ymax/100
-        __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
-        __main__.plt.axhline(y=0,c='black')
-        __main__.plt.axvline(x=0,c='black')
-        __main__.plt.legend()
-        __main__.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
-        __main__.plt.show()
-    if delta_num>0:
+        fraction_pas_racine.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom)
+    elif delta_num==0:
+        fraction_x0.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom)
+    else:
         fraction_x1.x1_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_x2.x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
+        fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom)
 
