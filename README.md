@@ -27,7 +27,7 @@
 4. Cliquer sur "Exéc" (f(x))
 # Comment installer python et lancer les programmes
 ## Télécharger et installer python
-1. [Télécharger python](https://www.python.org/downloads/)
+1. [Télécharger python](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F)
     1. Sélectionner la version la plus récente depuis "Looking for a specific release?" (python 3.9 n'est pas compatible)
     2. Descendre jusqu'à "Files" puis sélectionner "Windows x86-64 executable installer"
 2. Lancer le fichier télécharger à l'étape 1
