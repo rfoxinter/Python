@@ -10,9 +10,9 @@
     * [Lancer une application python](#Lancer-une-application-python)
 # Comment mettre des fichiers Python sur la calculatrice
 ## Installer TI Connect CE
-* [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win)
+* [Télécharger TI Connect CE](https://education.ti.com/ticonnectce/downloads/ticonnectce-win){:target="_blank"}
 ## Mettre à jour la calculatrice
-1. [Télécharger la dernière mise à jour](https://education.ti.com/83ce/downloads/osappsbundle)
+1. [Télécharger la dernière mise à jour](https://education.ti.com/83ce/downloads/osappsbundle){:target="_blank"}
 2. Brancher la calculatrice
 3. Faire un clic-droit sur le nom de la calculatrice et sélectionner "Envoter l'OS/Bundle à la calculatrice ..."
 4. Sélectionner le fichier téléchargé à l'étape 1
@@ -27,7 +27,7 @@
 4. Cliquer sur "Exéc" (f(x))
 # Comment installer python et lancer les programmes
 ## Télécharger et installer python
-1. [Télécharger python](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F)
+1. [Télécharger python](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F){:target="_blank"}
     1. Sélectionner la version la plus récente depuis "Looking for a specific release?" (python 3.9 n'est pas compatible)
     2. Descendre jusqu'à "Files" puis sélectionner "Windows x86-64 executable installer"
 2. Lancer le fichier télécharger à l'étape 1
@@ -41,7 +41,7 @@
 4. Lancer le programme python
 ## Lancer une application python
 1. Télécharger le fichier Appli.zip du dossier
-2. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
+2. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/){:target="_blank"}
     * Avec l'explorateur de fichiers Windows
         1. Ouvrir le .zip
         2. Sélectionner "Extraire tour"
