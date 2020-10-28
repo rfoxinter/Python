@@ -101,7 +101,7 @@ Col6_Row10.grid(column=5,row=9)
 Col6_Row11=Label(Fen,width=5)
 Col6_Row11.grid(column=5,row=10)
 
-Col7=Label(Fen,width=40)
+Col7=Label(Fen,width=100)
 Col7.grid(column=6,row=5)
 
 Fen.title("R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o")
