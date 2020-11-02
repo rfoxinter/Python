@@ -24,7 +24,7 @@ ValC.grid(column=1,row=5)
 BoutonCalc=Button(Fen,text="Calculer",command=entier.main_ent)
 BoutonCalc.grid(column=0,row=7,columnspan=2)
 
-Label(Fen,text='Coefficients entiers').grid(column=3,row=0,columnspan=2)
+Label(Fen,text='Coefficients décimaux').grid(column=3,row=0,columnspan=2)
 Label(Fen,text='Num\u00E9rateur de a=').grid(column=3,row=1,sticky='e')
 Label(Fen,text='D\u00E9nominateur de a=').grid(column=3,row=2,sticky='e')
 Label(Fen,text='Num\u00E9rateur de b=').grid(column=3,row=3,sticky='e')
