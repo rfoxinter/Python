@@ -2,10 +2,6 @@ from tkinter import *
 import __main__
 
 def main(a,b,delta):
-    x1_num=0
-    x1_denom=0
-    x2_num=0
-    x2_denom=0
     if delta**0.5==int(delta**0.5):
         x1_num=-b-delta**0.5
         x1_denom=2*a
