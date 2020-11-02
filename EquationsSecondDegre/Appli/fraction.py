@@ -87,4 +87,3 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
         fraction_x1.x1_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_x2.x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom)
-
