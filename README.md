@@ -19,7 +19,8 @@
 ## Envoyer le fichier python à la calculatrice
 1. Télécharger le fichier python (cliquer sur "Raw" puis Ctrl+S)
 2. Faire glisser le fichier .py sur le nom de la calculatrice
-3. Renommer le fichier (cliquer sur "Personalisé") ![](https://education.ti.com/html/webhelp/EG_TI83PremCE/FR/Subsystems/EG_83TIC-CE_FR/Content/EG_83_TIConnect/_Images/M_UsePython/SendtoCalc.png)
+3. Renommer le fichier (cliquer sur "Personalisé")
+![](https://education.ti.com/html/webhelp/EG_TI83PremCE/FR/Subsystems/EG_83TIC-CE_FR/Content/EG_83_TIConnect/_Images/M_UsePython/SendtoCalc.png)
 ## Lancer le programme
 1. Cliquez sur "prgm"
 2. Sélectionner "2: Python App"
@@ -31,9 +32,12 @@
     1. Sélectionner la version la plus récente depuis "Looking for a specific release?" (python 3.9 n'est pas compatible)
     2. Descendre jusqu'à "Files" puis sélectionner "Windows x86-64 executable installer"
 2. Lancer le fichier télécharger à l'étape 1
-3. Cocher "Add python 3.x to PATH" puis sélectionner "Customize installation" ![](https://www.zupimages.net/up/20/44/hul8.jpg)
-4. Vérifier que tout est coché comme sur l'image suivante puis cliquer sur "Next" ![](https://zupimages.net/up/20/44/lcdo.jpg)
-5. Vérifier que tout est coché comme sur l'image suivante, sélectionner un chemin facile à retrouver puis cliquer sur "Install" ![](https://zupimages.net/up/20/44/98bz.jpg)
+3. Cocher "Add python 3.x to PATH" puis sélectionner "Customize installation"
+![](https://www.zupimages.net/up/20/44/hul8.jpg)
+4. Vérifier que tout est coché comme sur l'image suivante puis cliquer sur "Next"
+![](https://zupimages.net/up/20/44/lcdo.jpg)
+5. Vérifier que tout est coché comme sur l'image suivante, sélectionner un chemin facile à retrouver puis cliquer sur "Install"
+![](https://zupimages.net/up/20/44/98bz.jpg)
 ## Lancer un programme python
 1. Télécharger le fichier .py
 2. Télécharger le fichier .bat du dossier
