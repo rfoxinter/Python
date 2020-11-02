@@ -6,7 +6,6 @@ import entier_x1
 import entier_x2
 import entier_deux_racines_plt
 
-
 def main_ent():
     __main__.plt.close()
     for label in __main__.Fen.grid_slaves():
