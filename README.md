@@ -40,8 +40,9 @@
 3. Lancer le .bat téléchargé à l'étape 2
 4. Lancer le programme python
 ## Lancer une application python
-1. Télécharger le fichier Appli.zip du dossier
-2. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
+1. Aller sur [GitZip](http://kinolien.github.io/gitzip/) et entrer le lien du dossier "Appli" dans "GitHub repo root URL or sub-folder URL"
+2. Cliquer sur "Download"
+3. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
     * Avec l'explorateur de fichiers Windows
         1. Ouvrir le .zip
         2. Sélectionner "Extraire tour"
@@ -49,4 +50,4 @@
     * Avec 7-Zip
         1. Sélectionner le .zip et faire un clic-droit
         2. Sélectionner "Extraire vers "Appli&#92;""
-3. Lancer le fichier &#95;&#95;main&#95;&#95;.py du dossier
+4. Lancer le fichier &#95;&#95;main&#95;&#95;.py du dossier
