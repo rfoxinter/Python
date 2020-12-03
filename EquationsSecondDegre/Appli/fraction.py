@@ -27,6 +27,7 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     beta_denom=int(4*a_num*delta_denom)
     if delta_num%delta_denom==0:
         delta_num=delta_num//delta_denom
+        delta_denom=1
         L1=Label(__main__.Fen,text='\u0394='+str(delta_num))
         L1.grid(column=6,row=0,sticky='w')
     else:
