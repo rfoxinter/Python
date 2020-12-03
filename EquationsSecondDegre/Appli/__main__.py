@@ -1,7 +1,7 @@
 from tkinter import *
 import matplotlib.pyplot as plt
 import numpy as np
-from math import *
+from math import inf
 import entier
 import fraction
 import quitter
