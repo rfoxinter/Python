@@ -8,10 +8,10 @@ import entier_deux_racines_plt
 
 def main_ent():
     __main__.plt.close()
-    for label in __main__.Fen.grid_slaves():
+    for label in __main__.root.grid_slaves():
         if int(label.grid_info()["column"])==6:
             label.destroy()
-    Col7=Label(__main__.Fen,width=100)
+    Col7=Label(__main__.root,width=100)
     Col7.grid(column=6,row=5)
     sec_ent(__main__.ValeurA.get(),__main__.ValeurB.get(),__main__.ValeurC.get())
 
@@ -21,11 +21,11 @@ def sec_ent(a,b,c):
     alpha_denom=2*a
     beta_num=-delta
     beta_denom=4*a
-    L1=Label(__main__.Fen,text='\u0394='+str(delta))
+    L1=Label(__main__.root,text='\u0394='+str(delta))
     L1.grid(column=6,row=0,sticky='w')
     if alpha_num%alpha_denom==0:
         alpha=alpha_num//alpha_denom
-        L2=Label(__main__.Fen,text='\u03B1='+str(alpha))
+        L2=Label(__main__.root,text='\u03B1='+str(alpha))
         L2.grid(column=6,row=1,sticky='w')
     else:
         div_alpha=2
@@ -36,14 +36,14 @@ def sec_ent(a,b,c):
             else:
                 div_alpha=div_alpha+1
         if alpha_num<0 and alpha_denom<0:
-            L2=Label(__main__.Fen,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=Label(__main__.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom))
             L2.grid(column=6,row=1,sticky='w')
         else:
-            L2=Label(__main__.Fen,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=Label(__main__.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom))
             L2.grid(column=6,row=1,sticky='w')
     if beta_num%beta_denom==0:
         beta=beta_num//beta_denom
-        L3=Label(__main__.Fen,text='\u03B2='+str(beta))
+        L3=Label(__main__.root,text='\u03B2='+str(beta))
         L3.grid(column=6,row=2,sticky='w')
     else:
         div_beta=2
@@ -54,10 +54,10 @@ def sec_ent(a,b,c):
             else:
                 div_beta=div_beta+1
         if beta_num<0 and beta_denom<0:
-            L3=Label(__main__.Fen,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
+            L3=Label(__main__.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
         else:
-            L3=Label(__main__.Fen,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
+            L3=Label(__main__.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
     if delta<0:
         entier_pas_racine.main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom)
