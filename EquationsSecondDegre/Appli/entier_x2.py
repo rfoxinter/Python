@@ -7,7 +7,7 @@ def main(a,b,delta):
         x2_denom=2*a
         if x2_num%x2_denom==0:
             x2=x2_num//x2_denom
-            L5=Label(__main__.Fen,text='x\u2082='+str(int(x2)))
+            L5=Label(__main__.root,text='x\u2082='+str(int(x2)))
             L5.grid(column=6,row=4,sticky='w')
         else:
             div_x2=2
@@ -18,10 +18,10 @@ def main(a,b,delta):
                 else:
                     div_x2=div_x2+1
             if x2_num<0 and x2_denom<0:
-                L5=Label(__main__.Fen,text='x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
+                L5=Label(__main__.root,text='x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
             else:
-                L5=Label(__main__.Fen,text='x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
+                L5=Label(__main__.root,text='x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
     else:
         x2_num_int=-b
@@ -41,26 +41,26 @@ def main(a,b,delta):
                 div_x2=div_x2+1
         if x2_num_int==0:
             if abs(x2_denom)==1:
-                L5=Label(__main__.Fen,text='x\u2082=-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
+                L5=Label(__main__.root,text='x\u2082=-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
             else:
                 if x2_denom<0:
-                    L5=Label(__main__.Fen,text='x\u2082=-\u221A('+str(x2_num_rt)+')/('+str(int(-x2_denom))+')='+str(-(x2_num_rt**0.5)/-x2_denom))
+                    L5=Label(__main__.root,text='x\u2082=-\u221A('+str(x2_num_rt)+')/('+str(int(-x2_denom))+')='+str(-(x2_num_rt**0.5)/-x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
                 else:
-                    L5=Label(__main__.Fen,text='x\u2082=\u221A('+str(x2_num_rt)+')/('+str(int(x2_denom))+')='+str((x2_num_rt**0.5)/x2_denom))
+                    L5=Label(__main__.root,text='x\u2082=\u221A('+str(x2_num_rt)+')/('+str(int(x2_denom))+')='+str((x2_num_rt**0.5)/x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
         elif x2_num_int<0 and x2_denom<0:
             if abs(x2_denom)==1:
-                L5=Label(__main__.Fen,text='x\u2082='+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
+                L5=Label(__main__.root,text='x\u2082='+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
             else:
-                L5=Label(__main__.Fen,text='x\u2082=('+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+'))/('+str(int(-x2_denom))+')='+str((x2_num_int-x2_num_rt**0.5)/x2_denom))
+                L5=Label(__main__.root,text='x\u2082=('+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+'))/('+str(int(-x2_denom))+')='+str((x2_num_int-x2_num_rt**0.5)/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
         else:
             if abs(x2_denom)==1:
-                L5=Label(__main__.Fen,text='x\u2082='+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+')='+str(x2_num_int+x2_num_rt**0.5))
+                L5=Label(__main__.root,text='x\u2082='+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+')='+str(x2_num_int+x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
             else:
-                L5=Label(__main__.Fen,text='x\u2082=('+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
+                L5=Label(__main__.root,text='x\u2082=('+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
