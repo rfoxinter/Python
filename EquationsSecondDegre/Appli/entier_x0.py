@@ -8,7 +8,7 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
     x0_denom=2*a
     if x0_num%x0_denom==0:
         x0=x0_num//x0_denom
-        L4=Label(__main__.Fen,text='x\u2080='+str(int(x0)))
+        L4=Label(__main__.root,text='x\u2080='+str(int(x0)))
         L4.grid(column=6,row=3,sticky='w')
     else:
         div_x0=2
@@ -19,10 +19,10 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
             else:
                 div_x0=div_x0+1
         if x0_num<0 and x0_denom<0:
-            L4=Label(__main__.Fen,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
+            L4=Label(__main__.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
             L4.grid(column=6,row=3,sticky='w')
         else:
-            L4=Label(__main__.Fen,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
+            L4=Label(__main__.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
             L4.grid(column=6,row=3,sticky='w')
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
