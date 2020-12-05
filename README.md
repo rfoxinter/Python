@@ -4,7 +4,7 @@
     * [Mettre à jour la calculatrice](#Mettre-à-jour-la-calculatrice)
     * [Envoyer le fichier python à la calculatrice](#Envoyer-le-fichier-python-à-la-calculatrice)
     * [Lancer le programme](#Lancer-le-programme)
-* [Comment mettre des fichiers Python sur la calculatrice](#Comment-installer-python-et-lancer-les-programmes)
+* [Comment installer python et lancer les programmes](#Comment-installer-python-et-lancer-les-programmes)
     * [Télécharger et installer python](#Télécharger-et-installer-python)
     * [Lancer un programme python](#Lancer-un-programme-python)
     * [Lancer une application python](#Lancer-une-application-python)
@@ -29,7 +29,7 @@
 # Comment installer python et lancer les programmes
 ## Télécharger et installer python
 1. [Télécharger python](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F)
-    1. Sélectionner la version la plus récente depuis "Looking for a specific release?" (python 3.9 n'est pas compatible)
+    1. Sélectionner la version la plus récente depuis "Looking for a specific release?"
     2. Descendre jusqu'à "Files" puis sélectionner "Windows x86-64 executable installer"
 2. Lancer le fichier télécharger à l'étape 1
 3. Cocher "Add python 3.x to PATH" puis sélectionner "Customize installation"
