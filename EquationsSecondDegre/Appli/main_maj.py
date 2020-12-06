@@ -1,5 +1,5 @@
-import urllib.request
 from tkinter import *
+import urllib.request
 
 root=Tk()
 
