@@ -9,7 +9,7 @@ def maj():
 
 root_maj=Tk()
 root_maj.title("Mise \u00E0 jour")
-Label(root_maj,text='L\u2019appareil est-il connect\u00E9 \u00E0 internet\u00A0\u003F',width=40).grid(column=0,row=0)
+Label(root_maj,text='L\u2019appareil est-il connect\u00E9 \u00E0 internet\u00A0\u003F',width=50).grid(column=0,row=0)
 bouton_oui=Button(root_maj,text="Oui",command=maj)
 bouton_oui.grid(column=0,row=1)
 bouton_non=Button(root_maj,text="Non",command=quitter.maj_quit)
