@@ -21,7 +21,7 @@ root_maj.mainloop()
 import entier
 import fraction
 
-version=2
+version=3
 
 root=Tk()
 
