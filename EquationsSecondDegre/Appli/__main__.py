@@ -2,7 +2,6 @@ from tkinter import *
 import matplotlib.pyplot as plt
 import numpy as np
 from math import inf
-import quitter
 
 def maj():
     import maj
@@ -18,10 +17,11 @@ root_maj.resizable(width=False,height=False)
 root_maj.iconbitmap(r'python.ico')
 root_maj.mainloop()
 
+import quitter
 import entier
 import fraction
 
-version=1
+version=2
 
 root=Tk()
 
