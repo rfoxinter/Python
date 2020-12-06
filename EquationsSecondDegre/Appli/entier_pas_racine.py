@@ -4,7 +4,7 @@ import numpy as np
 import __main__
 
 def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
-    L4=Label(__main__.root,text='L\u2019\u00E9quation n\u2019admet pas de racine')
+    L4=Label(__main__.root,text='L\u2019\u00E9quation n\u2019admet pas de racine.')
     L4.grid(column=6,row=3,sticky='w')
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
