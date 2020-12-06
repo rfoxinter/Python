@@ -1,4 +1,3 @@
-import urllib.request
 from tkinter import *
 import __main__
 
@@ -7,8 +6,6 @@ def main_quit():
         root.destroy()
     __main__.plt.close()
     __main__.root.destroy()
-    url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/main_version.py'
-    urllib.request.urlretrieve(url, 'main_version.py')
     import main_version
     root=Tk()
     if main_version.version>__main__.version:
