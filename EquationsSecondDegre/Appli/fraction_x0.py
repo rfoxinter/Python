@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import __main__
 
+#Define x for f(x)=0 when delta=0
 def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom):
     x0_num=-b_num*a_denom
     x0_denom=2*a_num*b_denom
