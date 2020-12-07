@@ -10,6 +10,7 @@ def download():
     for i in range(len(filename)):
         url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[i]+'.py'
         urllib.request.urlretrieve(url, filename[i]+'.py')
+
 #Close app
 def main_quit():
     def quit_quit():
@@ -20,7 +21,7 @@ def main_quit():
     import version
     root=Tk()
     #Check for a new version
-    if main_version.version>__main__.version:
+    if version.version>__main__.version:
         Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         Label(root,text='Lancer maj.py afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
     else:
