@@ -1,6 +1,7 @@
 from tkinter import *
 import __main__
 
+#Define x1 for f(x1)=0 when delta>0
 def main(a,b,delta):
     if delta**0.5==int(delta**0.5):
         x1_num=-b-delta**0.5
