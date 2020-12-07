@@ -1,6 +1,7 @@
 from tkinter import *
 import __main__
 
+#Define x1 for f(x1)=0 when delta>0
 def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     x1_num_int=int(-b_num*(delta_denom**0.5)*a_denom)
     x1_num_rt_int=int(-b_denom*a_denom)
