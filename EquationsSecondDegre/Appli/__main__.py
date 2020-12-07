@@ -3,27 +3,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from math import inf
 import quitter
-
-def maj():
-    import maj
-
-root_maj=Tk()
-root_maj.title("Mise \u00E0 jour")
-Label(root_maj,text='Voulez-vous t\u00E9l\u00E9charger la derni\u00E8re version de l\u2019application\u00A0\u003F',width=50).grid(column=0,row=0)
-Label(root_maj,text='Cette opération n\u00E9cessite une connection \u00E0 internet',width=50).grid(column=0,row=1)
-bouton_oui=Button(root_maj,text="Oui",command=maj)
-bouton_oui.grid(column=0,row=2)
-bouton_non=Button(root_maj,text="Non",command=quitter.maj_quit)
-bouton_non.grid(column=0,row=3)
-root_maj.resizable(width=False,height=False)
-root_maj.iconbitmap(r'python.ico')
-root_maj.mainloop()
-
 import entier
 import fraction
 
-version=4
+version=6
 
+#Create main window
 root=Tk()
 
 Label(root,text='Coefficients entiers').grid(column=0,row=0,columnspan=2)
@@ -42,7 +27,7 @@ ValC.grid(column=1,row=5)
 BoutonCalc=Button(root,text="Calculer",command=entier.main_ent)
 BoutonCalc.grid(column=0,row=7,columnspan=2)
 
-Label(root,text='Coefficients décimaux').grid(column=3,row=0,columnspan=2)
+Label(root,text='Coefficients d\u00E9cimaux').grid(column=3,row=0,columnspan=2)
 Label(root,text='Num\u00E9rateur de a=').grid(column=3,row=1,sticky='e')
 Label(root,text='D\u00E9nominateur de a=').grid(column=3,row=2,sticky='e')
 Label(root,text='Num\u00E9rateur de b=').grid(column=3,row=3,sticky='e')
