@@ -6,7 +6,7 @@ import quitter
 import entier
 import fraction
 
-version=6
+version=7
 
 #Create main window
 root=Tk()
