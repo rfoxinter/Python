@@ -5,11 +5,13 @@ from math import inf
 import quitter
 import entier
 import fraction
+import a_propos
 
-version=7
+version=8
 
 #Create main window
 root=Tk()
+root.option_add('*Font', 'Arial 10')
 
 Label(root,text='Coefficients entiers').grid(column=0,row=0,columnspan=2)
 Label(root,text='a=').grid(column=0,row=1,sticky='e')
@@ -106,6 +108,9 @@ Col6_Row11.grid(column=5,row=10)
 
 Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
+
+photo = PhotoImage(file=r'a_propos.gif')
+Button(root,image=photo,command=a_propos.main).grid(column=7,row=0,sticky='e') 
 
 root.title("R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o")
 root.resizable(width=False,height=False)
