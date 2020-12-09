@@ -2,6 +2,9 @@ from tkinter import *
 import urllib.request
 import __main__
 
+def about_quit():
+    __main__.about_root.destroy()
+
 def download():
     #List of files to be downloaded
     filename=['maj','version']
@@ -11,8 +14,7 @@ def download():
         url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[i]+'.py'
         urllib.request.urlretrieve(url, filename[i]+'.py')
 
-#Close app
-def main_quit():
+def close():
     def quit_quit():
         root.destroy()
     __main__.plt.close()
@@ -20,6 +22,7 @@ def main_quit():
     download()
     import version
     root=Tk()
+    root.option_add('*Font', 'Arial 10')
     #Check for a new version
     if version.version>__main__.version:
         Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
@@ -32,3 +35,11 @@ def main_quit():
     root.resizable(width=False,height=False)
     root.iconbitmap(r'python.ico')
     root.mainloop()
+
+#Close app
+def main_quit():
+    try:
+        about_quit()
+        close()
+    except:
+        close()
