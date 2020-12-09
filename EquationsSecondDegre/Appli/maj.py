@@ -8,7 +8,7 @@ def quit():
 	root.destroy()
 
 #List of files to be downloaded
-filename=[['__main__','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','version','quitter'],['a_propos'],['a_propos','python']]
+filename=[['__main__','a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','version','quitter'],['a_propos'],['a_propos','python']]
 
 #Download the files listed
 for i in range(len(filename[0])):
