@@ -7,12 +7,14 @@ def about_quit():
 
 def download():
     #List of files to be downloaded
+    extension=['.py','.pyw']
     filename=['maj','version']
 
     #Download the files listed
-    for i in range(len(filename)):
-        url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[i]+'.py'
-        urllib.request.urlretrieve(url, filename[i]+'.py')
+    for k in range(len(extension)):
+        for i in range(len(filename)):
+            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[i]+extension[k]
+            urllib.request.urlretrieve(url, filename[i]+extension[k])
 
 def close():
     def quit_quit():
@@ -26,7 +28,7 @@ def close():
     #Check for a new version
     if version.version>__main__.version:
         Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
-        Label(root,text='Lancer maj.py afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
+        Label(root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
     else:
         root.destroy()
     bouton_ok=Button(root,text="Ok",command=quit_quit)
