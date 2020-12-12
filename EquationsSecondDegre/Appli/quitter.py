@@ -6,15 +6,9 @@ def about_quit():
     __main__.about_root.destroy()
 
 def download():
-    #List of files to be downloaded
-    extension=['.py','.pyw']
-    filename=[['version'],['maj']]
-
-    #Download the files listed
-    for k in range(len(extension)):
-        for i in range(len(filename[k])):
-            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[k][i]+extension[k]
-            urllib.request.urlretrieve(url, filename[k][i]+extension[k])
+    #Download version file
+    url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/version.py'
+    urllib.request.urlretrieve(url, 'version.py')
 
 def close():
     def quit_quit():
@@ -27,6 +21,8 @@ def close():
     root.option_add('*Font', 'Arial 10')
     #Check for a new version
     if version.version>__main__.version:
+        url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.pyw'
+        urllib.request.urlretrieve(url, 'maj.pyw')
         Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         Label(root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
     else:
