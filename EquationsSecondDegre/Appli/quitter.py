@@ -8,13 +8,13 @@ def about_quit():
 def download():
     #List of files to be downloaded
     extension=['.py','.pyw']
-    filename=['maj','version']
+    filename=[['version'],['maj']]
 
     #Download the files listed
     for k in range(len(extension)):
-        for i in range(len(filename)):
-            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[i]+extension[k]
-            urllib.request.urlretrieve(url, filename[i]+extension[k])
+        for i in range(len(filename[k])):
+            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[k][i]+extension[k]
+            urllib.request.urlretrieve(url, filename[k][i]+extension[k])
 
 def close():
     def quit_quit():
