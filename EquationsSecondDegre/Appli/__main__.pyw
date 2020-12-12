@@ -7,7 +7,7 @@ import entier
 import fraction
 import a_propos
 
-version=9
+version=10
 
 #Create main window
 root=Tk()
