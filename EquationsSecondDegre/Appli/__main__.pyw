@@ -1,13 +1,19 @@
 from tkinter import *
-import matplotlib.pyplot as plt
-import numpy as np
 from math import inf
+try:
+    import matplotlib.pyplot as plt
+    import numpy as np
+except:
+    import os
+    os.system("modules.bat")
+    import matplotlib.pyplot as plt
+    import numpy as np
 import quitter
 import entier
 import fraction
 import a_propos
 
-version=10
+version=11
 
 #Create main window
 root=Tk()
