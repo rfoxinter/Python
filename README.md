@@ -49,7 +49,7 @@
 3. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
     * Avec l'explorateur de fichiers Windows
         1. Ouvrir le .zip
-        2. Sélectionner "Extraire tour"
+        2. Sélectionner "Extraire tout"
         3. Sélectionner "Extraire"
     * Avec 7-Zip
         1. Sélectionner le .zip et faire un clic-droit
