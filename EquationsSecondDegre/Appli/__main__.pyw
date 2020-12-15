@@ -5,7 +5,9 @@ try:
     import numpy as np
 except:
     import os
-    os.system("modules.bat")
+    os.system("python -m pip install --upgrade pip")
+    os.system("python -m pip install --upgrade numpy==1.19.3")
+    os.system("python -m pip install --upgrade matplotlib")
     import matplotlib.pyplot as plt
     import numpy as np
 import quitter
