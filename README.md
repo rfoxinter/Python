@@ -30,14 +30,14 @@
 ## Télécharger et installer python
 1. [Télécharger python](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F)
     1. Sélectionner la version la plus récente depuis "Looking for a specific release?"
-    2. Descendre jusqu'à "Files" puis sélectionner "Windows x86-64 executable installer"
+    2. Descendre jusqu'à "Files" puis sélectionner "Windows installer (64-bit)"
 2. Lancer le fichier télécharger à l'étape 1
 3. Cocher "Add python 3.x to PATH" puis sélectionner "Customize installation"
 ![](https://www.zupimages.net/up/20/44/hul8.jpg)
 4. Vérifier que tout est coché comme sur l'image suivante puis cliquer sur "Next"
 ![](https://zupimages.net/up/20/44/lcdo.jpg)
-5. Vérifier que tout est coché comme sur l'image suivante, sélectionner un chemin facile à retrouver puis cliquer sur "Install"
-![](https://zupimages.net/up/20/44/98bz.jpg)
+5. Vérifier que tout est coché comme sur l'image suivante puis cliquer sur "Install"
+![](https://zupimages.net/up/20/51/fddz.jpg)
 ## Lancer un programme python
 1. Télécharger le fichier .py
 2. Télécharger le fichier .bat du dossier
