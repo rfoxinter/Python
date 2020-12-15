@@ -40,9 +40,7 @@
 ![](https://zupimages.net/up/20/51/fddz.jpg)
 ## Lancer un programme python
 1. Télécharger le fichier .py
-2. Télécharger le fichier .bat du dossier
-3. Lancer le .bat téléchargé à l'étape 2
-4. Lancer le programme python
+2. Lancer le programme python
 ## Lancer une application python
 1. Aller sur [GitZip](http://kinolien.github.io/gitzip/) et entrer le lien du dossier "Appli" dans "GitHub repo root URL or sub-folder URL"
 2. Cliquer sur "Download"
@@ -54,4 +52,4 @@
     * Avec 7-Zip
         1. Sélectionner le .zip et faire un clic-droit
         2. Sélectionner "Extraire vers "Appli&#92;""
-4. Lancer le fichier &#95;&#95;main&#95;&#95;.py du dossier
+4. Lancer le fichier &#95;&#95;main&#95;&#95;.pyw du dossier
