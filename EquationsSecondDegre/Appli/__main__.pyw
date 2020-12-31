@@ -126,7 +126,7 @@ menuBar=Menu(root)
 menu_aide=Menu(menuBar, tearoff=0)
 menu_aide.add_command(label="\u00C0 propos", command=a_propos.main)
 menu_aide.add_separator()
-menu_aide.add_command(label="V\u00E9rifier les mises \u00E0 jour", command=quitter.ver_maj)
+menu_aide.add_command(label="V\u00E9rifier les mises \u00E0 jour", command=quitter.abt_maj)
 menuBar.add_cascade(label="Aide", menu=menu_aide)
 root.config(menu=menuBar)
 
