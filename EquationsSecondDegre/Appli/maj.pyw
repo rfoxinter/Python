@@ -13,8 +13,8 @@ def title(act):
     root.title('Mise \u00E0 jour ('+str(act)+'/'+str(ttl)+')')
 
 #List of files to be downloaded
-extension=['.py','.pyw','.gif','.ico']
-filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','version','quitter'],['__main__'],['a_propos'],['a_propos','python']]
+extension=['.py','.pyw','.ico']
+filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','version','quitter'],['a_propos'],['a_propos','python']]
 
 def down():
     act=0
