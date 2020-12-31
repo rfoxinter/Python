@@ -5,17 +5,22 @@ try:
     import numpy as np
 except:
     import os
-    os.system("python -m pip install --upgrade pip")
-    os.system("python -m pip install --upgrade numpy==1.19.3")
-    os.system("python -m pip install --upgrade matplotlib")
+    import sys
+    os.system(sys.executable+" -m pip install --upgrade matplotlib")
     import matplotlib.pyplot as plt
+try:
+    import numpy as np
+except:
+    import os
+    import sys
+    os.system(sys.executable+" -m pip install --upgrade numpy==1.19.3")
     import numpy as np
 import quitter
 import entier
 import fraction
 import a_propos
 
-version=11
+version=12
 
 #Create main window
 root=Tk()
@@ -117,8 +122,13 @@ Col6_Row11.grid(column=5,row=10)
 Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
 
-photo = PhotoImage(file=r'a_propos.gif')
-Button(root,image=photo,command=a_propos.main).grid(column=7,row=0,sticky='e') 
+menuBar=Menu(root)
+menu_aide=Menu(menuBar, tearoff=0)
+menu_aide.add_command(label="\u00C0 propos", command=a_propos.main)
+menu_aide.add_separator()
+menu_aide.add_command(label="V\u00E9rifier les mises \u00E0 jour", command=quitter.ver_maj)
+menuBar.add_cascade(label="Aide", menu=menu_aide)
+root.config(menu=menuBar)
 
 root.title("R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o")
 root.resizable(width=False,height=False)
