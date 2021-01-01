@@ -1,6 +1,7 @@
 from tkinter import *
 import urllib.request
 import __main__
+import preferences
 
 def about_quit():
     __main__.about_root.destroy()
@@ -15,28 +16,29 @@ def close():
         __main__.about_root.destroy()
     if __main__.maj_root.winfo_exists():
         __main__.maj_root.destroy()
-    def quit_quit():
-        root.destroy()
     __main__.plt.close()
     __main__.root.destroy()
-    download()
-    import version
-    root=Tk()
-    root.option_add('*Font','Arial 10')
-    #Check for a new version
-    if version.version>__main__.version:
-        url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.pyw'
-        urllib.request.urlretrieve(url,'maj.pyw')
-        Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
-        Label(root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
-    else:
-        root.destroy()
-    bouton_fermer=Button(root,text='Fermer',command=quit_quit)
-    bouton_fermer.grid(column=0,row=2)
-    root.title('Mise \u00E0 jour')
-    root.resizable(width=False,height=False)
-    root.iconbitmap(r'python.ico')
-    root.mainloop()
+    if preferences.ver_maj==1:
+        def quit_quit():
+            root.destroy()
+        download()
+        import version
+        root=Tk()
+        root.option_add('*Font','Arial 10')
+        #Check for a new version
+        if version.version>__main__.version:
+            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.pyw'
+            urllib.request.urlretrieve(url,'maj.pyw')
+            Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
+            Label(root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
+        else:
+            root.destroy()
+        bouton_fermer=Button(root,text='Fermer',command=quit_quit)
+        bouton_fermer.grid(column=0,row=2)
+        root.title('Mise \u00E0 jour')
+        root.resizable(width=False,height=False)
+        root.iconbitmap(r'python.ico')
+        root.mainloop()
 
 def abt_maj():
     def quit_quit():
