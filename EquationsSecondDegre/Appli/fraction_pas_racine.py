@@ -23,9 +23,9 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
     x=np.linspace(pltxmin,pltxmax,1000)
     y=(a_num/a_denom)*x**2+(b_num/b_denom)*x+(c_num/c_denom)
     __main__.plt.plot(x,y,c='blue')
-    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="(\u03B1;\u03B2)")
-    __main__.plt.xlabel("x")
-    __main__.plt.ylabel("y=f(x)")
+    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
+    __main__.plt.xlabel('x')
+    __main__.plt.ylabel('y=f(x)')
     pltymin=0
     pltymax=0
     if beta_num/beta_denom-ymax/100<ymax:
