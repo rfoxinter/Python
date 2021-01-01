@@ -21,6 +21,7 @@ import fraction
 import a_propos
 import sauvegarder
 import ouvrir
+import preferences
 
 version=14
 
@@ -128,11 +129,29 @@ Col6_Row11.grid(column=5,row=10)
 Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
 
+ver_maj=IntVar()
+ver_maj.set(preferences.ver_maj)
+
+def edit_ver_maj():
+    print(ver_maj.get())
+    file=open('preferences.py','r')
+    list_of_lines =file.readlines()
+    list_of_lines[0]='ver_maj='+str(ver_maj.get())
+    file=open('preferences.py','w')
+    file.writelines(list_of_lines)
+    file.close()
+
 menuBar=Menu(root)
 menu_fichier=Menu(menuBar,tearoff=0)
+menu_edition=Menu(menuBar,tearoff=0)
+menu_preference=Menu(menu_edition,tearoff=0)
+menu_aide=Menu(menuBar,tearoff=0)
 menu_fichier.add_command(label='Enregistrer l\u2019\u00E9quation Ctrl+S',command=sauvegarder.main)
 menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',command=ouvrir.main)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
+menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=edit_ver_maj)
+menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
+menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
 menu_aide=Menu(menuBar,tearoff=0)
 menu_aide.add_command(label='\u00C0 propos',command=a_propos.main)
 menu_aide.add_separator()
