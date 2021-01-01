@@ -7,15 +7,32 @@ import entier_x2
 import entier_deux_racines_plt
 
 def main_ent():
+    __main__.latest='entier'
     __main__.plt.close()
     for label in __main__.root.grid_slaves():
-        if int(label.grid_info()["column"])==6:
+        if int(label.grid_info()['column'])==6:
             label.destroy()
     Col7=Label(__main__.root,width=100)
     Col7.grid(column=6,row=5)
     sec_ent(__main__.ValeurA.get(),__main__.ValeurB.get(),__main__.ValeurC.get())
 
+def open_ent(a,b,c):
+    __main__.latest='entier'
+    __main__.entier_val[0]=a
+    __main__.entier_val[1]=b
+    __main__.entier_val[2]=c
+    __main__.plt.close()
+    for label in __main__.root.grid_slaves():
+        if int(label.grid_info()['column'])==6:
+            label.destroy()
+    Col7=Label(__main__.root,width=100)
+    Col7.grid(column=6,row=5)
+    sec_ent(a,b,c)
+
 def sec_ent(a,b,c):
+    __main__.entier_val[0]=a
+    __main__.entier_val[1]=b
+    __main__.entier_val[2]=c
     delta=b**2-4*a*c+(int(a/a)-1)
     alpha_num=-b
     alpha_denom=2*a
