@@ -6,25 +6,31 @@ try:
 except:
     import os
     import sys
-    os.system(sys.executable+" -m pip install --upgrade matplotlib")
+    os.system(sys.executable+' -m pip install --upgrade matplotlib')
     import matplotlib.pyplot as plt
 try:
     import numpy as np
 except:
     import os
     import sys
-    os.system(sys.executable+" -m pip install --upgrade numpy==1.19.3")
+    os.system(sys.executable+' -m pip install --upgrade numpy==1.19.3')
     import numpy as np
 import quitter
 import entier
 import fraction
 import a_propos
+import sauvegarder
+import ouvrir
 
-version=12
+version=14
+
+latest=''
+entier_val=[0,0,0]
+fraction_val=[0,0,0,0,0,0]
 
 #Create main window
 root=Tk()
-root.option_add('*Font', 'Arial 10')
+root.option_add('*Font','Arial 10')
 
 Label(root,text='Coefficients entiers').grid(column=0,row=0,columnspan=2)
 Label(root,text='a=').grid(column=0,row=1,sticky='e')
@@ -39,7 +45,7 @@ ValB=Spinbox(root,textvariable=ValeurB,from_=-inf,to=inf,increment=1,width=10)
 ValB.grid(column=1,row=3)
 ValC=Spinbox(root,textvariable=ValeurC,from_=-inf,to=inf,increment=1,width=10)
 ValC.grid(column=1,row=5)
-BoutonCalc=Button(root,text="Calculer",command=entier.main_ent)
+BoutonCalc=Button(root,text='Calculer',command=entier.main_ent)
 BoutonCalc.grid(column=0,row=7,columnspan=2)
 
 Label(root,text='Coefficients d\u00E9cimaux').grid(column=3,row=0,columnspan=2)
@@ -67,10 +73,10 @@ ValC_n=Spinbox(root,textvariable=ValeurC_n,from_=-inf,to=inf,increment=1,width=1
 ValC_n.grid(column=4,row=5)
 ValC_d=Spinbox(root,textvariable=ValeurC_d,from_=1,to=inf,increment=1,width=10)
 ValC_d.grid(column=4,row=6)
-BoutonCalc=Button(root,text="Calculer",command=fraction.main_frac)
+BoutonCalc=Button(root,text='Calculer',command=fraction.main_frac)
 BoutonCalc.grid(column=3,row=7,columnspan=2)
 
-BoutonQuit=Button(root,text="Quitter",command=quitter.main_quit)
+BoutonQuit=Button(root,text='Quitter',command=quitter.close)
 BoutonQuit.grid(column=7,row=10)
 
 Col3_Row1=Label(root,width=5)
@@ -123,14 +129,21 @@ Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
 
 menuBar=Menu(root)
-menu_aide=Menu(menuBar, tearoff=0)
-menu_aide.add_command(label="\u00C0 propos", command=a_propos.main)
+menu_fichier=Menu(menuBar,tearoff=0)
+menu_fichier.add_command(label='Enregistrer l\u2019\u00E9quation Ctrl+S',command=sauvegarder.main)
+menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',command=ouvrir.main)
+menuBar.add_cascade(label='Fichier',menu=menu_fichier)
+menu_aide=Menu(menuBar,tearoff=0)
+menu_aide.add_command(label='\u00C0 propos',command=a_propos.main)
 menu_aide.add_separator()
-menu_aide.add_command(label="V\u00E9rifier les mises \u00E0 jour", command=quitter.abt_maj)
-menuBar.add_cascade(label="Aide", menu=menu_aide)
+menu_aide.add_command(label='V\u00E9rifier les mises \u00E0 jour',command=quitter.abt_maj)
+menuBar.add_cascade(label='Aide',menu=menu_aide)
 root.config(menu=menuBar)
 
-root.title("R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o")
+root.bind('<Control-s>',sauvegarder.ctrl_s)
+root.bind('<Control-o>',ouvrir.ctrl_o)
+
+root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 root.resizable(width=False,height=False)
 root.iconbitmap(r'python.ico')
 root.mainloop()
