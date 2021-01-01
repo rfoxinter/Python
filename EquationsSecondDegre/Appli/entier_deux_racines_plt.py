@@ -20,11 +20,11 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
     x=np.linspace(pltxmin,pltxmax,1000)
     y=a*x**2+b*x+c
     __main__.plt.plot(x,y,c='blue')
-    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label="(\u03B1;\u03B2)")
-    __main__.plt.scatter((-b-(delta**0.5))/(2*a),0,c='green',marker='x',label="x\u2081=(((-b-\u221A(\u0394))/2a);0)")
-    __main__.plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='x',label="x\u2082=(((-b+\u221A(\u0394))/2a);0)")
-    __main__.plt.xlabel("x")
-    __main__.plt.ylabel("y=f(x)")
+    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
+    __main__.plt.scatter((-b-(delta**0.5))/(2*a),0,c='green',marker='x',label='x\u2081=(((-b-\u221A(\u0394))/2a);0)')
+    __main__.plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='x',label='x\u2082=(((-b+\u221A(\u0394))/2a);0)')
+    __main__.plt.xlabel('x')
+    __main__.plt.ylabel('y=f(x)')
     pltymin=0
     pltymax=0
     if beta_num/beta_denom-ymax/100<ymax:
