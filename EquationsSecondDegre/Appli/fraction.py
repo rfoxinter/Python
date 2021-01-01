@@ -7,15 +7,38 @@ import fraction_x2
 import fraction_deux_racines_plt
 
 def main_frac():
+    __main__.latest='fraction'
     __main__.plt.close()
     for label in __main__.root.grid_slaves():
-        if int(label.grid_info()["column"])==6:
+        if int(label.grid_info()['column'])==6:
             label.destroy()
     Col7=Label(__main__.root,width=100)
     Col7.grid(column=6,row=5)
     sec_frac(__main__.ValeurA_n.get(),__main__.ValeurA_d.get(),__main__.ValeurB_n.get(),__main__.ValeurB_d.get(),__main__.ValeurC_n.get(),__main__.ValeurC_d.get())
 
+def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
+    __main__.latest='fraction'
+    __main__.fraction_val[0]=a_num
+    __main__.fraction_val[1]=a_denom
+    __main__.fraction_val[2]=b_num
+    __main__.fraction_val[3]=b_denom
+    __main__.fraction_val[4]=c_num
+    __main__.fraction_val[5]=c_denom
+    __main__.plt.close()
+    for label in __main__.root.grid_slaves():
+        if int(label.grid_info()['column'])==6:
+            label.destroy()
+    Col7=Label(__main__.root,width=100)
+    Col7.grid(column=6,row=5)
+    sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom)
+
 def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
+    __main__.fraction_val[0]=a_num
+    __main__.fraction_val[1]=a_denom
+    __main__.fraction_val[2]=b_num
+    __main__.fraction_val[3]=b_denom
+    __main__.fraction_val[4]=c_num
+    __main__.fraction_val[5]=c_denom
     delta_num=int(b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2+((a_num/a_num)-1))
     delta_denom=int(a_denom*b_denom**2*c_denom)
     if delta_num>0 and delta_denom<0:
