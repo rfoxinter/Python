@@ -1,4 +1,3 @@
-from tkinter import *
 import fraction_x1_delta_num_entier
 import fraction_x1_delta_denom_entier
 import fraction_x1_sinon
