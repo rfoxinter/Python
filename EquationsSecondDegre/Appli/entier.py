@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label
 import __main__
 import entier_pas_racine
 import entier_x0
