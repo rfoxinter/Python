@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label,Button
 import urllib.request
 import __main__
 import quitter
