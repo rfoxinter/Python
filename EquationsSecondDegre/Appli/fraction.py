@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label
 import __main__
 import fraction_pas_racine
 import fraction_x0
