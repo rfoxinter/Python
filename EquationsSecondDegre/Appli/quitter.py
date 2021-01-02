@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk,Label,Button
 import urllib.request
 import __main__
 import preferences
@@ -70,3 +70,6 @@ def abt_maj():
     __main__.maj_root.resizable(width=False,height=False)
     __main__.maj_root.iconbitmap(r'python.ico')
     __main__.maj_root.mainloop()
+
+def ctrl_q(event):
+    close()
