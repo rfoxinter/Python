@@ -23,7 +23,7 @@ import sauvegarder
 import ouvrir
 import preferences
 
-version=14
+version=15
 
 latest=''
 entier_val=[0,0,0]
@@ -133,7 +133,6 @@ ver_maj=IntVar()
 ver_maj.set(preferences.ver_maj)
 
 def edit_ver_maj():
-    print(ver_maj.get())
     file=open('preferences.py','r')
     list_of_lines =file.readlines()
     list_of_lines[0]='ver_maj='+str(ver_maj.get())
