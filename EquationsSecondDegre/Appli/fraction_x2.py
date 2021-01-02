@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label
 import __main__
 
 def x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
