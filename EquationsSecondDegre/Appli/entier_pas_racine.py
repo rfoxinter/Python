@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label
 import matplotlib.pyplot as plt
 import numpy as np
 import __main__
