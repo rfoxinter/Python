@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk,Label,Button
 import urllib.request
 
 root=Tk()
@@ -14,7 +14,7 @@ def title(act):
 
 #List of files to be downloaded
 extension=['.py','.pyw','.ico']
-filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','ouvrir','version','quitter','sauvegarder'],['a_propos'],['a_propos','python']]
+filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','menu','ouvrir','quitter','sauvegarder','version'],['__main__'],['a_propos','python']]
 
 def down():
     act=0
