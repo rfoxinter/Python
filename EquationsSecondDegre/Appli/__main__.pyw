@@ -1,29 +1,28 @@
-from tkinter import *
+from tkinter import Tk,Label,Spinbox,Button,IntVar
 from math import inf
 try:
     import matplotlib.pyplot as plt
-    import numpy as np
 except:
     import os
     import sys
-    os.system(sys.executable+' -m pip install --upgrade matplotlib')
+    python_path=sys.executable.replace('pythonw','python')
+    os.system(python_path+' -m pip install --upgrade matplotlib')
     import matplotlib.pyplot as plt
 try:
     import numpy as np
 except:
     import os
     import sys
-    os.system(sys.executable+' -m pip install --upgrade numpy==1.19.3')
+    python_path=sys.executable.replace('pythonw','python')
+    os.system(python_path+' -m pip install --upgrade numpy==1.19.3')
     import numpy as np
 import quitter
 import entier
 import fraction
-import a_propos
 import sauvegarder
 import ouvrir
-import preferences
 
-version=15
+version=16
 
 latest=''
 entier_val=[0,0,0]
@@ -32,6 +31,8 @@ fraction_val=[0,0,0,0,0,0]
 #Create main window
 root=Tk()
 root.option_add('*Font','Arial 10')
+
+import menu
 
 Label(root,text='Coefficients entiers').grid(column=0,row=0,columnspan=2)
 Label(root,text='a=').grid(column=0,row=1,sticky='e')
@@ -128,38 +129,6 @@ Col6_Row11.grid(column=5,row=10)
 
 Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
-
-ver_maj=IntVar()
-ver_maj.set(preferences.ver_maj)
-
-def edit_ver_maj():
-    file=open('preferences.py','r')
-    list_of_lines =file.readlines()
-    list_of_lines[0]='ver_maj='+str(ver_maj.get())
-    file=open('preferences.py','w')
-    file.writelines(list_of_lines)
-    file.close()
-
-menuBar=Menu(root)
-menu_fichier=Menu(menuBar,tearoff=0)
-menu_edition=Menu(menuBar,tearoff=0)
-menu_preference=Menu(menu_edition,tearoff=0)
-menu_aide=Menu(menuBar,tearoff=0)
-menu_fichier.add_command(label='Enregistrer l\u2019\u00E9quation Ctrl+S',command=sauvegarder.main)
-menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',command=ouvrir.main)
-menuBar.add_cascade(label='Fichier',menu=menu_fichier)
-menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=edit_ver_maj)
-menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
-menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
-menu_aide=Menu(menuBar,tearoff=0)
-menu_aide.add_command(label='\u00C0 propos',command=a_propos.main)
-menu_aide.add_separator()
-menu_aide.add_command(label='V\u00E9rifier les mises \u00E0 jour',command=quitter.abt_maj)
-menuBar.add_cascade(label='Aide',menu=menu_aide)
-root.config(menu=menuBar)
-
-root.bind('<Control-s>',sauvegarder.ctrl_s)
-root.bind('<Control-o>',ouvrir.ctrl_o)
 
 root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 root.resizable(width=False,height=False)
