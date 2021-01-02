@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label
 import __main__
 
 #Define x1 for f(x1)=0 when delta>0
