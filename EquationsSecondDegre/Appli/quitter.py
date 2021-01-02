@@ -12,10 +12,14 @@ def download():
     urllib.request.urlretrieve(url,'version.py')
 
 def close():
-    if __main__.about_root.winfo_exists():
+    try:
         __main__.about_root.destroy()
-    if __main__.maj_root.winfo_exists():
+    except:
+        pass
+    try:
         __main__.maj_root.destroy()
+    except:
+        pass
     __main__.plt.close()
     __main__.root.destroy()
     if preferences.ver_maj==1:
