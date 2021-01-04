@@ -1,4 +1,4 @@
-from tkinter import Menu,IntVar
+from tkinter import Tk,Label,Button,IntVar,Menu,messagebox
 import __main__
 import quitter
 import a_propos
@@ -8,14 +8,36 @@ import preferences
 
 ver_maj=IntVar()
 ver_maj.set(preferences.ver_maj)
+afficher_graphs=IntVar()
+afficher_graphs.set(preferences.afficher_graphs)
+
+def redemarrage():
+    __main__.redemarrage=Tk()
+    __main__.redemarrage.option_add('*Font','Arial 10')
+    __main__.redemarrage.title('Avertissement')
+    Label(__main__.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
+    bouton_fermer=Button(__main__.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
+    bouton_fermer.grid(column=0,row=2)
+    __main__.redemarrage.resizable(width=False,height=False)
+    __main__.redemarrage.iconbitmap(r'python.ico')
+    __main__.redemarrage.mainloop()
 
 def edit_ver_maj():
     file=open('preferences.py','r')
-    list_of_lines =file.readlines()
-    list_of_lines[0]='ver_maj='+str(ver_maj.get())
+    list_of_lines=file.readlines()
+    list_of_lines[0]='ver_maj='+str(ver_maj.get())+'\n'
     file=open('preferences.py','w')
     file.writelines(list_of_lines)
     file.close()
+
+def edit_afficher_graphs():
+    file=open('preferences.py','r')
+    list_of_lines=file.readlines()
+    list_of_lines[1]='afficher_graphs='+str(afficher_graphs.get())+'\n'
+    file=open('preferences.py','w')
+    file.writelines(list_of_lines)
+    file.close()
+    redemarrage()
 
 menuBar=Menu(__main__.root)
 
@@ -31,6 +53,7 @@ menu_fichier.add_command(label='Quitter Ctrl+q',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
 menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=edit_ver_maj)
+menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=edit_afficher_graphs)
 
 menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
 menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
