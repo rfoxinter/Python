@@ -5,10 +5,12 @@ import fraction_x0
 import fraction_x1
 import fraction_x2
 import fraction_deux_racines_plt
+import preferences
 
 def main_frac():
     __main__.latest='fraction'
-    __main__.plt.close()
+    if preferences.afficher_graphs==1:
+        __main__.plt.close()
     for label in __main__.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
@@ -24,7 +26,8 @@ def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     __main__.fraction_val[3]=b_denom
     __main__.fraction_val[4]=c_num
     __main__.fraction_val[5]=c_denom
-    __main__.plt.close()
+    if preferences.afficher_graphs==1:
+        __main__.plt.close()
     for label in __main__.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
@@ -110,4 +113,5 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     else:
         fraction_x1.x1_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_x2.x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
-        fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom)
+        if preferences.afficher_graphs==1:
+            fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom)
