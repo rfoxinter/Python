@@ -19,7 +19,7 @@ def redemarrage():
     bouton_fermer=Button(__main__.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
     bouton_fermer.grid(column=0,row=2)
     __main__.redemarrage.resizable(width=False,height=False)
-    __main__.redemarrage.iconbitmap(r'python.ico')
+    __main__.redemarrage.iconbitmap(r'avertissement.ico')
     __main__.redemarrage.mainloop()
 
 def edit_ver_maj():
