@@ -14,7 +14,24 @@ def title(act):
 
 #List of files to be downloaded
 extension=['.py','.pyw','.ico']
-filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','menu','ouvrir','quitter','sauvegarder','version'],['__main__'],['a_propos','python']]
+filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','menu','ouvrir','quitter','sauvegarder','version'],['__main__'],['a_propos','avertissement','python']]
+
+def maj_pref():    
+    local_pref=open(r'preferences.py','r')
+    local_lines=local_pref.readlines()
+    url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/preferences.py'
+    urllib.request.urlretrieve(url,'preferences_maj.py')
+    maj_pref=open('preferences_maj.py','r')
+    maj_lines=maj_pref.readlines()
+    if len(local_lines)<len(maj_lines):
+        for i in range(len(maj_lines)-len(local_lines)):
+            local_lines.append(maj_lines[len(local_lines)+i])
+            local_pref=open(r'preferences.py','w')
+            local_pref.writelines(local_lines)
+            local_pref.close()
+    maj_pref.close()
+    import os
+    os.remove(r'preferences_maj.py')
 
 def down():
     act=0
@@ -30,6 +47,7 @@ def down():
                 urllib.request.urlretrieve(url,filename[k][i]+extension[k])
                 act=act+1
                 title(act)
+        maj_pref()
         for label in root.grid_slaves():
             if int(label.grid_info()['row'])==0:
                 label.destroy()
