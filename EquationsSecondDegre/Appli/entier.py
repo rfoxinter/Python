@@ -5,10 +5,12 @@ import entier_x0
 import entier_x1
 import entier_x2
 import entier_deux_racines_plt
+import preferences
 
 def main_ent():
     __main__.latest='entier'
-    __main__.plt.close()
+    if preferences.afficher_graphs==1:
+        __main__.plt.close()
     for label in __main__.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
@@ -21,7 +23,8 @@ def open_ent(a,b,c):
     __main__.entier_val[0]=a
     __main__.entier_val[1]=b
     __main__.entier_val[2]=c
-    __main__.plt.close()
+    if preferences.afficher_graphs==1:
+        __main__.plt.close()
     for label in __main__.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
@@ -83,4 +86,5 @@ def sec_ent(a,b,c):
     else:
         entier_x1.main(a,b,delta)
         entier_x2.main(a,b,delta)
-        entier_deux_racines_plt.main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta)
+        if preferences.afficher_graphs==1:
+            entier_deux_racines_plt.main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta)
