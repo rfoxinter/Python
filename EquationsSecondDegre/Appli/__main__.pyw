@@ -1,21 +1,23 @@
 from tkinter import Tk,Label,Spinbox,Button,IntVar
 from math import inf
-try:
-    import matplotlib.pyplot as plt
-except:
-    import os
-    import sys
-    python_path=sys.executable.replace('pythonw','python')
-    os.system(python_path+' -m pip install --upgrade matplotlib')
-    import matplotlib.pyplot as plt
-try:
-    import numpy as np
-except:
-    import os
-    import sys
-    python_path=sys.executable.replace('pythonw','python')
-    os.system(python_path+' -m pip install --upgrade numpy==1.19.3')
-    import numpy as np
+import preferences
+if preferences.afficher_graphs==1:
+    try:
+        import numpy as np
+    except:
+        import os
+        import sys
+        python_path=sys.executable.replace('pythonw','python')
+        os.system(python_path+' -m pip install --upgrade numpy==1.19.3')
+        import numpy as np
+    try:
+        import matplotlib.pyplot as plt
+    except:
+        import os
+        import sys
+        python_path=sys.executable.replace('pythonw','python')
+        os.system(python_path+' -m pip install --upgrade matplotlib')
+        import matplotlib.pyplot as plt
 import quitter
 import entier
 import fraction
