@@ -6,6 +6,9 @@ import preferences
 def about_quit():
     __main__.about_root.destroy()
 
+def redemarrage_quit():
+    __main__.redemarrage.destroy()
+
 def download():
     #Download version file
     url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/version.py'
@@ -20,7 +23,12 @@ def close():
         __main__.maj_root.destroy()
     except:
         pass
-    __main__.plt.close()
+    try:
+        __main__.redemarrage.destroy()
+    except:
+        pass
+    if preferences.afficher_graphs==1:
+        __main__.plt.close()
     __main__.root.destroy()
     if preferences.ver_maj==1:
         def quit_quit():
