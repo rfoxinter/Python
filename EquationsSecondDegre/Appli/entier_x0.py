@@ -14,6 +14,7 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
         x0=x0_num//x0_denom
         L4=Label(__main__.root,text='x\u2080='+str(int(x0)))
         L4.grid(column=6,row=3,sticky='w')
+        __main__.rep[5]=L4.cget('text')
     else:
         div_x0=2
         while div_x0<=abs(x0_num) and div_x0<=abs(x0_denom):
@@ -25,9 +26,11 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
         if x0_num<0 and x0_denom<0:
             L4=Label(__main__.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
             L4.grid(column=6,row=3,sticky='w')
+            __main__.rep[5]=L4.cget('text')
         else:
             L4=Label(__main__.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
             L4.grid(column=6,row=3,sticky='w')
+            __main__.rep[5]=L4.cget('text')
     
     if preferences.afficher_graphs==1:
         pltxmin=alpha_num/alpha_denom-10
