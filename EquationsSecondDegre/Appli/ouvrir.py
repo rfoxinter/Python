@@ -3,7 +3,7 @@ import __main__
 import entier
 import fraction
 
-def main():
+def main(event=None):
     file=askopenfilename(title='S\u00E9lectionner un fichier à ouvrir',filetypes=[('Fichier \u00E9quation', '.eq')])
     lire=open(file,'r')
     lignes=len(lire.readlines())
@@ -40,6 +40,3 @@ def main():
         __main__.ValeurC_n.set(c_num)
         __main__.ValeurC_d.set(c_denom)
         fraction.open_frac(int(a_num),int(a_denom),int(b_num),int(b_denom),int(c_num),int(c_denom))
-
-def ctrl_o(event):
-    main()
