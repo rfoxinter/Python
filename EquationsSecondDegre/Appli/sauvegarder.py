@@ -1,7 +1,7 @@
 from tkinter.filedialog import asksaveasfile
 import __main__
 
-def main():
+def main(event=None):
     file=asksaveasfile(mode='w',title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier \u00E9quation','*.eq')],defaultextension='*.eq')
     if file is None:
         return
@@ -11,7 +11,4 @@ def main():
     elif __main__.latest=='fraction':
         for l in range(len(__main__.fraction_val)):
             file.writelines(str(__main__.fraction_val[l])+'\n')
-    file.close()            
-
-def ctrl_s(event):
-    main()
+    file.close()
