@@ -36,3 +36,4 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     L4=Label(__main__.root,text='x\u2081='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))))
     L4.grid(column=6,row=3,sticky='w')
     ('('+x1_num_int_1+'racine'+x1_num_rt_1+x1_num_int_2+'racine'+x1_num_rt_2+')/('+x1_denom_int+'racine'+x1_denom_rt+')')
+    __main__.rep[5]=L4.cget('text')
