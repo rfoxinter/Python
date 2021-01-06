@@ -10,6 +10,7 @@ def main(a,b,delta):
             x2=x2_num//x2_denom
             L5=Label(__main__.root,text='x\u2082='+str(int(x2)))
             L5.grid(column=6,row=4,sticky='w')
+            __main__.rep[6]=L5.cget('text')
         else:
             div_x2=2
             while div_x2<=abs(x2_num) and div_x2<=abs(x2_denom):
@@ -21,9 +22,11 @@ def main(a,b,delta):
             if x2_num<0 and x2_denom<0:
                 L5=Label(__main__.root,text='x\u2082=('+str(int(-x2_num))+')/('+str(int(-x2_denom))+')='+str(x2_num/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
             else:
                 L5=Label(__main__.root,text='x\u2082=('+str(int(x2_num))+')/('+str(int(x2_denom))+')='+str(x2_num/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
     else:
         x2_num_int=-b
         x2_num_rt=delta
@@ -44,24 +47,31 @@ def main(a,b,delta):
             if abs(x2_denom)==1:
                 L5=Label(__main__.root,text='x\u2082=-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
             else:
                 if x2_denom<0:
                     L5=Label(__main__.root,text='x\u2082=-\u221A('+str(x2_num_rt)+')/('+str(int(-x2_denom))+')='+str(-(x2_num_rt**0.5)/-x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
+                    __main__.rep[6]=L5.cget('text')
                 else:
                     L5=Label(__main__.root,text='x\u2082=\u221A('+str(x2_num_rt)+')/('+str(int(x2_denom))+')='+str((x2_num_rt**0.5)/x2_denom))
                     L5.grid(column=6,row=4,sticky='w')
+                    __main__.rep[6]=L5.cget('text')
         elif x2_num_int<0 and x2_denom<0:
             if abs(x2_denom)==1:
                 L5=Label(__main__.root,text='x\u2082='+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+')='+str(x2_num_int-x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
             else:
                 L5=Label(__main__.root,text='x\u2082=('+str(int(-x2_num_int))+'-\u221A('+str(x2_num_rt)+'))/('+str(int(-x2_denom))+')='+str((x2_num_int-x2_num_rt**0.5)/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
         else:
             if abs(x2_denom)==1:
                 L5=Label(__main__.root,text='x\u2082='+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+')='+str(x2_num_int+x2_num_rt**0.5))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
             else:
                 L5=Label(__main__.root,text='x\u2082=('+str(int(x2_num_int))+'+\u221A('+str(x2_num_rt)+'))/('+str(int(x2_denom))+')='+str((x2_num_int+x2_num_rt**0.5)/x2_denom))
                 L5.grid(column=6,row=4,sticky='w')
+                __main__.rep[6]=L5.cget('text')
