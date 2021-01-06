@@ -21,14 +21,13 @@ if preferences.afficher_graphs==1:
 import quitter
 import entier
 import fraction
-import sauvegarder
-import ouvrir
 
 version=16
 
 latest=''
 entier_val=[0,0,0]
 fraction_val=[0,0,0,0,0,0]
+rep=['','','','','','','']
 
 #Create main window
 root=Tk()
