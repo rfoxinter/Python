@@ -14,7 +14,7 @@ def download():
     url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/version.py'
     urllib.request.urlretrieve(url,'version.py')
 
-def close():
+def close(event=None):
     try:
         __main__.about_root.destroy()
     except:
@@ -78,6 +78,3 @@ def abt_maj():
     __main__.maj_root.resizable(width=False,height=False)
     __main__.maj_root.iconbitmap(r'python.ico')
     __main__.maj_root.mainloop()
-
-def ctrl_q(event):
-    close()
