@@ -5,6 +5,7 @@ import a_propos
 import sauvegarder
 import ouvrir
 import preferences
+import exporter
 
 ver_maj=IntVar()
 ver_maj.set(preferences.ver_maj)
@@ -49,6 +50,8 @@ menu_aide=Menu(menuBar,tearoff=0)
 menu_fichier.add_command(label='Enregistrer l\u2019\u00E9quation Ctrl+S',command=sauvegarder.main)
 menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',command=ouvrir.main)
 menu_fichier.add_separator()
+menu_fichier.add_command(label='Exporter l\u2019\u00E9quation Ctrl+Shift+E',command=exporter.main)
+menu_fichier.add_separator()
 menu_fichier.add_command(label='Quitter Ctrl+q',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
@@ -66,6 +69,7 @@ menuBar.add_cascade(label='Aide',menu=menu_aide)
 
 __main__.root.config(menu=menuBar)
 
-__main__.root.bind('<Control-s>',sauvegarder.ctrl_s)
-__main__.root.bind('<Control-o>',ouvrir.ctrl_o)
-__main__.root.bind('<Control-q>',quitter.ctrl_q)
+__main__.root.bind('<Control-s>',sauvegarder.main)
+__main__.root.bind('<Control-o>',ouvrir.main)
+__main__.root.bind('<Control-q>',quitter.close)
+__main__.root.bind('<Control-E>',exporter.main)
