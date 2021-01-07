@@ -3,7 +3,7 @@ import pathlib
 import __main__
 
 def main(event=None):
-    file=asksaveasfile(title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier texte','.txt .text'),('Rich Text Format','.rtf'),('Hypertext Markup Language','.html .htm')],defaultextension='.txt')
+    file=asksaveasfile(title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier texte','.txt .text'),('Rich Text Format','.rtf'),('Hypertext Markup Language','.html .htm'),('LaTeX','.tex')],defaultextension='.txt')
     if file is None:
         return
     if __main__.latest=='entier':
@@ -16,6 +16,9 @@ def main(event=None):
     elif pathlib.Path(file.name).suffix=='.html' or pathlib.Path(file.name).suffix=='.htm':
         from extensions import html
         html.main(file.name)
+    elif pathlib.Path(file.name).suffix=='.tex':
+        from extensions import tex
+        tex.main(file.name)
     else:
         from extensions import txt
         txt.main(file.name)
