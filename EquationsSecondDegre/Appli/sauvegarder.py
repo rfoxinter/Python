@@ -2,7 +2,7 @@ from tkinter.filedialog import asksaveasfile
 import __main__
 
 def main(event=None):
-    file=asksaveasfile(mode='w',title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier \u00E9quation','*.eq')],defaultextension='*.eq')
+    file=asksaveasfile(mode='w',title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier \u00E9quation','.eq')],defaultextension='.eq')
     if file is None:
         return
     if __main__.latest=='entier':
