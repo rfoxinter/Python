@@ -4,7 +4,7 @@ import entier
 import fraction
 
 def main(event=None):
-    file=askopenfilename(title='S\u00E9lectionner un fichier à ouvrir',filetypes=[('Fichier \u00E9quation', '.eq')])
+    file=askopenfilename(title='S\u00E9lectionner un fichier à ouvrir',filetypes=[('Fichier \u00E9quation', '.eq')],defaultextension='.eq')
     lire=open(file,'r')
     lignes=len(lire.readlines())
     with open(file) as f:
