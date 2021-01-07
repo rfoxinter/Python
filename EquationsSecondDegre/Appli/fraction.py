@@ -36,6 +36,7 @@ def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom)
 
 def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
+    __main__.rep[6]=''
     __main__.fraction_val[0]=a_num
     __main__.fraction_val[1]=a_denom
     __main__.fraction_val[2]=b_num
