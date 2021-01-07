@@ -33,6 +33,7 @@ def open_ent(a,b,c):
     sec_ent(a,b,c)
 
 def sec_ent(a,b,c):
+    __main__.rep[6]=''
     __main__.entier_val[0]=a
     __main__.entier_val[1]=b
     __main__.entier_val[2]=c
