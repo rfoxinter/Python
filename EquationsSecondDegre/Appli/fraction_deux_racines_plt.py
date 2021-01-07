@@ -1,5 +1,7 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import preferences
+if preferences.afficher_graphs==1:
+    import matplotlib.pyplot as plt
+    import numpy as np
 import __main__
 
 #Plot graph when delta>0
