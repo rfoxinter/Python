@@ -13,15 +13,20 @@ afficher_graphs=IntVar()
 afficher_graphs.set(preferences.afficher_graphs)
 
 def redemarrage():
-    __main__.redemarrage=Tk()
-    __main__.redemarrage.option_add('*Font','Arial 10')
-    __main__.redemarrage.title('Avertissement')
-    Label(__main__.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
-    bouton_fermer=Button(__main__.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
-    bouton_fermer.grid(column=0,row=2)
-    __main__.redemarrage.resizable(width=False,height=False)
-    __main__.redemarrage.iconbitmap(r'avertissement.ico')
-    __main__.redemarrage.mainloop()
+    import importlib
+    importlib.reload(preferences)
+    try:
+        import matplotlib.pyplot as plt
+    except:
+        __main__.redemarrage=Tk()
+        __main__.redemarrage.option_add('*Font','Arial 10')
+        __main__.redemarrage.title('Avertissement')
+        Label(__main__.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
+        bouton_fermer=Button(__main__.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
+        bouton_fermer.grid(column=0,row=2)
+        __main__.redemarrage.resizable(width=False,height=False)
+        __main__.redemarrage.iconbitmap(r'avertissement.ico')
+        __main__.redemarrage.mainloop()
 
 def edit_ver_maj():
     file=open('preferences.py','r')
