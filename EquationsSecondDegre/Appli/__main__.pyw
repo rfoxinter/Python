@@ -1,18 +1,19 @@
 from tkinter import Tk,Label,Spinbox,Button,IntVar
 from math import inf
 import preferences
-if preferences.afficher_graphs==1:
-    try:
-        import matplotlib.pyplot as plt
-    except:
+try:
+    import matplotlib.pyplot as plt
+except:
+    if preferences.afficher_graphs==1:
         import os
         import sys
         python_path=sys.executable.replace('pythonw','python')
         os.system(python_path+' -m pip install --upgrade matplotlib')
         import matplotlib.pyplot as plt
-    try:
-        import numpy as np
-    except:
+try:
+    import numpy as np
+except:
+    if preferences.afficher_graphs==1:
         import os
         import sys
         python_path=sys.executable.replace('pythonw','python')
@@ -22,7 +23,7 @@ import quitter
 import entier
 import fraction
 
-version=18
+version=20
 
 latest=''
 entier_val=[0,0,0]
@@ -79,9 +80,6 @@ ValC_d.grid(column=4,row=6)
 BoutonCalc=Button(root,text='Calculer',command=fraction.main_frac)
 BoutonCalc.grid(column=3,row=7,columnspan=2)
 
-BoutonQuit=Button(root,text='Quitter',command=quitter.close)
-BoutonQuit.grid(column=7,row=10)
-
 Col3_Row1=Label(root,width=5)
 Col3_Row1.grid(column=2,row=0)
 Col3_Row2=Label(root,width=5)
@@ -102,8 +100,6 @@ Col3_Row9=Label(root,width=5)
 Col3_Row9.grid(column=2,row=8)
 Col3_Row10=Label(root,width=5)
 Col3_Row10.grid(column=2,row=9)
-Col3_Row11=Label(root,width=5)
-Col3_Row11.grid(column=2,row=10)
 
 Col6_Row1=Label(root,width=5)
 Col6_Row1.grid(column=5,row=0)
@@ -125,12 +121,11 @@ Col6_Row9=Label(root,width=5)
 Col6_Row9.grid(column=5,row=8)
 Col6_Row10=Label(root,width=5)
 Col6_Row10.grid(column=5,row=9)
-Col6_Row11=Label(root,width=5)
-Col6_Row11.grid(column=5,row=10)
 
 Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
 
+root.protocol('WM_DELETE_WINDOW',quitter.close)
 root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 root.resizable(width=False,height=False)
 root.iconbitmap(r'python.ico')
