@@ -1,5 +1,6 @@
 from tkinter import Tk,Label,Button
 import urllib.request
+import os
 
 root=Tk()
 root.option_add('*Font','Arial 10')
@@ -14,7 +15,7 @@ def title(act):
 
 #List of files to be downloaded
 extension=['.py','.pyw','.ico']
-filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','menu','ouvrir','quitter','sauvegarder','version','extensions/html','extensions/rtf','extensions/tex','extensions/txt'],['__main__'],['a_propos','avertissement','python']]
+filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','menu','ouvrir','quitter','sauvegarder','version','extensions\u002Fhtml','extensions\u002Frtf','extensions\u002Ftex','extensions\u002Ftxt'],['__main__'],['a_propos','avertissement','python']]
 
 def maj_pref():    
     local_pref=open(r'preferences.py','r')
@@ -30,7 +31,6 @@ def maj_pref():
             local_pref.writelines(local_lines)
             local_pref.close()
     maj_pref.close()
-    import os
     os.remove(r'preferences_maj.py')
 
 def down():
@@ -39,6 +39,8 @@ def down():
         if int(label.grid_info()['row'])==0:
             label.destroy()
     try:
+        if os.path.exists('extensions')==False:
+            os.mkdir('extensions')
         Label(root,text='T\u00E9l\u00E9chargement de la mise \u00E0 jour en cours.').grid(column=0,row=0)
         #Download the files listed
         for k in range(len(filename)):
