@@ -1,13 +1,13 @@
 from tkinter import Label
 import preferences
-if preferences.afficher_graphs==1:
-    import matplotlib.pyplot as plt
-    import numpy as np
 import __main__
 
 #Define x for f(x)=0 when delta=0
 #Plot graph when delta=0
 def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
+    if preferences.afficher_graphs==1:
+        import matplotlib.pyplot as plt
+        import numpy as np
     x0_num=-b
     x0_denom=2*a
     if x0_num%x0_denom==0:
@@ -24,11 +24,11 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
             else:
                 div_x0=div_x0+1
         if x0_num<0 and x0_denom<0:
-            L4=Label(__main__.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
+            L4=Label(__main__.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             __main__.rep[5]=L4.cget('text')
         else:
-            L4=Label(__main__.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
+            L4=Label(__main__.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             __main__.rep[5]=L4.cget('text')
     
