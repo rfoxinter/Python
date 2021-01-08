@@ -20,11 +20,11 @@ def main(a,b,delta):
                 else:
                     div_x1=div_x1+1
             if x1_num<0 and x1_denom<0:
-                L4=Label(__main__.root,text='x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom))
+                L4=Label(__main__.root,text='x\u2081=('+str(int(-x1_num))+')/('+str(int(-x1_denom))+')='+str(x1_num/x1_denom).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
             else:
-                L4=Label(__main__.root,text='x\u2081=('+str(int(x1_num))+')/('+str(int(x1_denom))+')='+str(x1_num/x1_denom))
+                L4=Label(__main__.root,text='x\u2081=('+str(int(x1_num))+')/('+str(int(x1_denom))+')='+str(x1_num/x1_denom).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
     else:
@@ -45,33 +45,33 @@ def main(a,b,delta):
                 div_x1=div_x1+1
         if x1_num_int==0:
             if abs(x1_denom)==1:
-                L4=Label(__main__.root,text='x\u2081=\u221A('+str(x1_num_rt)+')='+str(x1_num_rt**0.5))
+                L4=Label(__main__.root,text='x\u2081=\u221A('+str(x1_num_rt)+')='+str(x1_num_rt**0.5).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
             else:
                 if x1_denom<0:
-                    L4=Label(__main__.root,text='x\u2081=\u221A('+str(x1_num_rt)+')/('+str(int(-x1_denom))+')='+str((x1_num_rt**0.5)/-x1_denom))
+                    L4=Label(__main__.root,text='x\u2081=\u221A('+str(x1_num_rt)+')/('+str(int(-x1_denom))+')='+str((x1_num_rt**0.5)/-x1_denom).replace('.',','))
                     L4.grid(column=6,row=3,sticky='w')
                     __main__.rep[5]=L4.cget('text')
                 else:
-                    L4=Label(__main__.root,text='x\u2081=-\u221A('+str(x1_num_rt)+')/('+str(int(x1_denom))+')='+str(-(x1_num_rt**0.5)/x1_denom))
+                    L4=Label(__main__.root,text='x\u2081=-\u221A('+str(x1_num_rt)+')/('+str(int(x1_denom))+')='+str(-(x1_num_rt**0.5)/x1_denom).replace('.',','))
                     L4.grid(column=6,row=3,sticky='w')
                     __main__.rep[5]=L4.cget('text')
         elif x1_num_int<0 and x1_denom<0:
             if abs(x1_denom)==1:
-                L4=Label(__main__.root,text='x\u2081='+str(int(-x1_num_int))+'+\u221A('+str(x1_num_rt)+')='+str(x1_num_int+x1_num_rt**0.5))
+                L4=Label(__main__.root,text='x\u2081='+str(int(-x1_num_int))+'+\u221A('+str(x1_num_rt)+')='+str(x1_num_int+x1_num_rt**0.5).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
             else:
-                L4=Label(__main__.root,text='x\u2081=('+str(int(-x1_num_int))+'+\u221A('+str(x1_num_rt)+'))/('+str(int(-x1_denom))+')='+str((x1_num_int+x1_num_rt**0.5)/x1_denom))
+                L4=Label(__main__.root,text='x\u2081=('+str(int(-x1_num_int))+'+\u221A('+str(x1_num_rt)+'))/('+str(int(-x1_denom))+')='+str((x1_num_int+x1_num_rt**0.5)/x1_denom).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
         else:
             if abs(x1_denom)==1:
-                L4=Label(__main__.root,text='x\u2081='+str(int(x1_num_int))+'-\u221A('+str(x1_num_rt)+')='+str(x1_num_int-x1_num_rt**0.5))
+                L4=Label(__main__.root,text='x\u2081='+str(int(x1_num_int))+'-\u221A('+str(x1_num_rt)+')='+str(x1_num_int-x1_num_rt**0.5).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
             else:
-                L4=Label(__main__.root,text='x\u2081=('+str(int(x1_num_int))+'-\u221A('+str(x1_num_rt)+'))/('+str(int(x1_denom))+')='+str((x1_num_int-x1_num_rt**0.5)/x1_denom))
+                L4=Label(__main__.root,text='x\u2081=('+str(int(x1_num_int))+'-\u221A('+str(x1_num_rt)+'))/('+str(int(x1_denom))+')='+str((x1_num_int-x1_num_rt**0.5)/x1_denom).replace('.',','))
                 L4.grid(column=6,row=3,sticky='w')
                 __main__.rep[5]=L4.cget('text')
