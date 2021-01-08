@@ -16,8 +16,10 @@ def main(path):
     __main__.rep[5]=__main__.rep[5].replace("\u2080","\u005Cf1\u005Cu8320\u003F\u005Cf0")
     __main__.rep[5]=__main__.rep[5].replace("\u2081","\u005Cf1\u005Cu8321\u003F\u005Cf0")
     __main__.rep[6]=__main__.rep[6].replace("\u2082","\u005Cf1\u005Cu8322\u003F\u005Cf0")
+    for k in range(2):
+        __main__.rep[k+5]=__main__.rep[k+5].replace("\u221A","\u005Cf1\u005Cu8730\u003F\u005Cf0")
     file_write=open(path,'w',encoding="utf-8")
-    file_write.writelines('{\u005Crtf1\u005Cansi\u005Cdeff0{\u005Cfonttbl{\u005Cf0\u005Cfcharset161 Arial;}{\u005Cf1 Arial;}}\n')
+    file_write.writelines('{\u005Crtf1\u005Cansi\u005Cdeff0{\u005Cfonttbl{\u005Cf0\u005Cfcharset161 Arial;}{\u005Cf1 Arial;}{\u005Cf2\u005Cfcharset1 Arial;}}\n')
     file_write.close()
     for i in range(len(__main__.rep)):
         file_write=open(path,'a',encoding="utf-8")
