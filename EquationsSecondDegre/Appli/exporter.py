@@ -8,7 +8,114 @@ def main(event=None):
     if file is None:
         return
     if __main__.latest=='entier':
-        __main__.rep[0]='('+str(__main__.entier_val[0])+')x\u00B2+('+str(__main__.entier_val[1])+')x+('+str(__main__.entier_val[2])+')'
+        if __main__.entier_val[0]==1:
+            if __main__.entier_val[1]<-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='x\u00B2-'+str(-__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]='x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==0:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='x\u00B2-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='x\u00B2'
+                else:
+                    __main__.rep[0]='x\u00B2+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='x\u00B2+x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='x\u00B2+x'
+                else:
+                    __main__.rep[0]='x\u00B2+x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='x\u00B2-x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='x\u00B2-x'
+                else:
+                    __main__.rep[0]='x\u00B2-x+'+str(__main__.entier_val[2])
+            else:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='x\u00B2+'+str(__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]='x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+        elif __main__.entier_val[0]==-1:
+            if __main__.entier_val[1]<-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='-x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='-x\u00B2-'+str(-__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]='-x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==0:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='-x\u00B2-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='-x\u00B2'
+                else:
+                    __main__.rep[0]='-x\u00B2+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='-x\u00B2+x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='-x\u00B2+x'
+                else:
+                    __main__.rep[0]='-x\u00B2+x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='-x\u00B2-x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='-x\u00B2-x'
+                else:
+                    __main__.rep[0]='-x\u00B2-x+'+str(__main__.entier_val[2])
+            else:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]='-x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]='-x\u00B2+'+str(__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]='-x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+        else:
+            if __main__.entier_val[1]<-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==0:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2'
+                else:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+x'
+                else:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+x+'+str(__main__.entier_val[2])
+            elif __main__.entier_val[1]==-1:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-x'
+                else:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2-x+'+str(__main__.entier_val[2])
+            else:
+                if __main__.entier_val[2]<0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
+                elif __main__.entier_val[2]==0:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x'
+                else:
+                    __main__.rep[0]=str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
     elif __main__.latest=='fraction':
         __main__.rep[0]='('+str(__main__.fraction_val[0])+'/'+str(__main__.fraction_val[1])+')x\u00B2+('+str(__main__.fraction_val[2])+'/'+str(__main__.fraction_val[3])+')x+('+str(__main__.fraction_val[4])+'/'+str(__main__.fraction_val[5])+')'
     if  pathlib.Path(file.name).suffix=='.rtf':
