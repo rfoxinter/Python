@@ -20,8 +20,12 @@ def main(path):
     for k in range(2):
         for i in range(len(__main__.rep[k+5])):
             if __main__.rep[k+5][i]=="\u221A" :
-                ifin=__main__.rep[k+5].find(")", i)
-                __main__.rep[k+5]=__main__.rep[k+5].replace(__main__.rep[k+5][i:ifin],"\u005Csqrt{"+__main__.rep[k+5][i+2:ifin]+"}")
+                ifin=__main__.rep[k+5].find(")",i)
+                __main__.rep[k+5]=__main__.rep[k+5].replace(__main__.rep[k+5][i:ifin+1],"\u005Csqrt{"+__main__.rep[k+5][i+2:ifin]+"}")
+    for k in range(4):
+        __main__.rep[k+3]=__main__.rep[k+3].replace(")/(","}{")
+        __main__.rep[k+3]=__main__.rep[k+3].replace(")","}")
+        __main__.rep[k+3]=__main__.rep[k+3].replace("(","\u005Cfrac{")
     if __main__.rep[6]=='':
         __main__.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
