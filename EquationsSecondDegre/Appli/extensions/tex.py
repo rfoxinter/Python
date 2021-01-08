@@ -17,6 +17,11 @@ def main(path):
     __main__.rep[5]=__main__.rep[5].replace("\u2080","_0")
     __main__.rep[5]=__main__.rep[5].replace("\u2081","_1")
     __main__.rep[6]=__main__.rep[6].replace("\u2082","_2")
+    for k in range(2):
+        for i in range(len(__main__.rep[k+5])):
+            if __main__.rep[k+5][i]=="\u221A" :
+                ifin=__main__.rep[k+5].find(")", i)
+                __main__.rep[k+5]=__main__.rep[k+5].replace(__main__.rep[k+5][i:ifin],"\u005Csqrt{"+__main__.rep[k+5][i+2:ifin]+"}")
     if __main__.rep[6]=='':
         __main__.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
