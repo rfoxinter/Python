@@ -1,12 +1,12 @@
 from tkinter import Label
 import preferences
-if preferences.afficher_graphs==1:
-    import matplotlib.pyplot as plt
-    import numpy as np
 import __main__
 
 #Plot graph when delta<0
 def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom):
+    if preferences.afficher_graphs==1:
+        import matplotlib.pyplot as plt
+        import numpy as np
     L4=Label(__main__.root,text='L\u2019\u00E9quation n\u2019admet pas de racine.')
     __main__.rep[5]=L4.cget('text')
     L4.grid(column=6,row=3,sticky='w')
