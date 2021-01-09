@@ -1,6 +1,6 @@
 from tkinter.filedialog import asksaveasfile
 import pathlib
-import __main__
+import prgm
 from extensions import *
 
 def main(event=None):
@@ -8,117 +8,117 @@ def main(event=None):
     file=asksaveasfile(title='Enregistrer l\u2019\u00E9quation',filetypes=file_list,defaultextension='.txt')
     if file is None:
         return
-    if __main__.latest=='entier':
-        if __main__.entier_val[0]==1:
-            if __main__.entier_val[1]<-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=x\u00B2-'+str(-__main__.entier_val[1])+'x'
+    if prgm.latest=='entier':
+        if prgm.entier_val[0]==1:
+            if prgm.entier_val[1]<-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=x\u00B2-'+str(-prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=x\u00B2-'+str(-prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)=x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==0:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=x\u00B2-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=x\u00B2'
+                    prgm.rep[0]='f(x)=x\u00B2-'+str(-prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==0:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=x\u00B2-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=x\u00B2'
                 else:
-                    __main__.rep[0]='f(x)=x\u00B2+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=x\u00B2+x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=x\u00B2+x'
+                    prgm.rep[0]='f(x)=x\u00B2+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=x\u00B2+x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=x\u00B2+x'
                 else:
-                    __main__.rep[0]='f(x)=x\u00B2+x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=x\u00B2-x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=x\u00B2-x'
+                    prgm.rep[0]='f(x)=x\u00B2+x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=x\u00B2-x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=x\u00B2-x'
                 else:
-                    __main__.rep[0]='f(x)=x\u00B2-x+'+str(__main__.entier_val[2])
+                    prgm.rep[0]='f(x)=x\u00B2-x+'+str(prgm.entier_val[2])
             else:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=x\u00B2+'+str(__main__.entier_val[1])+'x'
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=x\u00B2+'+str(prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=x\u00B2+'+str(prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)=x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
-        elif __main__.entier_val[0]==-1:
-            if __main__.entier_val[1]<-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=-x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=-x\u00B2-'+str(-__main__.entier_val[1])+'x'
+                    prgm.rep[0]='f(x)=x\u00B2+'+str(prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
+        elif prgm.entier_val[0]==-1:
+            if prgm.entier_val[1]<-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=-x\u00B2-'+str(-prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=-x\u00B2-'+str(-prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)=-x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==0:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=-x\u00B2-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=-x\u00B2'
+                    prgm.rep[0]='f(x)=-x\u00B2-'+str(-prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==0:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=-x\u00B2-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=-x\u00B2'
                 else:
-                    __main__.rep[0]='f(x)=-x\u00B2+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=-x\u00B2+x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=-x\u00B2+x'
+                    prgm.rep[0]='f(x)=-x\u00B2+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=-x\u00B2+x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=-x\u00B2+x'
                 else:
-                    __main__.rep[0]='f(x)=-x\u00B2+x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=-x\u00B2-x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=-x\u00B2-x'
+                    prgm.rep[0]='f(x)=-x\u00B2+x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=-x\u00B2-x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=-x\u00B2-x'
                 else:
-                    __main__.rep[0]='f(x)=-x\u00B2-x+'+str(__main__.entier_val[2])
+                    prgm.rep[0]='f(x)=-x\u00B2-x+'+str(prgm.entier_val[2])
             else:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)=-x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)=-x\u00B2+'+str(__main__.entier_val[1])+'x'
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)=-x\u00B2+'+str(prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)=-x\u00B2+'+str(prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)=-x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
+                    prgm.rep[0]='f(x)=-x\u00B2+'+str(prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
         else:
-            if __main__.entier_val[1]<-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x'
+            if prgm.entier_val[1]<-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-'+str(-prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-'+str(-prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==0:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2'
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-'+str(-prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==0:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2'
                 else:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+x'
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+x'
                 else:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+x+'+str(__main__.entier_val[2])
-            elif __main__.entier_val[1]==-1:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-x'
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+x+'+str(prgm.entier_val[2])
+            elif prgm.entier_val[1]==-1:
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-x'
                 else:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2-x+'+str(__main__.entier_val[2])
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2-x+'+str(prgm.entier_val[2])
             else:
-                if __main__.entier_val[2]<0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x-'+str(-__main__.entier_val[2])
-                elif __main__.entier_val[2]==0:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x'
+                if prgm.entier_val[2]<0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+'+str(prgm.entier_val[1])+'x-'+str(-prgm.entier_val[2])
+                elif prgm.entier_val[2]==0:
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+'+str(prgm.entier_val[1])+'x'
                 else:
-                    __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
-    elif __main__.latest=='fraction':
-        __main__.rep[0]='('+str(__main__.fraction_val[0])+')/('+str(__main__.fraction_val[1])+')x\u00B2+('+str(__main__.fraction_val[2])+')/('+str(__main__.fraction_val[3])+')x+('+str(__main__.fraction_val[4])+')/('+str(__main__.fraction_val[5])+')'
+                    prgm.rep[0]='f(x)='+str(prgm.entier_val[0])+'x\u00B2+'+str(prgm.entier_val[1])+'x+'+str(prgm.entier_val[2])
+    elif prgm.latest=='fraction':
+        prgm.rep[0]='('+str(prgm.fraction_val[0])+')/('+str(prgm.fraction_val[1])+')x\u00B2+('+str(prgm.fraction_val[2])+')/('+str(prgm.fraction_val[3])+')x+('+str(prgm.fraction_val[4])+')/('+str(prgm.fraction_val[5])+')'
     if  pathlib.Path(file.name).suffix=='.rtf':
         rtf.main(file.name)
     elif pathlib.Path(file.name).suffix=='.html' or pathlib.Path(file.name).suffix=='.htm':
