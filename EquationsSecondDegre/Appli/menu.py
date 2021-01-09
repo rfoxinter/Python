@@ -1,5 +1,5 @@
 from tkinter import Tk,Label,Button,IntVar,Menu,messagebox
-import __main__
+import prgm
 import quitter
 import a_propos
 import sauvegarder
@@ -13,41 +13,32 @@ afficher_graphs=IntVar()
 afficher_graphs.set(preferences.afficher_graphs)
 
 def redemarrage():
-    import importlib
-    importlib.reload(preferences)
     try:
         import matplotlib.pyplot as plt
     except:
-        __main__.redemarrage=Tk()
-        __main__.redemarrage.option_add('*Font','Arial 10')
-        __main__.redemarrage.title('Avertissement')
-        Label(__main__.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
-        bouton_fermer=Button(__main__.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
+        prgm.redemarrage=Tk()
+        prgm.redemarrage.option_add('*Font','Arial 10')
+        prgm.redemarrage.title('Avertissement')
+        Label(prgm.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
+        bouton_fermer=Button(prgm.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
         bouton_fermer.grid(column=0,row=2)
-        __main__.redemarrage.resizable(width=False,height=False)
-        __main__.redemarrage.iconbitmap(r'avertissement.ico')
-        __main__.redemarrage.mainloop()
+        prgm.redemarrage.resizable(width=False,height=False)
+        prgm.redemarrage.iconbitmap(r'avertissement.ico')
+        prgm.redemarrage.mainloop()
 
-def edit_pref(var,line):
+def edit_pref(var,val,line):
     file=open('preferences.py','r')
     list_of_lines=file.readlines()
-    list_of_lines[line]=var+'='+str(ver_maj.get())+'\n'
+    list_of_lines[line]=var+'='+val+'\n'
     file=open('preferences.py','w')
     file.writelines(list_of_lines)
     file.close()
     import importlib
     importlib.reload(preferences)
+    if var=='afficher_graphs':
+        redemarrage()
 
-def edit_afficher_graphs():
-    file=open('preferences.py','r')
-    list_of_lines=file.readlines()
-    list_of_lines[1]='afficher_graphs='+str(afficher_graphs.get())+'\n'
-    file=open('preferences.py','w')
-    file.writelines(list_of_lines)
-    file.close()
-    redemarrage()
-
-menuBar=Menu(__main__.root)
+menuBar=Menu(prgm.root)
 
 menu_fichier=Menu(menuBar,tearoff=0)
 menu_edition=Menu(menuBar,tearoff=0)
@@ -62,8 +53,8 @@ menu_fichier.add_separator()
 menu_fichier.add_command(label='Quitter Ctrl+q',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
-menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref('ver_maj',0))
-menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=lambda:edit_pref('afficher_graphs',1))
+menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref('ver_maj',str(ver_maj.get()),0))
+menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=lambda:edit_pref('afficher_graphs',str(afficher_graphs.get()),1))
 
 menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
 menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
@@ -74,9 +65,9 @@ menu_aide.add_separator()
 menu_aide.add_command(label='V\u00E9rifier les mises \u00E0 jour',command=quitter.abt_maj)
 menuBar.add_cascade(label='Aide',menu=menu_aide)
 
-__main__.root.config(menu=menuBar)
+prgm.root.config(menu=menuBar)
 
-__main__.root.bind('<Control-s>',sauvegarder.main)
-__main__.root.bind('<Control-o>',ouvrir.main)
-__main__.root.bind('<Control-q>',quitter.close)
-__main__.root.bind('<Control-E>',exporter.main)
+prgm.root.bind('<Control-s>',sauvegarder.main)
+prgm.root.bind('<Control-o>',ouvrir.main)
+prgm.root.bind('<Control-q>',quitter.close)
+prgm.root.bind('<Control-E>',exporter.main)
