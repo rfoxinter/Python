@@ -35,6 +35,8 @@ def edit_ver_maj():
     file=open('preferences.py','w')
     file.writelines(list_of_lines)
     file.close()
+    import importlib
+    importlib.reload(preferences)
 
 def edit_afficher_graphs():
     file=open('preferences.py','r')
