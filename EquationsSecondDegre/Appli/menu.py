@@ -28,10 +28,10 @@ def redemarrage():
         __main__.redemarrage.iconbitmap(r'avertissement.ico')
         __main__.redemarrage.mainloop()
 
-def edit_ver_maj():
+def edit_pref(var,line):
     file=open('preferences.py','r')
     list_of_lines=file.readlines()
-    list_of_lines[0]='ver_maj='+str(ver_maj.get())+'\n'
+    list_of_lines[line]=var+'='+str(ver_maj.get())+'\n'
     file=open('preferences.py','w')
     file.writelines(list_of_lines)
     file.close()
@@ -62,8 +62,8 @@ menu_fichier.add_separator()
 menu_fichier.add_command(label='Quitter Ctrl+q',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
-menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=edit_ver_maj)
-menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=edit_afficher_graphs)
+menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref('ver_maj',0))
+menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=lambda:edit_pref('afficher_graphs',1))
 
 menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
 menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
