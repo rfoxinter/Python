@@ -1,6 +1,7 @@
 from tkinter.filedialog import asksaveasfile
 import pathlib
 import __main__
+from extensions import *
 
 def main(event=None):
     file_list=[('Fichier texte','.txt .text'),('Fichier Rich Text Format','.rtf'),('Fichier Hypertext Markup Language','.html .htm'),('Fichier LaTeX','.tex'),('Tous les fichiers','.*')]
@@ -117,17 +118,13 @@ def main(event=None):
                 else:
                     __main__.rep[0]='f(x)='+str(__main__.entier_val[0])+'x\u00B2+'+str(__main__.entier_val[1])+'x+'+str(__main__.entier_val[2])
     elif __main__.latest=='fraction':
-        __main__.rep[0]='('+str(__main__.fraction_val[0])+'/'+str(__main__.fraction_val[1])+')x\u00B2+('+str(__main__.fraction_val[2])+'/'+str(__main__.fraction_val[3])+')x+('+str(__main__.fraction_val[4])+'/'+str(__main__.fraction_val[5])+')'
+        __main__.rep[0]='('+str(__main__.fraction_val[0])+')/('+str(__main__.fraction_val[1])+')x\u00B2+('+str(__main__.fraction_val[2])+')/('+str(__main__.fraction_val[3])+')x+('+str(__main__.fraction_val[4])+')/('+str(__main__.fraction_val[5])+')'
     if  pathlib.Path(file.name).suffix=='.rtf':
-        from extensions import rtf
         rtf.main(file.name)
     elif pathlib.Path(file.name).suffix=='.html' or pathlib.Path(file.name).suffix=='.htm':
-        from extensions import html
         html.main(file.name)
     elif pathlib.Path(file.name).suffix=='.tex':
-        from extensions import tex
         tex.main(file.name)
     else:
-        from extensions import txt
         txt.main(file.name)
     file.close()
