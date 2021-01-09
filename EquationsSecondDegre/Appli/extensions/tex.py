@@ -22,10 +22,10 @@ def main(path):
             if __main__.rep[k+5][i]=="\u221A" :
                 ifin=__main__.rep[k+5].find(")",i)
                 __main__.rep[k+5]=__main__.rep[k+5].replace(__main__.rep[k+5][i:ifin+1],"\u005Csqrt{"+__main__.rep[k+5][i+2:ifin]+"}")
-    for k in range(4):
-        __main__.rep[k+3]=__main__.rep[k+3].replace(")/(","}{")
-        __main__.rep[k+3]=__main__.rep[k+3].replace(")","}")
-        __main__.rep[k+3]=__main__.rep[k+3].replace("(","\u005Cfrac{")
+    for k in range(7):
+        __main__.rep[k]=__main__.rep[k].replace(")/(","}{")
+        __main__.rep[k]=__main__.rep[k].replace(")","}")
+        __main__.rep[k]=__main__.rep[k].replace("(","\u005Cfrac{")
     if __main__.rep[6]=='':
         __main__.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
