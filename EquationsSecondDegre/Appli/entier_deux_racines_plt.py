@@ -1,5 +1,5 @@
 import preferences
-import __main__
+import prgm
 
 #Plot graph when delta>0
 def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
@@ -21,12 +21,12 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
             ymax=a*(pltxmin)**2+b*(pltxmin)+c
     x=np.linspace(pltxmin,pltxmax,1000)
     y=a*x**2+b*x+c
-    __main__.plt.plot(x,y,c='blue')
-    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
-    __main__.plt.scatter((-b-(delta**0.5))/(2*a),0,c='green',marker='x',label='x\u2081=(((-b-\u221A(\u0394))/2a);0)')
-    __main__.plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='x',label='x\u2082=(((-b+\u221A(\u0394))/2a);0)')
-    __main__.plt.xlabel('x')
-    __main__.plt.ylabel('y=f(x)')
+    prgm.plt.plot(x,y,c='blue')
+    prgm.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
+    prgm.plt.scatter((-b-(delta**0.5))/(2*a),0,c='green',marker='x',label='x\u2081=(((-b-\u221A(\u0394))/2a);0)')
+    prgm.plt.scatter((-b+(delta**0.5))/(2*a),0,c='violet',marker='x',label='x\u2082=(((-b+\u221A(\u0394))/2a);0)')
+    prgm.plt.xlabel('x')
+    prgm.plt.ylabel('y=f(x)')
     pltymin=0
     pltymax=0
     if beta_num/beta_denom-ymax/100<ymax:
@@ -35,9 +35,9 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
     else:
         pltymin=ymax
         pltymax=beta_num/beta_denom-ymax/100
-    __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
-    __main__.plt.axhline(y=0,c='black')
-    __main__.plt.axvline(x=0,c='black')
-    __main__.plt.legend()
-    __main__.plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
-    __main__.plt.show()
+    prgm.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
+    prgm.plt.axhline(y=0,c='black')
+    prgm.plt.axvline(x=0,c='black')
+    prgm.plt.legend()
+    prgm.plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
+    prgm.plt.show()
