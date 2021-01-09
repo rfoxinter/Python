@@ -8,7 +8,6 @@ import entier_deux_racines_plt
 import preferences
 
 def main_ent():
-    __main__.latest='entier'
     if preferences.afficher_graphs==1:
         __main__.plt.close()
     for label in __main__.root.grid_slaves():
@@ -16,13 +15,14 @@ def main_ent():
             label.destroy()
     Col7=Label(__main__.root,width=100)
     Col7.grid(column=6,row=5)
-    sec_ent(__main__.ValeurA.get(),__main__.ValeurB.get(),__main__.ValeurC.get())
+    if __main__.ValeurA.get()!=0:
+        __main__.latest='entier'
+        sec_ent(__main__.ValeurA.get(),__main__.ValeurB.get(),__main__.ValeurC.get())
+    else:
+        L1=Label(__main__.root,text='Erreur\u00A0:\u00A0a\u22600')
+        L1.grid(column=6,row=0,sticky='w')
 
 def open_ent(a,b,c):
-    __main__.latest='entier'
-    __main__.entier_val[0]=a
-    __main__.entier_val[1]=b
-    __main__.entier_val[2]=c
     if preferences.afficher_graphs==1:
         __main__.plt.close()
     for label in __main__.root.grid_slaves():
@@ -30,7 +30,15 @@ def open_ent(a,b,c):
             label.destroy()
     Col7=Label(__main__.root,width=100)
     Col7.grid(column=6,row=5)
-    sec_ent(a,b,c)
+    if __main__.ValeurA.get()!=0:
+        __main__.latest='entier'
+        __main__.entier_val[0]=a
+        __main__.entier_val[1]=b
+        __main__.entier_val[2]=c
+        sec_ent(a,b,c)
+    else:
+        L1=Label(__main__.root,text='Erreur\u00A0:\u00A0a\u22600')
+        L1.grid(column=6,row=0,sticky='w')
 
 def sec_ent(a,b,c):
     __main__.rep[6]=''
