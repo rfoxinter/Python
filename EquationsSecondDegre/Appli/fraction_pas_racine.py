@@ -1,14 +1,14 @@
 from tkinter import Label
 import preferences
-import __main__
+import prgm
 
 #Plot graph when delta<0
 def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom):
     if preferences.afficher_graphs==1:
         import matplotlib.pyplot as plt
         import numpy as np
-    L4=Label(__main__.root,text='L\u2019\u00E9quation n\u2019admet pas de racine.')
-    __main__.rep[5]=L4.cget('text')
+    L4=Label(prgm.root,text='L\u2019\u00E9quation n\u2019admet pas de racine.')
+    prgm.rep[5]=L4.cget('text')
     L4.grid(column=6,row=3,sticky='w')
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
@@ -25,10 +25,10 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
             ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
     x=np.linspace(pltxmin,pltxmax,1000)
     y=(a_num/a_denom)*x**2+(b_num/b_denom)*x+(c_num/c_denom)
-    __main__.plt.plot(x,y,c='blue')
-    __main__.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
-    __main__.plt.xlabel('x')
-    __main__.plt.ylabel('y=f(x)')
+    prgm.plt.plot(x,y,c='blue')
+    prgm.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
+    prgm.plt.xlabel('x')
+    prgm.plt.ylabel('y=f(x)')
     pltymin=0
     pltymax=0
     if beta_num/beta_denom-ymax/100<ymax:
@@ -37,9 +37,9 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
     else:
         pltymin=ymax
         pltymax=beta_num/beta_denom-ymax/100
-    __main__.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
-    __main__.plt.axhline(y=0,c='black')
-    __main__.plt.axvline(x=0,c='black')
-    __main__.plt.legend()
-    __main__.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
-    __main__.plt.show()
+    prgm.plt.axis([pltxmin,pltxmax,pltymin,pltymax])
+    prgm.plt.axhline(y=0,c='black')
+    prgm.plt.axvline(x=0,c='black')
+    prgm.plt.legend()
+    prgm.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
+    prgm.plt.show()
