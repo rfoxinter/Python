@@ -1,5 +1,5 @@
 from tkinter.filedialog import askopenfilename
-import __main__
+import prgm
 import entier
 import fraction
 
@@ -16,9 +16,9 @@ def main(event=None):
             b=f.readlines()[1]
         with open(file) as f:
             c=f.readlines()[2]
-        __main__.ValeurA.set(a)
-        __main__.ValeurB.set(b)
-        __main__.ValeurC.set(b)
+        prgm.ValeurA.set(a)
+        prgm.ValeurB.set(b)
+        prgm.ValeurC.set(b)
         entier.open_ent(int(a),int(b),int(c))
     else:
         with open(file) as f:
@@ -33,10 +33,10 @@ def main(event=None):
             c_num=f.readlines()[4]
         with open(file) as f:
             c_denom=f.readlines()[5]
-        __main__.ValeurA_n.set(a_num)
-        __main__.ValeurA_d.set(a_denom)
-        __main__.ValeurB_n.set(b_num)
-        __main__.ValeurB_d.set(b_denom)
-        __main__.ValeurC_n.set(c_num)
-        __main__.ValeurC_d.set(c_denom)
+        prgm.ValeurA_n.set(a_num)
+        prgm.ValeurA_d.set(a_denom)
+        prgm.ValeurB_n.set(b_num)
+        prgm.ValeurB_d.set(b_denom)
+        prgm.ValeurC_n.set(c_num)
+        prgm.ValeurC_d.set(c_denom)
         fraction.open_frac(int(a_num),int(a_denom),int(b_num),int(b_denom),int(c_num),int(c_denom))
