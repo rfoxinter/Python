@@ -1,5 +1,5 @@
 from tkinter import Label
-import __main__
+import prgm
 import fraction_pas_racine
 import fraction_x0
 import fraction_x1
@@ -8,41 +8,41 @@ import fraction_deux_racines_plt
 import preferences
 
 def main_frac():
-    __main__.latest='fraction'
+    prgm.latest='fraction'
     if preferences.afficher_graphs==1:
-        __main__.plt.close()
-    for label in __main__.root.grid_slaves():
+        prgm.plt.close()
+    for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
-    Col7=Label(__main__.root,width=100)
+    Col7=Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
-    sec_frac(__main__.ValeurA_n.get(),__main__.ValeurA_d.get(),__main__.ValeurB_n.get(),__main__.ValeurB_d.get(),__main__.ValeurC_n.get(),__main__.ValeurC_d.get())
+    sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
 
 def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
-    __main__.latest='fraction'
-    __main__.fraction_val[0]=a_num
-    __main__.fraction_val[1]=a_denom
-    __main__.fraction_val[2]=b_num
-    __main__.fraction_val[3]=b_denom
-    __main__.fraction_val[4]=c_num
-    __main__.fraction_val[5]=c_denom
+    prgm.latest='fraction'
+    prgm.fraction_val[0]=a_num
+    prgm.fraction_val[1]=a_denom
+    prgm.fraction_val[2]=b_num
+    prgm.fraction_val[3]=b_denom
+    prgm.fraction_val[4]=c_num
+    prgm.fraction_val[5]=c_denom
     if preferences.afficher_graphs==1:
-        __main__.plt.close()
-    for label in __main__.root.grid_slaves():
+        prgm.plt.close()
+    for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
-    Col7=Label(__main__.root,width=100)
+    Col7=Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
     sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom)
 
 def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
-    __main__.rep[6]=''
-    __main__.fraction_val[0]=a_num
-    __main__.fraction_val[1]=a_denom
-    __main__.fraction_val[2]=b_num
-    __main__.fraction_val[3]=b_denom
-    __main__.fraction_val[4]=c_num
-    __main__.fraction_val[5]=c_denom
+    prgm.rep[6]=''
+    prgm.fraction_val[0]=a_num
+    prgm.fraction_val[1]=a_denom
+    prgm.fraction_val[2]=b_num
+    prgm.fraction_val[3]=b_denom
+    prgm.fraction_val[4]=c_num
+    prgm.fraction_val[5]=c_denom
     delta_num=int(b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2+((a_num/a_num)-1))
     delta_denom=int(a_denom*b_denom**2*c_denom)
     if delta_num>0 and delta_denom<0:
@@ -55,9 +55,9 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     if delta_num%delta_denom==0:
         delta_num=delta_num//delta_denom
         delta_denom=1
-        L1=Label(__main__.root,text='\u0394='+str(delta_num))
+        L1=Label(prgm.root,text='\u0394='+str(delta_num))
         L1.grid(column=6,row=0,sticky='w')
-        __main__.rep[2]=L1.cget('text')
+        prgm.rep[2]=L1.cget('text')
     else:
         div_delta=2
         while div_delta<=abs(delta_num) and div_delta<=abs(delta_denom):
@@ -67,18 +67,18 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_delta=div_delta+1
         if delta_num<0 and delta_denom<0:
-            L1=Label(__main__.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')='+str(delta_num/delta_denom))
+            L1=Label(prgm.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')='+str(delta_num/delta_denom))
             L1.grid(column=6,row=0,sticky='w')
-            __main__.rep[2]=L1.cget('text')
+            prgm.rep[2]=L1.cget('text')
         else:
-            L1=Label(__main__.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')='+str(delta_num/delta_denom))
+            L1=Label(prgm.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')='+str(delta_num/delta_denom))
             L1.grid(column=6,row=0,sticky='w')
-            __main__.rep[2]=L1.cget('text')
+            prgm.rep[2]=L1.cget('text')
     if alpha_num%alpha_denom==0:
         alpha=alpha_num//alpha_denom
-        L2=Label(__main__.root,text='\u03B1='+str(alpha))
+        L2=Label(prgm.root,text='\u03B1='+str(alpha))
         L2.grid(column=6,row=1,sticky='w')
-        __main__.rep[3]=L2.cget('text')
+        prgm.rep[3]=L2.cget('text')
     else:
         div_alpha=2
         while div_alpha<=abs(alpha_num) and div_alpha<=abs(alpha_denom):
@@ -88,18 +88,18 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_alpha=div_alpha+1
         if alpha_num<0 and alpha_denom<0:
-            L2=Label(__main__.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=Label(prgm.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom))
             L2.grid(column=6,row=1,sticky='w')
-            __main__.rep[3]=L2.cget('text')
+            prgm.rep[3]=L2.cget('text')
         else:
-            L2=Label(__main__.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=Label(prgm.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom))
             L2.grid(column=6,row=1,sticky='w')
-            __main__.rep[3]=L2.cget('text')
+            prgm.rep[3]=L2.cget('text')
     if beta_num%beta_denom==0:
         beta=beta_num//beta_denom
-        L3=Label(__main__.root,text='\u03B2='+str(beta))
+        L3=Label(prgm.root,text='\u03B2='+str(beta))
         L3.grid(column=6,row=2,sticky='w')
-        __main__.rep[4]=L3.cget('text')
+        prgm.rep[4]=L3.cget('text')
     else:
         div_beta=2
         while div_beta<=abs(beta_num) and div_beta<=abs(beta_denom):
@@ -109,13 +109,13 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_beta=div_beta+1
         if beta_num<0 and beta_denom<0:
-            L3=Label(__main__.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
+            L3=Label(prgm.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
-            __main__.rep[4]=L3.cget('text')
+            prgm.rep[4]=L3.cget('text')
         else:
-            L3=Label(__main__.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
+            L3=Label(prgm.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
             L3.grid(column=6,row=2,sticky='w')
-            __main__.rep[4]=L3.cget('text')
+            prgm.rep[4]=L3.cget('text')
     if delta_num<0:
         fraction_pas_racine.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom)
     elif delta_num==0:
