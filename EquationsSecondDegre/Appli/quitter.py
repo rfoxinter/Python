@@ -1,13 +1,14 @@
 from tkinter import Tk,Label,Button
 import urllib.request
-import __main__
+import prgm
 import preferences
+import __init__
 
 def about_quit():
-    __main__.about_root.destroy()
+    prgm.about_root.destroy()
 
 def redemarrage_quit():
-    __main__.redemarrage.destroy()
+    prgm.redemarrage.destroy()
 
 def download():
     #Download version file
@@ -16,36 +17,35 @@ def download():
 
 def close(event=None):
     try:
-        __main__.about_root.destroy()
+        prgm.about_root.destroy()
     except:
         pass
     try:
-        __main__.maj_root.destroy()
+        prgm.maj_root.destroy()
     except:
         pass
     try:
-        __main__.redemarrage.destroy()
+        prgm.redemarrage.destroy()
     except:
         pass
     if preferences.afficher_graphs==1:
-        __main__.plt.close()
-    __main__.root.destroy()
+        prgm.plt.close()
+    prgm.root.destroy()
     if preferences.ver_maj==1:
-        def quit_quit():
-            root.destroy()
         download()
         import version
         root=Tk()
         root.option_add('*Font','Arial 10')
         #Check for a new version
-        if version.version>__main__.version:
-            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.pyw'
+        if version.version>prgm.version:
+            url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
             urllib.request.urlretrieve(url,'maj.pyw')
             Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
-            Label(root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
         else:
             root.destroy()
-        bouton_fermer=Button(root,text='Fermer',command=quit_quit)
+        bouton_maj=Label(root,text='Mettre \u00E0 jour  l\u2019application.',width=50,command=__init__.mise_a_jour_quitter)
+        bouton_maj.grid(column=0,row=1)
+        bouton_fermer=Button(root,text='Fermer sans mettre \u00E0 jour  l\u2019application',command=root.destroy)
         bouton_fermer.grid(column=0,row=2)
         root.title('Mise \u00E0 jour')
         root.resizable(width=False,height=False)
@@ -53,28 +53,24 @@ def close(event=None):
         root.mainloop()
 
 def abt_maj():
-    def quit_quit():
-        quit()
-    def later():
-        __main__.maj_root.destroy()
     download()
-    __main__.maj_root=Tk()
-    __main__.maj_root.option_add('*Font','Arial 10')
+    prgm.maj_root=Tk()
+    prgm.maj_root.option_add('*Font','Arial 10')
     import version
-    if version.version>__main__.version:
-        url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.pyw'
+    if version.version>prgm.version:
+        url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
         urllib.request.urlretrieve(url,'maj.pyw')
-        Label(__main__.maj_root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
-        Label(__main__.maj_root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
-        bouton_maj=Button(__main__.maj_root,text='Fermer pour mettre \u00E0 jour  l\u2019application',command=quit_quit)
+        Label(prgm.maj_root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
+        Label(prgm.maj_root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
+        bouton_maj=Button(prgm.maj_root,text='Mettre \u00E0 jour  l\u2019application',command=__init__.mise_a_jour)
         bouton_maj.grid(column=0,row=2)
-        bouton_fermer=Button(__main__.maj_root,text='Ne pas mettre à jour',command=later)
+        bouton_fermer=Button(prgm.maj_root,text='Ne pas mettre à jour',command=prgm.maj_root.destroy)
         bouton_fermer.grid(column=0,row=3)
     else:
-        Label(__main__.maj_root,text='L\u2019application est \u00E0 jour.',width=50).grid(column=0,row=0)
-        bouton_fermer=Button(__main__.maj_root,text='Fermer',command=later)
+        Label(prgm.maj_root,text='L\u2019application est \u00E0 jour.',width=50).grid(column=0,row=0)
+        bouton_fermer=Button(prgm.maj_root,text='Fermer',command=prgm.maj_root.destroy)
         bouton_fermer.grid(column=0,row=2)
-    __main__.maj_root.title('Mise \u00E0 jour')
-    __main__.maj_root.resizable(width=False,height=False)
-    __main__.maj_root.iconbitmap(r'python.ico')
-    __main__.maj_root.mainloop()
+    prgm.maj_root.title('Mise \u00E0 jour')
+    prgm.maj_root.resizable(width=False,height=False)
+    prgm.maj_root.iconbitmap(r'python.ico')
+    prgm.maj_root.mainloop()
