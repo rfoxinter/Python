@@ -2,9 +2,6 @@ from tkinter import Tk,Label,Button
 import urllib.request
 import os
 
-root=Tk()
-root.option_add('*Font','Arial 10')
-
 ttl=0
 
 def title(act):
@@ -14,7 +11,15 @@ def title(act):
 extension=['.py','.ico']
 filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','maj','menu','ouvrir','prgm','quitter','sauvegarder','version','extensions\u002F__init__','extensions\u002Fhtml','extensions\u002Frtf','extensions\u002Ftex','extensions\u002Ftxt'],['a_propos','avertissement','python']]
 
-def maj_pref():    
+def maj_pref():
+    root=Tk()
+    root.option_add('*Font','Arial 10')
+    Label(root,text='',width=50).grid(column=0,row=1)
+    bouton_ok=Button(root,text='Fermer',command=root.destroy)
+    bouton_ok.grid(column=0,row=2)
+    root.resizable(width=False,height=False)
+    root.iconbitmap(r'python.ico')
+    root.mainloop()
     local_pref=open(r'preferences.py','r')
     local_lines=local_pref.readlines()
     url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/preferences.py'
@@ -31,6 +36,14 @@ def maj_pref():
     os.remove(r'preferences_maj.py')
 
 def down():
+    root=Tk()
+    root.option_add('*Font','Arial 10')
+    Label(root,text='',width=50).grid(column=0,row=1)
+    bouton_ok=Button(root,text='Fermer',command=root.destroy)
+    bouton_ok.grid(column=0,row=2)
+    root.resizable(width=False,height=False)
+    root.iconbitmap(r'python.ico')
+    root.mainloop()
     act=0
     try:
         if os.path.exists('extensions')==False:
@@ -53,10 +66,3 @@ def down():
 
 for k in range(len(extension)):
     ttl=ttl+len(filename[k])
-
-Label(root,text='',width=50).grid(column=0,row=1)
-bouton_ok=Button(root,text='Fermer',command=root.destroy)
-bouton_ok.grid(column=0,row=2)
-root.resizable(width=False,height=False)
-root.iconbitmap(r'python.ico')
-root.mainloop()
