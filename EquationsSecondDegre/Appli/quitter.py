@@ -39,7 +39,9 @@ def close(event=None):
         #Check for a new version
         if version.version>prgm.version:
             url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
-            urllib.request.urlretrieve(url,'maj.pyw')
+            urllib.request.urlretrieve(url,'maj.py')
+            import importlib
+            importlib.reload(maj)
             Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         else:
             root.destroy()
@@ -59,10 +61,11 @@ def abt_maj():
     import version
     if version.version>prgm.version:
         url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
-        urllib.request.urlretrieve(url,'maj.pyw')
+        urllib.request.urlretrieve(url,'maj.py')
+        import importlib
+        importlib.reload(maj)
         Label(prgm.maj_root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
-        Label(prgm.maj_root,text='Lancer maj.pyw afin de mettre \u00E0 jour  l\u2019application.',width=50).grid(column=0,row=1)
-        bouton_maj=Button(prgm.maj_root,text='Mettre \u00E0 jour  l\u2019application',command=__init__.mise_a_jour)
+        bouton_maj=Button(prgm.maj_root,text='Mettre \u00E0 jour l\u2019application',command=__init__.mise_a_jour)
         bouton_maj.grid(column=0,row=2)
         bouton_fermer=Button(prgm.maj_root,text='Ne pas mettre à jour',command=prgm.maj_root.destroy)
         bouton_fermer.grid(column=0,row=3)
