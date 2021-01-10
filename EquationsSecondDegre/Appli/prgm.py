@@ -23,7 +23,7 @@ import quitter
 import entier
 import fraction
 
-version=21
+version=22
 
 latest=''
 entier_val=[0,0,0]
