@@ -1,2 +1,2 @@
-ver_maj=0
+ver_maj=1
 afficher_graphs=0
