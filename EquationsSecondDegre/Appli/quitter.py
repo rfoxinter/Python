@@ -1,4 +1,5 @@
-from tkinter import Tk,Label,Button
+from tkinter import Tk,Label,Button,PhotoImage
+import os
 import urllib.request
 import prgm
 import preferences
@@ -51,7 +52,11 @@ def close(event=None):
         bouton_fermer.grid(column=0,row=2)
         root.title('Mise \u00E0 jour')
         root.resizable(width=False,height=False)
-        root.iconbitmap(r'python.ico')
+        if os.name=='nt':
+            prgm.maj_root.iconbitmap(r'python.ico')
+        else:
+            img=PhotoImage(file='python.png')
+            root.tk.call('wm','iconphoto',root._w,img)
         root.mainloop()
 
 def abt_maj():
@@ -75,5 +80,6 @@ def abt_maj():
         bouton_fermer.grid(column=0,row=2)
     prgm.maj_root.title('Mise \u00E0 jour')
     prgm.maj_root.resizable(width=False,height=False)
-    prgm.maj_root.iconbitmap(r'python.ico')
+    if os.name=='nt':
+        prgm.maj_root.iconbitmap(r'python.ico')
     prgm.maj_root.mainloop()
