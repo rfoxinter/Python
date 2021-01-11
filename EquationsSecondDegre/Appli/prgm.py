@@ -1,5 +1,6 @@
-from tkinter import Tk,Label,Spinbox,Button,IntVar
+from tkinter import Tk,Label,Spinbox,Button,IntVar,PhotoImage
 from math import inf
+import os
 import preferences
 try:
     import matplotlib.pyplot as plt
@@ -23,7 +24,7 @@ import quitter
 import entier
 import fraction
 
-version=23
+version=24
 
 latest=''
 entier_val=[0,0,0]
@@ -128,5 +129,9 @@ Col7.grid(column=6,row=5)
 root.protocol('WM_DELETE_WINDOW',quitter.close)
 root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 root.resizable(width=False,height=False)
-root.iconbitmap(r'python.ico')
+if os.name=='nt':
+    root.iconbitmap(r'python.ico')
+else:
+    img=PhotoImage(file='python.png')
+    root.tk.call('wm','iconphoto',root._w,img)
 root.mainloop()
