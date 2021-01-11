@@ -19,8 +19,8 @@ def maj_pref():
     os.remove(r'preferences_maj.py')
 
 def down():
-    extension=['.py','.ico']
-    filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','maj','menu','ouvrir','prgm','quitter','sauvegarder','version','extensions\u002F__init__','extensions\u002Fhtml','extensions\u002Frtf','extensions\u002Ftex','extensions\u002Ftxt'],['a_propos','avertissement','python']]
+    extension=['.py','.ico','.png']
+    filename=[['a_propos','entier','entier_deux_racines_plt','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','maj','menu','ouvrir','prgm','quitter','sauvegarder','version','extensions\u002F__init__','extensions\u002Fhtml','extensions\u002Frtf','extensions\u002Ftex','extensions\u002Ftxt'],['a_propos','avertissement','python'],['python']]
     try:
         if os.path.exists('extensions')==False:
             os.mkdir('extensions')
