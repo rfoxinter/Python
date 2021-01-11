@@ -1,4 +1,5 @@
 from tkinter import Tk,Label,Button,IntVar,Menu,messagebox
+import os
 import prgm
 import quitter
 import a_propos
@@ -23,7 +24,8 @@ def redemarrage():
         bouton_fermer=Button(prgm.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
         bouton_fermer.grid(column=0,row=2)
         prgm.redemarrage.resizable(width=False,height=False)
-        prgm.redemarrage.iconbitmap(r'avertissement.ico')
+        if os.name=='nt':
+            prgm.redemarrage.iconbitmap(r'avertissement.ico')
         prgm.redemarrage.mainloop()
 
 def edit_pref(var,val,line):
