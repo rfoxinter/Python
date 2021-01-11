@@ -52,4 +52,4 @@
     * Avec 7-Zip
         1. Sélectionner le .zip et faire un clic-droit
         2. Sélectionner "Extraire vers "Appli&#92;""
-4. Lancer le fichier &#95;&#95;init&#95;&#95;.pyw du dossier
+4. Lancer le fichier &#95;&#95;main&#95;&#95;.pyw du dossier
