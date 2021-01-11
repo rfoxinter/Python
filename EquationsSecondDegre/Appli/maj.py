@@ -25,7 +25,7 @@ def down():
         if os.path.exists('extensions')==False:
             os.mkdir('extensions')
         #Download the files listed
-        for k in range(len(filename)):
+        for k in range(len(extension)):
             for i in range(len(filename[k])):
                 url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[k][i]+extension[k]
                 urllib.request.urlretrieve(url,filename[k][i]+extension[k])
