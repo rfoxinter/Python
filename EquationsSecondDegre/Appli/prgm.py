@@ -1,12 +1,17 @@
-from tkinter import Tk,Label,Spinbox,Button,IntVar,PhotoImage
-from math import inf
 import os
+try:
+    from tkinter import Tk,Label,Spinbox,Button,IntVar,PhotoImage
+except:
+    if os.name=='posix':
+        import sys
+        os.system('sudo apt install python3-tk')
+        from tkinter import Tk,Label,Spinbox,Button,IntVar,PhotoImage
+from math import inf
 import preferences
 try:
     import matplotlib.pyplot as plt
 except:
     if preferences.afficher_graphs==1:
-        import os
         import sys
         python_path=sys.executable.replace('pythonw','python')
         os.system(python_path+' -m pip install --upgrade matplotlib')
@@ -15,7 +20,6 @@ try:
     import numpy as np
 except:
     if preferences.afficher_graphs==1:
-        import os
         import sys
         python_path=sys.executable.replace('pythonw','python')
         os.system(python_path+' -m pip install --upgrade numpy')
