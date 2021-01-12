@@ -1,5 +1,5 @@
-import maj
 import prgm
+import maj
 import os
 import sys
 
