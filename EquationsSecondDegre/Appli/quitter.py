@@ -44,7 +44,7 @@ def close(event=None):
             Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         else:
             root.destroy()
-        bouton_maj=Label(root,text='Mettre \u00E0 jour  l\u2019application.',width=50,command=__init__.mise_a_jour_quitter)
+        bouton_maj=Button(root,text='Mettre \u00E0 jour  l\u2019application.',width=50,command=__init__.mise_a_jour_quitter)
         bouton_maj.grid(column=0,row=1)
         bouton_fermer=Button(root,text='Fermer sans mettre \u00E0 jour  l\u2019application',command=root.destroy)
         bouton_fermer.grid(column=0,row=2)
