@@ -51,7 +51,7 @@ def close(event=None):
         root.title('Mise \u00E0 jour')
         root.resizable(width=False,height=False)
         if os.name=='nt':
-            prgm.maj_root.iconbitmap(r'python.ico')
+            root.iconbitmap(r'python.ico')
         else:
             img=PhotoImage(file='python.png')
             root.tk.call('wm','iconphoto',root._w,img)
