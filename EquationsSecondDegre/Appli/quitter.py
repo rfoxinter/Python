@@ -41,8 +41,6 @@ def close(event=None):
         if version.version>prgm.version:
             url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
             urllib.request.urlretrieve(url,'maj.py')
-            import importlib
-            importlib.reload(maj)
             Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         else:
             root.destroy()
@@ -67,8 +65,6 @@ def abt_maj():
     if version.version>prgm.version:
         url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
         urllib.request.urlretrieve(url,'maj.py')
-        import importlib
-        importlib.reload(maj)
         Label(prgm.maj_root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
         bouton_maj=Button(prgm.maj_root,text='Mettre \u00E0 jour l\u2019application',command=__init__.mise_a_jour)
         bouton_maj.grid(column=0,row=2)
