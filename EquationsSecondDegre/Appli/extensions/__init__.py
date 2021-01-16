@@ -1,1 +1,1 @@
-__all__=['html','rtf','txt','tex']
+__all__=['docx','html','rtf','txt','tex','xhtml']
