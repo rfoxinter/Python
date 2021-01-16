@@ -24,6 +24,8 @@ def down():
     try:
         if os.path.exists('extensions')==False:
             os.mkdir('extensions')
+        if os.path.exists('extensions/docx')==False:
+            os.mkdir('extensions/docx')
         #Download the files listed
         for k in range(len(extension)):
             for i in range(len(filename[k])):
