@@ -30,7 +30,10 @@ def close(event=None):
     except:
         pass
     if preferences.afficher_graphs==1:
-        prgm.plt.close()
+        try:
+            prgm.plt.close()
+        except:
+            pass
     prgm.root.destroy()
     if preferences.ver_maj==1:
         download()
@@ -42,20 +45,20 @@ def close(event=None):
             url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
             urllib.request.urlretrieve(url,'maj.py')
             Label(root,text='Une mise \u00E0 jour est disponible.',width=50).grid(column=0,row=0)
+            bouton_maj=Button(root,text='Mettre \u00E0 jour l\u2019application',command=__init__.mise_a_jour_quitter)
+            bouton_maj.grid(column=0,row=1)
+            bouton_fermer=Button(root,text='Fermer sans mettre \u00E0 jour l\u2019application',command=root.destroy)
+            bouton_fermer.grid(column=0,row=2)
+            root.title('Mise \u00E0 jour')
+            root.resizable(width=False,height=False)
+            if os.name=='nt':
+                root.iconbitmap(r'python.ico')
+            else:
+                img=PhotoImage(file='python.png')
+                root.tk.call('wm','iconphoto',root._w,img)
+            root.mainloop()
         else:
             root.destroy()
-        bouton_maj=Button(root,text='Mettre \u00E0 jour l\u2019application',command=__init__.mise_a_jour_quitter)
-        bouton_maj.grid(column=0,row=1)
-        bouton_fermer=Button(root,text='Fermer sans mettre \u00E0 jour l\u2019application',command=root.destroy)
-        bouton_fermer.grid(column=0,row=2)
-        root.title('Mise \u00E0 jour')
-        root.resizable(width=False,height=False)
-        if os.name=='nt':
-            root.iconbitmap(r'python.ico')
-        else:
-            img=PhotoImage(file='python.png')
-            root.tk.call('wm','iconphoto',root._w,img)
-        root.mainloop()
 
 def abt_maj():
     download()
