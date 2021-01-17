@@ -26,7 +26,7 @@ import quitter
 import entier
 import fraction
 
-version=28
+version=29
 
 latest=''
 entier_val=[0,0,0]
