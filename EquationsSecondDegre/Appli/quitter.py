@@ -5,12 +5,6 @@ import prgm
 import preferences
 import __init__
 
-def about_quit():
-    prgm.about_root.destroy()
-
-def redemarrage_quit():
-    prgm.redemarrage.destroy()
-
 def download():
     #Download version file
     url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/version.py'
@@ -52,10 +46,10 @@ def close(event=None):
             root.title('Mise \u00E0 jour')
             root.resizable(width=False,height=False)
             if os.name=='nt':
-                root.iconbitmap(r'python.ico')
-            else:
-                img=PhotoImage(file='python.png')
-                root.tk.call('wm','iconphoto',root._w,img)
+                import ctypes
+                ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('equations')
+            img=PhotoImage(file='python.png')
+            root.tk.call('wm','iconphoto',root._w,img)
             root.mainloop()
         else:
             root.destroy()
