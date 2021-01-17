@@ -26,7 +26,24 @@ import quitter
 import entier
 import fraction
 
-version=29
+if preferences.etat_maj!='':
+    root=Tk()
+    root.option_add('*Font','Arial 10')
+    Label(root,text=preferences.etat_maj,width=50).grid(column=0,row=0)
+    bouton_fermer=Button(root,text='Fermer',command=root.destroy)
+    bouton_fermer.grid(column=0,row=1)
+    root.title('Mise \u00E0 jour')
+    root.resizable(width=False,height=False)
+    if os.name=='nt':
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('equations')
+    img=PhotoImage(file='python.png')
+    root.tk.call('wm','iconphoto',root._w,img)
+    root.mainloop()
+    import edit_pref
+    edit_pref.main('etat_maj','',2)
+
+version=30
 
 latest=''
 entier_val=[0,0,0]
@@ -132,8 +149,8 @@ root.protocol('WM_DELETE_WINDOW',quitter.close)
 root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
 root.resizable(width=False,height=False)
 if os.name=='nt':
-    root.iconbitmap(r'python.ico')
-else:
-    img=PhotoImage(file='python.png')
-    root.tk.call('wm','iconphoto',root._w,img)
+    import ctypes
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('equations')
+img=PhotoImage(file='python.png')
+root.tk.call('wm','iconphoto',root._w,img)
 root.mainloop()
