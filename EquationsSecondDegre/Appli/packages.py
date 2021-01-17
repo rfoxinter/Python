@@ -17,7 +17,7 @@ def main(package_name):
     root=Tk()
     root.option_add('*Font','Arial 10')
     Label(root,text='Ce programme \u00E0 besoin d\u2019installer '+package_name+' pour fonctionner.',width=50).grid(column=0,row=0)
-    bouton_maj=Button(root,text='Installer '+package_name,command=lambda:os.system(python_path+' -m pip install --upgrade '+package_name))
+    bouton_maj=Button(root,text='Installer '+package_name,command=lambda:[os.system(python_path+' -m pip install --upgrade '+package_name+' --user'),os.execl(sys.executable,sys.executable,*sys.argv)])
     bouton_maj.grid(column=0,row=1)
     bouton_fermer=Button(root,text='Ne pas installer '+package_name,command=quit)
     bouton_fermer.grid(column=0,row=2)
