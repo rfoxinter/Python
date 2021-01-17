@@ -24,8 +24,9 @@ def main(package_name):
     root.title(package_name)
     root.resizable(width=False,height=False)
     if os.name=='nt':
-        root.iconbitmap(r'package.ico')
-    else:
-        img=PhotoImage(file='package.png')
-        root.tk.call('wm','iconphoto',root._w,img)
+        import ctypes
+        import prgm
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('equations')
+    img=PhotoImage(file='package.png')
+    root.tk.call('wm','iconphoto',root._w,img)
     root.mainloop()
