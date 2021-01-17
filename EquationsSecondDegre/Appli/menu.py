@@ -1,4 +1,4 @@
-from tkinter import Tk,Label,Button,IntVar,Menu,messagebox
+from tkinter import IntVar,Menu,messagebox
 import os
 import prgm
 import quitter
@@ -7,38 +7,14 @@ import sauvegarder
 import ouvrir
 import preferences
 import exporter
+import edit_pref
 
 ver_maj=IntVar()
 ver_maj.set(preferences.ver_maj)
 afficher_graphs=IntVar()
 afficher_graphs.set(preferences.afficher_graphs)
 
-def redemarrage():
-    try:
-        import matplotlib.pyplot as plt
-    except:
-        prgm.redemarrage=Tk()
-        prgm.redemarrage.option_add('*Font','Arial 10')
-        prgm.redemarrage.title('Avertissement')
-        Label(prgm.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
-        bouton_fermer=Button(prgm.redemarrage,text='Fermer',command=quitter.redemarrage_quit)
-        bouton_fermer.grid(column=0,row=2)
-        prgm.redemarrage.resizable(width=False,height=False)
-        if os.name=='nt':
-            prgm.redemarrage.iconbitmap(r'avertissement.ico')
-        prgm.redemarrage.mainloop()
 
-def edit_pref(var,val,line):
-    file=open('preferences.py','r')
-    list_of_lines=file.readlines()
-    list_of_lines[line]=var+'='+val+'\n'
-    file=open('preferences.py','w')
-    file.writelines(list_of_lines)
-    file.close()
-    import importlib
-    importlib.reload(preferences)
-    if var=='afficher_graphs':
-        redemarrage()
 
 menuBar=Menu(prgm.root)
 
@@ -55,8 +31,8 @@ menu_fichier.add_separator()
 menu_fichier.add_command(label='Quitter Ctrl+q',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
-menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref('ver_maj',str(ver_maj.get()),0))
-menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=lambda:edit_pref('afficher_graphs',str(afficher_graphs.get()),1))
+menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref.main('ver_maj',str(ver_maj.get()),0))
+menu_preference.add_checkbutton(label='Afficher les graphiques',variable=afficher_graphs,command=lambda:edit_pref.main('afficher_graphs',str(afficher_graphs.get()),1))
 
 menu_edition.add_cascade(label='Pr\u00E9f\u00E9rences',menu=menu_preference)
 menuBar.add_cascade(label='\u00C9dition',menu=menu_edition)
