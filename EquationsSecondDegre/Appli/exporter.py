@@ -5,7 +5,7 @@ from extensions import *
 
 def main(event=None):
     file_list=[('Fichier texte','.txt .text'),('Fichier Rich Text Format','.rtf'),('Fichier Document Office Open XML','.docx'),('Fichier HyperText Markup Language','.html .htm'),('Fichier Extensible HyperText Markup Language','.xhtml'),('Fichier LaTeX','.tex'),('Tous les fichiers','.*')]
-    file=asksaveasfile(title='Enregistrer l\u2019\u00E9quation',filetypes=file_list,defaultextension='.txt')
+    file=asksaveasfile(title='Exporter l\u2019\u00E9quation',filetypes=file_list,defaultextension='.txt')
     if file is None:
         return
     if prgm.latest=='entier':
