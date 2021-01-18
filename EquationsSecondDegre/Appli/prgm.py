@@ -43,7 +43,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj','',2)
 
-version=30
+version=31
 
 latest=''
 entier_val=[0,0,0]
