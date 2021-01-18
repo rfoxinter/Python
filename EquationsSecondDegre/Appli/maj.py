@@ -1,23 +1,23 @@
-from tkinter import Label
+import importlib
 import urllib.request
 import os
+import edit_pref
 
 def maj_pref():
-    local_pref=open(r'preferences.py','r')
+    local_pref=open('preferences.py','r')
     local_lines=local_pref.readlines()
     url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/preferences.py'
     urllib.request.urlretrieve(url,'preferences_maj.py')
     maj_pref=open('preferences_maj.py','r')
     maj_lines=maj_pref.readlines()
     if len(local_lines)<len(maj_lines):
-        del local_lines[len(local_lines)]
         for i in range(len(maj_lines)-len(local_lines)):
-            local_lines.append(maj_lines[len(local_lines)+i])
-            local_pref=open(r'preferences.py','w')
+            local_lines.append(maj_lines[len(local_lines)])
+            local_pref=open('preferences.py','w')
             local_pref.writelines(local_lines)
             local_pref.close()
     maj_pref.close()
-    os.remove(r'preferences_maj.py')
+    os.remove('preferences_maj.py')
 
 def down():
     extension=['.py','.ico','.png','.xml','.rels']
@@ -33,12 +33,8 @@ def down():
                 url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[k][i]+extension[k]
                 urllib.request.urlretrieve(url,filename[k][i]+extension[k])
         maj_pref()
-        import edit_pref
-        import importlib
         importlib.reload(edit_pref)
         edit_pref.main('etat_maj',"'L\\u2019application a bien \\u00E9t\\u00E9 mise \\u00E0 jour.'",2)
     except:
-        import edit_pref
-        import importlib
         importlib.reload(edit_pref)
         edit_pref.main('etat_maj',"'Une erreur est survenue lors de la mise \\u00E0 jour.'",2)
