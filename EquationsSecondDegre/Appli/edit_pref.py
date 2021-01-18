@@ -18,7 +18,7 @@ def redemarrage():
         bouton_fermer.grid(column=0,row=2)
         prgm.redemarrage.resizable(width=False,height=False)
         if os.name=='nt':
-            prgm.redemarrage.iconbitmap(r'avertissement.ico')
+            prgm.redemarrage.iconbitmap('avertissement.ico')
         prgm.redemarrage.mainloop()
 
 def main(var,val,line):
