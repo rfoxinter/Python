@@ -41,9 +41,9 @@ if preferences.etat_maj!='':
     root.tk.call('wm','iconphoto',root._w,img)
     root.mainloop()
     import edit_pref
-    edit_pref.main('etat_maj','',2)
+    edit_pref.main('etat_maj',"''",2)
 
-version=31
+version=32
 
 latest=''
 entier_val=[0,0,0]
