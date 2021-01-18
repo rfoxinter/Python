@@ -36,9 +36,9 @@ def down():
         import edit_pref
         import importlib
         importlib.reload(edit_pref)
-        edit_pref.main('etat_maj','L\u2019application a bien \u00E9t\u00E9 mise \u00E0 jour.',2)
+        edit_pref.main('etat_maj',"'L\u2019application a bien \u00E9t\u00E9 mise \u00E0 jour.'",2)
     except:
         import edit_pref
         import importlib
         importlib.reload(edit_pref)
-        edit_pref.main('etat_maj','Une erreur est survenue lors de la mise \u00E0 jour.',2)
+        edit_pref.main('etat_maj',"'Une erreur est survenue lors de la mise \u00E0 jour.'",2)
