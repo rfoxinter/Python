@@ -31,7 +31,6 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom):
             L4=Label(prgm.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
-    
     if preferences.afficher_graphs==1:
         pltxmin=alpha_num/alpha_denom-10
         pltxmax=alpha_num/alpha_denom+10
