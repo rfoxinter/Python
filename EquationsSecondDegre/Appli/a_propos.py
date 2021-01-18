@@ -10,7 +10,7 @@ def main():
     Label(prgm.about_root,text='Version actuelle\u00A0:\u00A0'+str(prgm.version)).grid(column=0,row=0,sticky='w')
     Label(prgm.about_root,text='-\u00A0Correction de l\u2019icone Windows').grid(column=0,row=1,sticky='w')
     Label(prgm.about_root,text='-\u00A0Am\u00E9lioration de l\u2019exportation au format .docx').grid(column=0,row=2,sticky='w')
-    Label(prgm.about_root,text='-\u00A0Am\u00E9lioration de la mise \u00E0 jour des pr\u00E9f\u00E9rences').grid(column=0,row=3,sticky='w')
+    Label(prgm.about_root,text='-\u00A0Am\u00E9lioration de la mise \u00E0 jour').grid(column=0,row=3,sticky='w')
     Label(prgm.about_root,width=50).grid(column=0,row=9)
     bouton_fermer=Button(prgm.about_root,text="Fermer",command=prgm.about_root.destroy)
     bouton_fermer.grid(column=0,row=10)
