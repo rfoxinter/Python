@@ -74,5 +74,5 @@ def abt_maj():
     prgm.maj_root.title('Mise \u00E0 jour')
     prgm.maj_root.resizable(width=False,height=False)
     if os.name=='nt':
-        prgm.maj_root.iconbitmap(r'python.ico')
+        prgm.maj_root.iconbitmap('python.ico')
     prgm.maj_root.mainloop()
