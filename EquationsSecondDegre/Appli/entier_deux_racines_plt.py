@@ -1,11 +1,9 @@
-import preferences
 import prgm
 
 #Plot graph when delta>0
 def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
-    if preferences.afficher_graphs==1:
-        import matplotlib.pyplot as plt
-        import numpy as np
+    import matplotlib.pyplot as plt
+    import numpy as np
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
     ymax=0
