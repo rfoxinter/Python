@@ -26,6 +26,7 @@ def main(path):
         prgm.rep[k]=prgm.rep[k].replace(")/(","}{")
         prgm.rep[k]=prgm.rep[k].replace(")","}")
         prgm.rep[k]=prgm.rep[k].replace("(","\u005Cfrac{")
+        prgm.rep[k]=prgm.rep[k].replace("\u005Cfrac{x}","(x)")
     if prgm.rep[6]=='':
         prgm.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
