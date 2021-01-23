@@ -34,7 +34,7 @@ menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',image=ouvrir_im
 menu_fichier.add_separator()
 menu_fichier.add_command(label='Exporter l\u2019\u00E9quation Ctrl+Shift+E',image=exporter_image,compound='left',command=exporter.main)
 menu_fichier.add_separator()
-menu_fichier.add_command(label='Quitter Ctrl+q',image=quitter_image,compound='left',command=quitter.close)
+menu_fichier.add_command(label='Quitter Ctrl+Q',image=quitter_image,compound='left',command=quitter.close)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
 
 menu_preference.add_checkbutton(label='V\u00E9rifier automatiquement les mises à jour',variable=ver_maj,command=lambda:edit_pref.main('ver_maj',str(ver_maj.get()),0))
