@@ -1,6 +1,5 @@
-import zipfile
 import prgm
-import os
+import zipfile
 
 def main(path):
     file_write=zipfile.ZipFile(path+'.docx','w')
@@ -14,11 +13,11 @@ def main(path):
     write_document.close()
     for i in range(len(prgm.rep)):
         write_document=open(r'extensions/docx/document.xml','a',encoding="utf-8")
-        write_document.writelines('<w:p>\n            <w:r>\n                <w:rPr>\n                    <w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" w:eastAsia="Arial" />\n                    <w:color w:val="auto" /><w:spacing w:val="0" />\n                    <w:position w:val="0" />\n                    <w:sz w:val="24" />\n                    <w:shd w:fill="auto" w:val="clear" />\n                </w:rPr>\n                <w:t xml:space="preserve">'+prgm.rep[i]+'</w:t>\n            </w:r>\n        </w:p>\n')
+        write_document.writelines('<w:p>\n            <w:r>\n                <w:rPr>\n                    <w:rFonts w:ascii="DejaVu Sans" w:hAnsi="DejaVu Sans" w:cs="DejaVu Sans" w:eastAsia="DejaVu Sans" />\n                    <w:color w:val="auto" /><w:spacing w:val="0" />\n                    <w:position w:val="0" />\n                    <w:sz w:val="24" />\n                    <w:shd w:fill="auto" w:val="clear" />\n                </w:rPr>\n                <w:t xml:space="preserve">'+prgm.rep[i]+'</w:t>\n            </w:r>\n        </w:p>\n')
         write_document.close()
     write_document=open(r'extensions/docx/document.xml','a',encoding="utf-8")
     write_document.writelines('    </w:body>\n</w:document>')
     write_document.close()
     file_write.write(r'extensions/docx/document.xml','word/document.xml',zipfile.ZIP_DEFLATED)
     file_write.close()
-    os.remove(r'extensions/docx/document.xml')
+    prgm.os.remove(r'extensions/docx/document.xml')

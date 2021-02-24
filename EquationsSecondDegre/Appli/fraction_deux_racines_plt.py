@@ -1,9 +1,11 @@
 import prgm
 
-#Plot graph when delta>0
-def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom):
-    import matplotlib.pyplot as plt
-    import numpy as np
+def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom,extension,path):
+    if extension!='':
+        prgm.plt.figure(300)
+    prgm.plt.rcParams['pdf.fonttype']=42
+    prgm.plt.rcParams['font.family']='DejaVu Sans'
+    prgm.plt.rcParams['font.size']='10'
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
     ymax=0
@@ -17,7 +19,7 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
             ymax=(a_num/a_denom)*(pltxmax)**2+(b_num/b_denom)*(pltxmax)+(c_num/c_denom)
         else:
             ymax=(a_num/a_denom)*(pltxmin)**2+(b_num/b_denom)*(pltxmin)+(c_num/c_denom)
-    x=np.linspace(pltxmin,pltxmax,1000)
+    x=prgm.linspace(pltxmin,pltxmax,1000)
     y=(a_num/a_denom)*x**2+(b_num/b_denom)*x+(c_num/c_denom)
     prgm.plt.plot(x,y,c='blue')
     prgm.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
@@ -38,4 +40,12 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
     prgm.plt.axvline(x=0,c='black')
     prgm.plt.legend()
     prgm.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
-    prgm.plt.show()
+    if extension=='pdf':
+        from matplotlib.backends.backend_pdf import PdfPages
+        prgm.plt.savefig(path)
+        prgm.plt.close(300)
+    elif extension!='':
+        prgm.plt.savefig(path)
+        prgm.plt.close(300)
+    else:
+        prgm.plt.show()

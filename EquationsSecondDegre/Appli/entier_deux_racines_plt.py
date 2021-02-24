@@ -1,9 +1,12 @@
 import prgm
+import entier_equation
 
-#Plot graph when delta>0
-def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
-    import matplotlib.pyplot as plt
-    import numpy as np
+def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta,extension,path):
+    if extension!='':
+        prgm.plt.figure(300)
+    prgm.plt.rcParams['pdf.fonttype']=42
+    prgm.plt.rcParams['font.family']='DejaVu Sans'
+    prgm.plt.rcParams['font.size']='10'
     pltxmin=alpha_num/alpha_denom-10
     pltxmax=alpha_num/alpha_denom+10
     ymax=0
@@ -17,7 +20,7 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
             ymax=a*(pltxmax)**2+b*(pltxmax)+c
         else:
             ymax=a*(pltxmin)**2+b*(pltxmin)+c
-    x=np.linspace(pltxmin,pltxmax,1000)
+    x=prgm.linspace(pltxmin,pltxmax,1000)
     y=a*x**2+b*x+c
     prgm.plt.plot(x,y,c='blue')
     prgm.plt.scatter(alpha_num/alpha_denom,beta_num/beta_denom,c='red',marker='x',label='(\u03B1;\u03B2)')
@@ -37,5 +40,13 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta):
     prgm.plt.axhline(y=0,c='black')
     prgm.plt.axvline(x=0,c='black')
     prgm.plt.legend()
-    prgm.plt.title('f(x)=('+str(a)+')x\u00B2+('+str(b)+')x+('+str(c)+')')
-    prgm.plt.show()
+    prgm.plt.title(entier_equation.main())
+    if extension=='pdf':
+        from matplotlib.backends.backend_pdf import PdfPages
+        prgm.plt.savefig(path)
+        prgm.plt.close(300)
+    elif extension!='':
+        prgm.plt.savefig(path)
+        prgm.plt.close(300)
+    else:
+        prgm.plt.show()

@@ -1,5 +1,5 @@
-from tkinter.filedialog import asksaveasfile
 import prgm
+from tkinter.filedialog import asksaveasfile
 
 def main(event=None):
     file=asksaveasfile(mode='w',title='Enregistrer l\u2019\u00E9quation',filetypes=[('Fichier \u00E9quation','.eq')],defaultextension='.eq')

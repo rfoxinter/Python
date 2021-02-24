@@ -1,5 +1,5 @@
-import base64
 import prgm
+import base64
 
 def main(path):
     prgm.rep[1]='<br/>'
@@ -8,7 +8,7 @@ def main(path):
     file_write.close()
     for i in range(len(prgm.rep)):
         file_write=open(path,'a',encoding="utf-8")
-        file_write.writelines('        <p style="font-family: Arial;">'+prgm.rep[i]+'</p>\n')
+        file_write.writelines('        <p style="font-family: DejaVu Sans;">'+prgm.rep[i]+'</p>\n')
         file_write.close()
     file_write=open(path,'a',encoding="utf-8")
     file_write.writelines('    </body>\n</html>')

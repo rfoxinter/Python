@@ -1,5 +1,5 @@
-from tkinter.filedialog import askopenfilename
 import prgm
+from tkinter.filedialog import askopenfilename
 import entier
 import fraction
 

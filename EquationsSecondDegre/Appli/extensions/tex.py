@@ -9,7 +9,7 @@ def main(path):
     rep_6=prgm.rep[6]
     prgm.rep[0]=prgm.rep[0].replace("\u00B2","\u005E2")
     prgm.rep[1]=' '
-    prgm.rep[2]=prgm.rep[2].replace("\u0394","\u005CDelta")
+    prgm.rep[2]=prgm.rep[2].replace("\u0394","\u005CvarDelta")
     prgm.rep[3]=prgm.rep[3].replace("\u03B1","\u005Calpha")
     prgm.rep[4]=prgm.rep[4].replace("\u03B2","\u005Cbeta")
     prgm.rep[5]=prgm.rep[5].replace(" ","\u005C:")
@@ -30,7 +30,7 @@ def main(path):
     if prgm.rep[6]=='':
         prgm.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
-    file_write.writelines('\u005Cdocumentclass\u005Ba4paper\u005D\u007Barticle\u007D\n\u005Cusepackage\u005Butf8\u005D\u007Binputenc\u007D\n\u005Csetlength\u007B\u005Cparindent\u007D\u007B0cm\u007D\n\u005Cbegin\u007Bdocument\u007D\n')
+    file_write.writelines('\u005Cdocumentclass\u005Ba4paper\u005D\u007Barticle\u007D\n\u005Csetlength\u007B\u005Cparindent\u007D\u007B0cm\u007D\n\u005CDeclareMathSymbol\u007B\u005CvarDelta\u007D\u007B\u005Cmathord\u007D\u007Bletters\u007D\u007B"01\u007D\n\u005Cbegin\u007Bdocument\u007D\n')
     file_write.close()
     for i in range(len(prgm.rep)):
         file_write=open(path,'a',encoding="utf-8")

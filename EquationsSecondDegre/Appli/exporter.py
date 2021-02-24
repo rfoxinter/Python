@@ -1,6 +1,7 @@
+import prgm
 from tkinter.filedialog import asksaveasfile
 import pathlib
-import prgm
+import entier_equation
 from extensions import *
 
 def main(event=None):
@@ -8,36 +9,8 @@ def main(event=None):
     file=asksaveasfile(title='Exporter l\u2019\u00E9quation',filetypes=file_list,defaultextension='.txt')
     if file is None:
         return
-    facteurs=[]
     if prgm.latest=='entier':
-        if prgm.entier_val[0]==1:
-            facteurs.append('')
-        elif prgm.entier_val[0]==-1:
-            facteurs.append('-')
-        else:
-            facteurs.append(str(prgm.entier_val[0]))
-        if prgm.entier_val[1]==1:
-            facteurs.append('+')
-        elif prgm.entier_val[1]==-1:
-            facteurs.append('-')
-        elif prgm.entier_val[1]>0:
-            facteurs.append('+'+str(prgm.entier_val[1]))
-        else:
-            facteurs.append(str(prgm.entier_val[1]))
-        if prgm.entier_val[2]>0:
-            facteurs.append('+'+str(prgm.entier_val[2]))
-        else:
-            facteurs.append(str(prgm.entier_val[2]))
-        if prgm.entier_val[1]==0:
-            if prgm.entier_val[2]==0:
-                prgm.rep[0]='f(x)='+facteurs[0]+'x\u00B2'
-            else:
-                prgm.rep[0]='f(x)='+facteurs[0]+'x\u00B2'+facteurs[2]
-        else:
-            if prgm.entier_val[2]==0:
-                prgm.rep[0]='f(x)='+facteurs[0]+'x\u00B2'+facteurs[1]+'x'
-            else:
-                prgm.rep[0]='f(x)='+facteurs[0]+'x\u00B2'+facteurs[1]+'x'+facteurs[2]
+        prgm.rep[0]=entier_equation.main()
     elif prgm.latest=='fraction':
         prgm.rep[0]='('+str(prgm.fraction_val[0])+')/('+str(prgm.fraction_val[1])+')x\u00B2+('+str(prgm.fraction_val[2])+')/('+str(prgm.fraction_val[3])+')x+('+str(prgm.fraction_val[4])+')/('+str(prgm.fraction_val[5])+')'
     if  pathlib.Path(file.name).suffix=='.rtf':

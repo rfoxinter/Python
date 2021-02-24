@@ -19,7 +19,7 @@ def main(path):
     for k in range(2):
         prgm.rep[k+5]=prgm.rep[k+5].replace("\u221A","\u005Cf1\u005Cu8730\u003F\u005Cf0")
     file_write=open(path,'w',encoding="utf-8")
-    file_write.writelines('{\u005Crtf1\u005Cansi\u005Cdeff0{\u005Cfonttbl{\u005Cf0\u005Cfcharset161 Arial;}{\u005Cf1 Arial;}{\u005Cf2\u005Cfcharset1 Arial;}}\n')
+    file_write.writelines('{\u005Crtf1\u005Cansi\u005Cdeff0{\u005Cfonttbl{\u005Cf0\u005Cfcharset161 DejaVu Sans;}{\u005Cf1 DejaVu Sans;}{\u005Cf2\u005Cfcharset1 DejaVu Sans;}}\n')
     file_write.close()
     for i in range(len(prgm.rep)):
         file_write=open(path,'a',encoding="utf-8")
