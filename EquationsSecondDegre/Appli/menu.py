@@ -33,7 +33,7 @@ menu_fichier.add_command(label='Enregistrer l\u2019\u00E9quation Ctrl+S',image=s
 menu_fichier.add_command(label='Ouvrir une \u00E9quation Ctrl+O',image=ouvrir_image,compound='left',command=ouvrir.main,font=police)
 menu_fichier.add_separator()
 menu_fichier.add_command(label='Exporter l\u2019\u00E9quation Ctrl+Shift+E',image=exporter_image,compound='left',command=exporter.main,font=police)
-menu_fichier.add_command(label='Exporter le grpahique Ctrl+Shift+G',image=exporter_image,compound='left',command=exporter_graph.main,font=police)
+menu_fichier.add_command(label='Exporter le graphique Ctrl+Shift+G',image=exporter_image,compound='left',command=exporter_graph.main,font=police)
 menu_fichier.add_separator()
 menu_fichier.add_command(label='Quitter Ctrl+Q',image=quitter_image,compound='left',command=quitter.close,font=police)
 menuBar.add_cascade(label='Fichier',menu=menu_fichier)
