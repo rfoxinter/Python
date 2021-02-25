@@ -116,11 +116,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             L3.grid(column=6,row=2,sticky='w')
             prgm.rep[4]=L3.cget('text')
     if delta_num<0:
-        fraction_pas_racine.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom)
+        fraction_pas_racine.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,'','')
     elif delta_num==0:
-        fraction_x0.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom)
+        fraction_x0.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,'','')
     else:
         fraction_x1.x1_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_x2.x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         if preferences.afficher_graphs==1:
-            fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom)
+            fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom,'','')
