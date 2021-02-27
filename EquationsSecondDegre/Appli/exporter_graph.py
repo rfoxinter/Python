@@ -11,41 +11,19 @@ def main(event=None):
     file=asksaveasfile(title='Exporter le graphique',filetypes=file_list,defaultextension='.jpg')
     if file is None:
         return
-    graph=''
     if prgm.latest=='entier':
         a=prgm.entier_val[0]
         b=prgm.entier_val[1]
         c=prgm.entier_val[2]
         if b**2-4*a*c<0:
-            from entier_pas_racine import main
+            import entier_pas_racine
+            entier_pas_racine.main(a,b,c,-b,2*a,-b**2+4*a*c,4*a,pathlib.Path(file.name).suffix.replace('.',''),file.name)
         elif b**2-4*a*c==0:
-            from entier_x0 import main
+            import entier_x0
+            entier_x0.main(a,b,c,-b,2*a,-b**2+4*a*c,4*a,pathlib.Path(file.name).suffix.replace('.',''),file.name)
         else:
-            from entier_deux_racines_plt import main
+            import entier_deux_racines_plt
+            entier_deux_racines_plt.main(a,b,c,-b,2*a,-b**2+4*a*c,4*a,b**2-4*a*c,pathlib.Path(file.name).suffix.replace('.',''),file.name)
     elif prgm.latest=='fraction':
         prgm.rep[0]='('+str(prgm.fraction_val[0])+')/('+str(prgm.fraction_val[1])+')x\u00B2+('+str(prgm.fraction_val[2])+')/('+str(prgm.fraction_val[3])+')x+('+str(prgm.fraction_val[4])+')/('+str(prgm.fraction_val[5])+')'
-    if  pathlib.Path(file.name).suffix=='.jpg' or pathlib.Path(file.name).suffix=='.jpeg':
-        if prgm.latest=='entier':
-            if prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2]<=0:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],'jpg',file.name)
-            else:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2],'jpg',file.name)
-    elif  pathlib.Path(file.name).suffix=='.png':
-        if prgm.latest=='entier':
-            if prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2]<=0:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],'png',file.name)
-            else:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2],'jpg',file.name)
-    elif pathlib.Path(file.name).suffix=='.svg':
-        if prgm.latest=='entier':
-            if prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2]<=0:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],'svg',file.name)
-            else:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2],'jpg',file.name)
-    elif pathlib.Path(file.name).suffix=='.pdf':
-        if prgm.latest=='entier':
-            if prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2]<=0:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],'pdf',file.name)
-            else:
-                main(prgm.entier_val[0],prgm.entier_val[1],prgm.entier_val[2],-prgm.entier_val[1],2*prgm.entier_val[0],-prgm.entier_val[1]**2+4*prgm.entier_val[0]*prgm.entier_val[2],4*prgm.entier_val[0],prgm.entier_val[1]**2-4*prgm.entier_val[0]*prgm.entier_val[2],'jpg',file.name)
     file.close()
