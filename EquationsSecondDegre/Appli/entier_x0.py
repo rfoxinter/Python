@@ -68,9 +68,11 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,extension,path):
         if extension=='pdf':
             from matplotlib.backends.backend_pdf import PdfPages
             prgm.plt.savefig(path)
+            prgm.plt.show(block=False)
             prgm.plt.close(300)
         elif extension!='':
             prgm.plt.savefig(path)
+            prgm.plt.show(block=False)
             prgm.plt.close(300)
         else:
             prgm.plt.show()
