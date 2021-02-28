@@ -21,12 +21,14 @@ def maj_pref():
 
 def down():
     extension=['.py','.ico','.png','.xml','.rels']
-    filename=[['a_propos','edit_pref','entier','entier_deux_racines_plt','entier_equation','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','exporter_graph','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','linux_distribution','maj','menu','ouvrir','packages','packages_linux','prgm','quitter','sauvegarder','version','extensions/__init__','extensions/docx','extensions/html','extensions/rtf','extensions/tex','extensions/txt','extensions/xhtml'],['a_propos','avertissement','python'],['a_propos_menu','exporter_menu','maj_menu','ouvrir_menu','package','preferences_menu','python','quitter_menu','sauvegarder_menu'],['extensions/docx/[Content_Types]','extensions/docx/numbering','extensions/docx/styles'],['extensions/docx/','extensions/docx/document.xml']]
+    filename=[['a_propos','edit_pref','entier','entier_deux_racines_plt','entier_equation','entier_pas_racine','entier_x0','entier_x1','entier_x2','exporter','exporter_graph','fraction','fraction_deux_racines_plt','fraction_pas_racine','fraction_x0','fraction_x1','fraction_x1_delta_denom_entier','fraction_x1_delta_num_entier','fraction_x1_sinon','fraction_x2','linux_distribution','maj','menu','ouvrir','packages','packages_linux','prgm','quitter','sauvegarder','version','extensions/__init__','extensions/docx','extensions/html','extensions/rtf','extensions/tex','extensions/txt','extensions/xhtml','images/__init__','images/jpg','images.png'],['a_propos','avertissement','python'],['a_propos_menu','exporter_menu','maj_menu','ouvrir_menu','package','preferences_menu','python','quitter_menu','sauvegarder_menu'],['extensions/docx/[Content_Types]','extensions/docx/numbering','extensions/docx/styles'],['extensions/docx/','extensions/docx/document.xml']]
     try:
-        if os.path.exists('extensions')==False:
+        if not os.path.exists('extensions'):
             os.mkdir('extensions')
-        if os.path.exists('extensions/docx')==False:
+        if not os.path.exists('extensions/docx'):
             os.mkdir('extensions/docx')
+        if not os.path.exists('images'):
+            os.mkdir('images')
         #Download the files listed
         for k in range(len(extension)):
             for i in range(len(filename[k])):
