@@ -45,7 +45,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=38
+version=39
 
 latest=''
 entier_val=[0,0,0]
