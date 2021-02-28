@@ -47,6 +47,12 @@ def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta,extension,path):
         prgm.plt.show(block=False)
         prgm.plt.close(300)
     elif extension!='':
+        if extension=='png':
+            from images import png
+            prgm.plt.rcParams['savefig.dpi'],prgm.plt.rcParams['savefig.transparent']=png.main(extension)
+        elif extension=='jpg':
+            from images import jpg
+            prgm.plt.rcParams['savefig.dpi']=jpg.main(extension)
         prgm.plt.savefig(path)
         prgm.plt.show(block=False)
         prgm.plt.close(300)
