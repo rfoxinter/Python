@@ -29,7 +29,7 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
             if x1_num_rt_1%div_x1**2==0:
                 x1_num_rt_1=x1_num_rt_1//div_x1**2
             else:
-                x1_num_rt_1=x1_num_rt_1//div_x1
+                x1_num_int_1=x1_num_int_1//div_x1
             x1_num_int_1_div=x1_num_int_1_div//div_x1
             x1_num_rt_1_div=x1_num_rt_1_div//div_x1
         else:
@@ -41,7 +41,7 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     else:
         x1_denom=str(x1_denom_int)+'\u221A('+str(x1_denom_rt)+')'
     if x1_num_int_1==1:
-        x1_num_1='\u221A('+str(x1_num_rt_1)+')'
+        x1_num_1='+\u221A('+str(x1_num_rt_1)+')'
     elif x1_num_int_1==-1:
         x1_num_1='-\u221A('+str(x1_num_rt_1)+')'
     else:
@@ -55,10 +55,10 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     else:
         x1_num_2='+'+str(x1_num_int_2)+'\u221A('+str(x1_num_rt_2)+')'
     if x1_num_int_1==0:
-        L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_2.replace('+','')+')/('+x1_denom+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))))
+        L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_2.replace('+','')+')/('+x1_denom+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
         L4.grid(column=6,row=3,sticky='w')
         prgm.rep[5]=L4.cget('text')
     else:
-        L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_1+x1_num_2+')/('+x1_denom+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))))
+        L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_1+x1_num_2+')/('+x1_denom+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
         L4.grid(column=6,row=3,sticky='w')
         prgm.rep[5]=L4.cget('text')
