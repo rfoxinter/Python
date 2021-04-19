@@ -24,11 +24,11 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
             else:
                 div_x0=div_x0+1
         if x0_num<0 and x0_denom<0:
-            L4=prgm.Label(prgm.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom))
+            L4=prgm.Label(prgm.root,text='x\u2080=('+str(int(-x0_num))+')/('+str(int(-x0_denom))+')='+str(x0_num/x0_denom).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
         else:
-            L4=prgm.Label(prgm.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom))
+            L4=prgm.Label(prgm.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')='+str(x0_num/x0_denom).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
     if preferences.afficher_graphs==1:
