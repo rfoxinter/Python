@@ -1,6 +1,12 @@
 import prgm
+import fraction_x2_delta_num_entier
+import fraction_x2_delta_denom_entier
+import fraction_x2_sinon
 
 def x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
-    L5=prgm.Label(prgm.root,text='x\u2082='+str(((-b_num*a_denom*delta_denom**0.5)+(b_denom*a_denom*delta_num**0.5))/(b_denom*2*a_num*delta_denom**0.5)))
-    L5.grid(column=6,row=4,sticky='w')
-    prgm.rep[6]=L5.cget('text')
+    if delta_num**0.5==int(delta_num**0.5):
+        fraction_x2_delta_num_entier.main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
+    elif delta_denom**0.5==int(delta_denom**0.5):
+        fraction_x2_delta_denom_entier.main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
+    else:
+        fraction_x2_sinon.main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
