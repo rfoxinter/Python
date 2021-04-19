@@ -15,7 +15,12 @@ def main_frac():
             label.destroy()
     Col7=prgm.Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
-    sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
+    if prgm.ValeurA_n.get()!=0:
+        prgm.latest='entier'
+        sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
+    else:
+        L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u22600')
+        L1.grid(column=6,row=0,sticky='w')
 
 def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     prgm.latest='fraction'
