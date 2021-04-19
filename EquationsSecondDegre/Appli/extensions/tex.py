@@ -30,7 +30,7 @@ def main(path):
     if prgm.rep[6]=='':
         prgm.rep[6]=' '
     file_write=open(path,'w',encoding="utf-8")
-    file_write.writelines('\u005Cdocumentclass\u005Ba4paper\u005D\u007Barticle\u007D\n\u005Csetlength\u007B\u005Cparindent\u007D\u007B0cm\u007D\n\u005CDeclareMathSymbol\u007B\u005CvarDelta\u007D\u007B\u005Cmathord\u007D\u007Bletters\u007D\u007B"01\u007D\n\u005Cbegin\u007Bdocument\u007D\n')
+    file_write.writelines('\u005Cdocumentclass\u005Ba4paper\u005D\u007Barticle\u007D\n\u005Csetlength\u007B\u005Cparindent\u007D\u007B0cm\u007D\n\u005Crenewcommand\u007B\u005Cbaselinestretch\u007D\u007B1.125\u007D\n\u005CDeclareMathSymbol\u007B\u005CvarDelta\u007D\u007B\u005Cmathord\u007D\u007Bletters\u007D\u007B"01\u007D\n\u005Cbegin\u007Bdocument\u007D\n')
     file_write.close()
     for i in range(len(prgm.rep)):
         file_write=open(path,'a',encoding="utf-8")
