@@ -2,6 +2,7 @@ import prgm
 from tkinter.filedialog import asksaveasfile
 import pathlib
 import entier_equation
+import fraction_equation
 from extensions import *
 
 def main(event=None):
@@ -12,7 +13,7 @@ def main(event=None):
     if prgm.latest=='entier':
         prgm.rep[0]=entier_equation.main()
     elif prgm.latest=='fraction':
-        prgm.rep[0]='('+str(prgm.fraction_val[0])+')/('+str(prgm.fraction_val[1])+')x\u00B2+('+str(prgm.fraction_val[2])+')/('+str(prgm.fraction_val[3])+')x+('+str(prgm.fraction_val[4])+')/('+str(prgm.fraction_val[5])+')'
+        prgm.rep[0]=fraction_equation.main()
     if  pathlib.Path(file.name).suffix=='.rtf':
         rtf.main(file.name)
     elif  pathlib.Path(file.name).suffix=='.docx':
