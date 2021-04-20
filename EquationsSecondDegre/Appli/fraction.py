@@ -25,7 +25,7 @@ def main_frac():
             L1.grid(column=6,row=i,sticky='w')
             i=i+1
         if prgm.ValeurA_d.get()<=0 or prgm.ValeurB_d.get()<=0 or prgm.ValeurC_d.get()<=0:
-            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0Dénominateurs\u2208\u2115*')
+            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0D\u00E9nominateur\u2208\u2115*')
             L1.grid(column=6,row=i,sticky='w')
             i=i+1
 
