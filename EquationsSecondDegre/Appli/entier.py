@@ -18,7 +18,7 @@ def main_ent():
         prgm.latest='entier'
         sec_ent(prgm.ValeurA.get(),prgm.ValeurB.get(),prgm.ValeurC.get())
     else:
-        L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u22600')
+        L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u2208\u2124*')
         L1.grid(column=6,row=0,sticky='w')
 
 def open_ent(a,b,c):
