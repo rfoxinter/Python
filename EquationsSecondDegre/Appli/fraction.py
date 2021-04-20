@@ -15,12 +15,19 @@ def main_frac():
             label.destroy()
     Col7=prgm.Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
-    if prgm.ValeurA_n.get()!=0:
+    if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
         prgm.latest='entier'
         sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
     else:
-        L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u22600')
-        L1.grid(column=6,row=0,sticky='w')
+        i=0
+        if prgm.ValeurA_n.get()==0:
+            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u2208\u2124*')
+            L1.grid(column=6,row=i,sticky='w')
+            i=i+1
+        if prgm.ValeurA_d.get()<=0 or prgm.ValeurB_d.get()<=0 or prgm.ValeurC_d.get()<=0:
+            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0Dénominateurs\u2208\u2115*')
+            L1.grid(column=6,row=i,sticky='w')
+            i=i+1
 
 def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     prgm.latest='fraction'
