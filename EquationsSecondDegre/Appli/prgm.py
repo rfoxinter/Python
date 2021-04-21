@@ -45,7 +45,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=43
+version=44
 
 fonts=list(font.families())
 if not 'DejaVu Sans' in fonts:
