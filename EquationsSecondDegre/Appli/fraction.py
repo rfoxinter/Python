@@ -7,7 +7,6 @@ import fraction_deux_racines_plt
 import preferences
 
 def main_frac():
-    prgm.latest='fraction'
     if preferences.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
@@ -16,7 +15,7 @@ def main_frac():
     Col7=prgm.Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
     if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
-        prgm.latest='entier'
+        prgm.latest='fraction'
         sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
     else:
         i=0
@@ -30,7 +29,6 @@ def main_frac():
             i=i+1
 
 def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
-    prgm.latest='fraction'
     prgm.fraction_val[0]=a_num
     prgm.fraction_val[1]=a_denom
     prgm.fraction_val[2]=b_num
@@ -44,7 +42,19 @@ def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             label.destroy()
     Col7=prgm.Label(prgm.root,width=100)
     Col7.grid(column=6,row=5)
-    sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom)
+    if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
+        prgm.latest='fraction'
+        sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom)
+    else:
+        i=0
+        if prgm.ValeurA_n.get()==0:
+            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u2208\u2124*')
+            L1.grid(column=6,row=i,sticky='w')
+            i=i+1
+        if prgm.ValeurA_d.get()<=0 or prgm.ValeurB_d.get()<=0 or prgm.ValeurC_d.get()<=0:
+            L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0D\u00E9nominateur\u2208\u2115*')
+            L1.grid(column=6,row=i,sticky='w')
+            i=i+1
 
 def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     prgm.rep[6]=''
