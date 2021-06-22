@@ -45,12 +45,15 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=44
+version=45
 
+root=Tk()
 fonts=list(font.families())
 if not 'DejaVu Sans' in fonts:
+    root.destroy()
     import dejavusans
     dejavusans.main()
+root.destroy()
 
 latest=''
 entier_val=[0,0,0]
