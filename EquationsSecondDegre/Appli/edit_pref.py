@@ -6,8 +6,9 @@ def redemarrage():
         prgm.plt
     except:
         prgm.redemarrage=prgm.Tk()
-        police=prgm.font.Font(family='DejaVu Sans',size=10)
-        prgm.redemarrage.option_add('*Font',police)
+        if 'DejaVu Sans' in list(prgm.font.families()):
+            police=prgm.font.Font(family='DejaVu Sans',size=10)
+            prgm.redemarrage.option_add('*Font',police)
         prgm.redemarrage.title('Avertissement')
         prgm.Label(prgm.redemarrage,text='Un red\u00E9marrage de l\u2019application est n\u00E9cessaire',width=50).grid(column=0,row=0)
         bouton_redemarrer=prgm.Button(prgm.redemarrage,text='Red\u00E9marrer l\u2019application',command=lambda:prgm.os.execl(prgm.sys.executable,prgm.sys.executable,*prgm.sys.argv))
