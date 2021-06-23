@@ -29,8 +29,9 @@ import fraction
 
 if preferences.etat_maj!='':
     root=Tk()
-    police=font.Font(family='DejaVu Sans',size=10)
-    root.option_add('*Font',police)
+    if 'DejaVu Sans' in list(font.families()):
+        police=font.Font(root,family='DejaVu Sans',size=10)
+        root.option_add('*Font',police)
     Label(root,text=preferences.etat_maj,width=50).grid(column=0,row=0)
     bouton_fermer=Button(root,text='Fermer',command=root.destroy)
     bouton_fermer.grid(column=0,row=1)
@@ -45,15 +46,15 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=45
+version=46
 
 root=Tk()
-fonts=list(font.families())
-if not 'DejaVu Sans' in fonts:
+if not 'DejaVu Sans' in list(font.families()):
     root.destroy()
     import dejavusans
     dejavusans.main()
-root.destroy()
+else:
+    root.destroy()
 
 latest=''
 entier_val=[0,0,0]
@@ -62,8 +63,9 @@ rep=['','','','','','','']
 
 #Create main window
 root=Tk()
-police=font.Font(root,family='DejaVu Sans',size=10)
-root.option_add('*Font',police)
+if 'DejaVu Sans' in list(font.families()):
+    police=font.Font(root,family='DejaVu Sans',size=10)
+    root.option_add('*Font',police)
 
 import menu
 
