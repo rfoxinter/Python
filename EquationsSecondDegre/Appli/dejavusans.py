@@ -24,7 +24,7 @@ def main():
     Label(root,text='Cette application a besions de la police DejaVu Sans pour fonctionner').grid(column=0,row=0,sticky='w')
     bouton_maj=Button(root,text='Installer DejaVu Sans',command=lambda:[install(),os.execl(sys.executable,sys.executable,*sys.argv)])
     bouton_maj.grid(column=0,row=1)
-    bouton_fermer=Button(root,text='Ne pas installer DejaVu Sans',command=quit)
+    bouton_fermer=Button(root,text='Ne pas installer DejaVu Sans',command=root.destroy)
     bouton_fermer.grid(column=0,row=2)
     root.title('DejaVu Sans')
     root.resizable(width=False,height=False)
