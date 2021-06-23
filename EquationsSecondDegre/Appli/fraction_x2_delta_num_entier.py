@@ -6,7 +6,7 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
         x2_denom=int(2*a_num*b_denom*(delta_denom**0.5))
         if x2_num%x2_denom==0:
             x2=x2_num//x2_denom
-            L4=prgm.Label(prgm.root,text='x\u2081='+str(x2))
+            L4=prgm.Label(prgm.root,text='x\u2082='+str(x2))
             L4.grid(column=6,row=4,sticky='w')
             prgm.rep[6]=L4.cget('text')
         else:
@@ -19,11 +19,11 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
                     div_x2=div_x2+1
                 
             if x2_num<0 and x2_denom<0:
-                L4=prgm.Label(prgm.root,text='x\u2081=('+str(-x2_num)+')/('+str(-x2_denom)+')='+str(x2_num/x2_denom).replace('.',','))
+                L4=prgm.Label(prgm.root,text='x\u2082=('+str(-x2_num)+')/('+str(-x2_denom)+')='+str(x2_num/x2_denom).replace('.',','))
                 L4.grid(column=6,row=4,sticky='w')
                 prgm.rep[6]=L4.cget('text')
             else:
-                L4=prgm.Label(prgm.root,text='x\u2081=('+str(x2_num)+')/('+str(x2_denom)+')='+str(x2_num/x2_denom).replace('.',','))
+                L4=prgm.Label(prgm.root,text='x\u2082=('+str(x2_num)+')/('+str(x2_denom)+')='+str(x2_num/x2_denom).replace('.',','))
                 L4.grid(column=6,row=4,sticky='w')
                 prgm.rep[6]=L4.cget('text')
     else:
