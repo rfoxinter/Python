@@ -31,8 +31,9 @@ def close(event=None):
         download()
         import version
         root=prgm.Tk()
-        police=prgm.font.Font(root,family='DejaVu Sans',size=10)
-        root.option_add('*Font',police)
+        if 'DejaVu Sans' in list(prgm.font.families()):
+            police=prgm.font.Font(root,family='DejaVu Sans',size=10)
+            root.option_add('*Font',police)
         #Check for a new version
         if version.version>prgm.version:
             url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
@@ -56,8 +57,9 @@ def close(event=None):
 def abt_maj():
     download()
     prgm.maj_root=prgm.Tk()
-    police=prgm.font.Font(prgm.maj_root,family='DejaVu Sans',size=10)
-    prgm.maj_root.option_add('*Font',police)
+    if 'DejaVu Sans' in list(prgm.font.families()):
+        police=prgm.font.Font(prgm.maj_root,family='DejaVu Sans',size=10)
+        prgm.maj_root.option_add('*Font',police)
     import version
     if version.version>prgm.version:
         url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/maj.py'
