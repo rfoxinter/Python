@@ -3,8 +3,9 @@ from tkinter import Scale,Toplevel
 
 def main(extension):
     root=Toplevel()
-    police=prgm.font.Font(root,family='DejaVu Sans',size=10)
-    root.option_add('*Font',police)
+    if 'DejaVu Sans' in list(prgm.font.families()):
+        police=prgm.font.Font(root,family='DejaVu Sans',size=10)
+        root.option_add('*Font',police)
     qualite=prgm.IntVar(root)
     qualite.set(100)
     bar_qualite=Scale(root,from_=100,to=500,orient='horizontal',var=qualite,tickinterval=50,label='Résolution',length=325,resolution=5)
