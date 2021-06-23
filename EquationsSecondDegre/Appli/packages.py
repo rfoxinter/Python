@@ -15,8 +15,9 @@ def main(package_name):
             packages_linux.pip()
     python_path=sys.executable.replace('pythonw','python')
     root=Tk()
-    police=font.Font(family='DejaVu Sans',size=10)
-    root.option_add('*Font',police)
+    if 'DejaVu Sans' in list(font.families()):
+        police=font.Font(family='DejaVu Sans',size=10)
+        root.option_add('*Font',police)
     Label(root,text='Ce programme a besoin d\u2019installer '+package_name+' pour fonctionner.',width=50).grid(column=0,row=0)
     bouton_maj=Button(root,text='Installer '+package_name,command=lambda:[os.system(python_path+' -m pip install --upgrade '+package_name+' --user'),os.execl(sys.executable,sys.executable,*sys.argv)])
     bouton_maj.grid(column=0,row=1)
