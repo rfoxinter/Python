@@ -2,8 +2,9 @@ import prgm
 
 def main():
     prgm.about_root=prgm.Tk()
-    police=prgm.font.Font(prgm.about_root,family='DejaVu Sans',size=10)
-    prgm.about_root.option_add('*Font',police)
+    if 'DejaVu Sans' in list(prgm.font.families()):
+        police=prgm.font.Font(prgm.about_root,family='DejaVu Sans',size=10)
+        prgm.about_root.option_add('*Font',police)
     prgm.Label(prgm.about_root,text='Version actuelle\u00A0:\u00A0'+str(prgm.version)).grid(column=0,row=0,sticky='w')
     prgm.Label(prgm.about_root,text='-\u00A0Correction d\u2019un bug ').grid(column=0,row=1,sticky='w')
     prgm.Label(prgm.about_root,width=50).grid(column=0,row=9)
