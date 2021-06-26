@@ -11,7 +11,7 @@ def main(extension):
     bar_qualite=Scale(root,from_=100,to=500,orient='horizontal',var=qualite,tickinterval=50,label='Résolution',length=325,resolution=5)
     bar_qualite.grid(column=0,row=0)
     prgm.Label(root,text='',width=50).grid(column=0,row=1)
-    bouton_fermer=prgm.Button(root,text='Fermer',command=root.destroy)
+    bouton_fermer=prgm.Button(root,text='Valider',command=root.destroy)
     bouton_fermer.grid(column=0,row=2)
     root.title('Exporter en png')
     root.resizable(width=False,height=False)
