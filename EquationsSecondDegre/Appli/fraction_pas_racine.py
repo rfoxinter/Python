@@ -1,5 +1,6 @@
 import prgm
 import preferences
+import fraction_equation
 
 def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,extension,path):
     if extension!='':
@@ -43,7 +44,7 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
         prgm.plt.axhline(y=0,c='black')
         prgm.plt.axvline(x=0,c='black')
         prgm.plt.legend()
-        prgm.plt.title('f(x)=('+str(a_num)+')/('+str(a_denom)+')x\u00B2+('+str(b_num)+')/('+str(b_denom)+')x+('+str(c_num)+')/('+str(c_denom)+')')
+        prgm.plt.title(fraction_equation.main())
         if extension=='pdf':
             from matplotlib.backends.backend_pdf import PdfPages
             prgm.plt.savefig(path)
