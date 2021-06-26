@@ -15,7 +15,7 @@ def main(extension):
     bar_transparent=Checkbutton(root,text='Transparent',variable=transparent)
     bar_transparent.grid(column=0,row=1)
     prgm.Label(root,text='',width=50).grid(column=0,row=2)
-    bouton_fermer=prgm.Button(root,text='Fermer',command=root.destroy)
+    bouton_fermer=prgm.Button(root,text='Valider',command=root.destroy)
     bouton_fermer.grid(column=0,row=3)
     root.title('Exporter en png')
     root.resizable(width=False,height=False)
