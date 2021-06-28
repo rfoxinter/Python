@@ -65,9 +65,9 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
         else:
             x1_num_1=str(x1_num_rt_int)+'\u221A('+str(x1_num_rt)+')'
         if x1_num_int>0:
-            x1_num_2='+'+srt(x1_num_int)
+            x1_num_2='+'+str(x1_num_int)
         else:
-            x1_num_2=srt(x1_num_int)
+            x1_num_2=str(x1_num_int)
         if x1_denom_int==0:
             x1_denom=''
         elif x1_denom_int==1:
