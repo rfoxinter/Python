@@ -88,11 +88,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_delta=div_delta+1
         if delta_num<0 and delta_denom<0:
-            L1=prgm.Label(prgm.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')='+str(delta_num/delta_denom))
+            L1=prgm.Label(prgm.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')='+str(delta_num/delta_denom).replace('.',','))
             L1.grid(column=6,row=0,sticky='w')
             prgm.rep[2]=L1.cget('text')
         else:
-            L1=prgm.Label(prgm.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')='+str(delta_num/delta_denom))
+            L1=prgm.Label(prgm.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')='+str(delta_num/delta_denom).replace('.',','))
             L1.grid(column=6,row=0,sticky='w')
             prgm.rep[2]=L1.cget('text')
     if alpha_num%alpha_denom==0:
@@ -109,11 +109,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_alpha=div_alpha+1
         if alpha_num<0 and alpha_denom<0:
-            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom).replace('.',','))
             L2.grid(column=6,row=1,sticky='w')
             prgm.rep[3]=L2.cget('text')
         else:
-            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom))
+            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom).replace('.',','))
             L2.grid(column=6,row=1,sticky='w')
             prgm.rep[3]=L2.cget('text')
     if beta_num%beta_denom==0:
@@ -130,11 +130,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_beta=div_beta+1
         if beta_num<0 and beta_denom<0:
-            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom))
+            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom).replace('.',','))
             L3.grid(column=6,row=2,sticky='w')
             prgm.rep[4]=L3.cget('text')
         else:
-            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom))
+            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom).replace('.',','))
             L3.grid(column=6,row=2,sticky='w')
             prgm.rep[4]=L3.cget('text')
     if delta_num<0:
