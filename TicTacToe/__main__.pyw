@@ -1,1 +1,1 @@
-exec(open('prgm.py').read()) 
+exec(open('prgm.py').read())
