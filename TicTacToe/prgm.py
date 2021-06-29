@@ -1,8 +1,12 @@
-from tkinter import Tk,Canvas,messagebox,PhotoImage
+from tkinter import Tk,font,Canvas,messagebox,PhotoImage
 from os import name
 
 root=Tk()
 root.geometry('600x600')
+
+if 'DejaVu Sans' in list(font.families()):
+    police=font.Font(root,family='DejaVu Sans',size=10)
+    root.option_add('*Font',police)
 
 x_play=True
 boxes=[[True for i in range(3)]for j in range(3)]
