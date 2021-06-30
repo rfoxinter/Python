@@ -1,16 +1,19 @@
 from tkinter import Tk,Canvas,messagebox,PhotoImage
 from os import name
+from random import getrandbits
 
 root=Tk()
-root.geometry('700x600')
+root.geometry('700x700')
 
-x_play=True
+y_play=bool(getrandbits(1))
 boxes=[[True for i in range(7)]for j in range(6)]
 board=[['' for i in range(7)]for j in range(6)]
 xy_vals=[50,150,250,350,450,550,650]
 winner=('player',False)
 moves=[]
 boxes_full=0
+y_score=0
+r_score=0
 
 def clear(event=False):
     for i in range(len(xy_vals)-1):
@@ -19,23 +22,39 @@ def clear(event=False):
                 globals()['button%s_%s'%(xy_vals[i],xy_vals[j])].delete('all')
                 boxes[i][j]=True
                 board[i][j]=''
-                global x_play
-                x_play=True
-                global boxes_full
-                boxes_full=0
-                global winner
-                winner=('player',False)
+    global winner
+    global y_play
+    if winner[0]=='y':
+        y_play=False
+        global y_score
+        y_score+=1
+        score()
+    elif winner[0]=='r':
+        y_play=True
+        global r_score
+        r_score+=1
+        score()
+    else:
+        y_play=bool(getrandbits(1))
+    global boxes_full
+    boxes_full=0
+    old_winner=winner
+    print(old_winner,winner)
+    winner=('player',False)
+    player()
 
 def undo(event=False):
     m=len(moves)
-    globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete("all")
-    boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
-    board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
-    moves.pop()
-    global x_play
-    x_play=not x_play
-    global boxes_full
-    boxes_full=boxes_full-1
+    if m>0:
+        globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete("all")
+        boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
+        board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
+        moves.pop()
+        global y_play
+        y_play=not y_play
+        global boxes_full
+        boxes_full=boxes_full-1
+        player()
 
 def coord_to_val(x):
     return int((x-50)/100+1)
@@ -75,27 +94,68 @@ def check_win(player,y,x):
         else:
             messagebox.showinfo(title='Gagn\u00E9',message='Rouge \u00E0 gagn\u00E9')
 
-def plot_y(y,x):
+def plot_y(y,x,c='gold'):
     globals()['button%s_%s'%(y,x)]=Canvas(root,width=60,height=60,highlightthickness=0)
-    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline='yellow',fill='yellow')
+    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline=c,fill=c)
     globals()['button%s_%s'%(y,x)].place(x=x-30,y=y-30)
 
-def plot_r(y,x):
+def plot_r(y,x,c='red'):
     globals()['button%s_%s'%(y,x)]=Canvas(root,width=60,height=60,highlightthickness=0)
-    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline='red',fill='red')
+    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline=c,fill=c)
     globals()['button%s_%s'%(y,x)].place(x=x-30,y=y-30)
+
+def plot_square(y,x):
+    globals()['sq%s_%s'%(y,x)]=Canvas(root,width=90,height=90,highlightthickness=0)
+    globals()['sq%s_%s'%(y,x)].create_rectangle(10,10,80,80,width=5,outline='lime green')
+    globals()['sq%s_%s'%(y,x)].place(x=x-45,y=y-45)
 
 def click_xy(xy):
     for i in range(len(xy_vals)):
         if abs(xy_vals[i]-xy)<50:
             return xy_vals[i],i
 
+def player():
+    try:
+        globals()['button650_200'].delete('all')
+        globals()['button650_500'].delete('all')
+        globals()['sq650_200'].delete('all')
+    except:
+        pass
+    try:
+        globals()['sq650_500'].delete('all')
+    except:
+        pass
+    if y_play:
+        plot_square(650,200)
+        plot_y(650,200,'gold')
+        plot_r(650,500,'gray')
+    else:
+        plot_square(650,500)
+        plot_y(650,200,'gray')
+        plot_r(650,500,'red')
+
+def score():
+    try:
+        globals()['y_win'].delete('all')
+        globals()['r_xin'].delete('all')
+    except:
+        pass
+    y=str(y_score)
+    globals()['y_win']=Canvas(root,width=50,height=50,highlightthickness=0)
+    globals()['y_win'].create_text(25,25,text=y,fill='gold',anchor='center',font='50')
+    globals()['y_win'].place(x=75,y=625)
+    r=str(r_score)
+    globals()['r_win']=Canvas(root,width=50,height=50,highlightthickness=0)
+    globals()['r_win'].create_text(25,25,text=r,fill='red',anchor='center',font='50')
+    globals()['r_win'].place(x=575,y=625)
+
 def click(event):
     x=root.winfo_pointerx()-root.winfo_rootx()
     box_x,x_val=click_xy(x)
-    global boxes_full
-    boxes_full=boxes_full+1
-    global x_play
+    if root.winfo_pointery()-root.winfo_rooty()>=700:
+        return
+    global y_play
+    global winner
     box_y,y_val=0,0
     for i in range(6):
         if boxes[5-i][x_val]:
@@ -103,30 +163,38 @@ def click(event):
             y_val=5-i
             break
     if boxes[y_val][x_val]:
-        if x_play:
+        global boxes_full
+        boxes_full=boxes_full+1
+        if y_play:
             plot_y(box_y,box_x)
-            x_play=False
+            y_play=False
             board[y_val][x_val]='y'
             check_win('y',y_val,x_val)
         else:
             plot_r(box_y,box_x)
-            x_play=True
+            y_play=True
             board[y_val][x_val]='r'
             check_win('r',y_val,x_val)
         boxes[y_val][x_val]=False
         moves.append((box_y,box_x))
     if winner[1]:
         clear()
-    if boxes_full==42:
+    elif boxes_full==42:
         messagebox.showinfo(title='\u00C9galit\u00E9',message='\u00C9galit\u00E9')
+        winner=('player',True)
         clear()
+    else:
+        player()
 
-canva=Canvas(root,width=700,height=600)
+canva=Canvas(root,width=700,height=700)
 for i in xy_vals[0:6]:
-    canva.create_line(i+50,0,i+50,800,width=2,fill='blue3')
+    canva.create_line(i+50,0,i+50,600,width=2,fill='blue3')
 for i in xy_vals[0:5]:
     canva.create_line(0,i+50,700,i+50,width=2,fill='blue3')
+canva.create_line(0,600,700,600,width=2,fill='blue3')
 canva.place(x=0,y=0)
+player()
+score()
 
 root.bind('<Button-1>',click)
 root.bind('<Escape>',clear)
