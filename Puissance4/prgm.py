@@ -39,7 +39,6 @@ def clear(event=False):
     global boxes_full
     boxes_full=0
     old_winner=winner
-    print(old_winner,winner)
     winner=('player',False)
     player()
 
@@ -61,7 +60,6 @@ def coord_to_val(x):
 
 def check_win(player,y,x):
     global winner
-    print(y)
     if y<=2 and board[y+1][x]==player and board[y+2][x]==player and board[y+3][x]==player:
         winner=(player,True)
     elif x>=3 and board[y][x-3]==player and board[y][x-2]==player and board[y][x-1]==player:
@@ -188,10 +186,10 @@ def click(event):
 
 canva=Canvas(root,width=700,height=700)
 for i in xy_vals[0:6]:
-    canva.create_line(i+50,0,i+50,600,width=2,fill='blue3')
+    canva.create_line(i+50,0,i+50,600,width=2,fill='blue2')
 for i in xy_vals[0:5]:
-    canva.create_line(0,i+50,700,i+50,width=2,fill='blue3')
-canva.create_line(0,600,700,600,width=2,fill='blue3')
+    canva.create_line(0,i+50,700,i+50,width=2,fill='blue2')
+canva.create_line(0,600,700,600,width=2,fill='blue2')
 canva.place(x=0,y=0)
 player()
 score()
