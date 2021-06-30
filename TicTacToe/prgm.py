@@ -45,15 +45,16 @@ def clear(event=False):
 
 def undo(event=False):
     m=len(moves)
-    globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete('all')
-    boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
-    board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
-    moves.pop()
-    global x_play
-    x_play=not x_play
-    global boxes_full
-    boxes_full=boxes_full-1
-    player()
+    if m>0:
+        globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete('all')
+        boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
+        board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
+        moves.pop()
+        global x_play
+        x_play=not x_play
+        global boxes_full
+        boxes_full=boxes_full-1
+        player()
 
 def coord_to_val(x):
     if x==100:
