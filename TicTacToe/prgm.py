@@ -133,10 +133,10 @@ def click(event):
         return
     box_y,y_val=click_xy(y)
     global boxes_full
-    boxes_full=boxes_full+1
     global x_play
     global winner
     if boxes[x_val][y_val]:
+        boxes_full=boxes_full+1
         if x_play:
             plot_x(box_x,box_y)
             x_play=False
