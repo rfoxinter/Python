@@ -3,12 +3,12 @@ from os import name
 from random import getrandbits
 
 root=Tk()
-root.geometry('600x800')
+root.geometry('450x600')
 
 x_play=bool(getrandbits(1))
 boxes=[[True for i in range(3)]for j in range(3)]
 board=[['' for i in range(3)]for j in range(3)]
-xy_vals=[100,300,500]
+xy_vals=[75,225,375]
 winner=('player',False)
 moves=[]
 boxes_full=0
@@ -57,9 +57,9 @@ def undo(event=False):
         player()
 
 def coord_to_val(x):
-    if x==100:
+    if x==75:
         return 1
-    elif x==300:
+    elif x==225:
         return 2
     else:
         return 3
@@ -71,45 +71,45 @@ def check_win(player):
         messagebox.showinfo(title='Gagn\u00E9',message=player+' \u00E0 gagn\u00E9')
 
 def plot_x(x,y,c='red'):
-    globals()['button%s_%s'%(x,y)]=Canvas(root,width=150,height=150,highlightthickness=0)
-    globals()['button%s_%s'%(x,y)].create_line(25,25,125,125,width=5,fill=c)
-    globals()['button%s_%s'%(x,y)].create_line(125,25,25,125,width=5,fill=c)
-    globals()['button%s_%s'%(x,y)].place(x=x-75,y=y-75)
+    globals()['button%s_%s'%(x,y)]=Canvas(root,width=140,height=140,highlightthickness=0)
+    globals()['button%s_%s'%(x,y)].create_line(20,20,120,120,width=5,fill=c)
+    globals()['button%s_%s'%(x,y)].create_line(120,20,20,120,width=5,fill=c)
+    globals()['button%s_%s'%(x,y)].place(x=x-70,y=y-70)
 
 def plot_o(x,y,c='blue'):
-    globals()['button%s_%s'%(x,y)]=Canvas(root,width=150,height=150,highlightthickness=0)
-    globals()['button%s_%s'%(x,y)].create_oval(25,25,125,125,width=5,outline=c)
-    globals()['button%s_%s'%(x,y)].place(x=x-75,y=y-75)
+    globals()['button%s_%s'%(x,y)]=Canvas(root,width=140,height=140,highlightthickness=0)
+    globals()['button%s_%s'%(x,y)].create_oval(20,20,120,120,width=5,outline=c)
+    globals()['button%s_%s'%(x,y)].place(x=x-70,y=y-70)
 
 def plot_square(x,y):
-    globals()['sq%s_%s'%(x,y)]=Canvas(root,width=180,height=180,highlightthickness=0)
-    globals()['sq%s_%s'%(x,y)].create_rectangle(10,10,170,170,width=5,outline='yellow')
-    globals()['sq%s_%s'%(x,y)].place(x=x-90,y=y-90)
+    globals()['sq%s_%s'%(x,y)]=Canvas(root,width=150,height=150,highlightthickness=0)
+    globals()['sq%s_%s'%(x,y)].create_rectangle(5,5,145,145,width=5,outline='yellow')
+    globals()['sq%s_%s'%(x,y)].place(x=x-75,y=y-75)
 
 def click_xy(xy):
     for i in range(len(xy_vals)):
-        if abs(xy_vals[i]-xy)<100:
+        if abs(xy_vals[i]-xy)<75:
             return xy_vals[i],i
 
 def player():
     try:
-        globals()['button200_700'].delete('all')
-        globals()['button400_700'].delete('all')
-        globals()['sq200_700'].delete('all')
+        globals()['button150_525'].delete('all')
+        globals()['button300_525'].delete('all')
+        globals()['sq150_525'].delete('all')
     except:
         pass
     try:
-        globals()['sq400_700'].delete('all')
+        globals()['sq300_525'].delete('all')
     except:
         pass
     if x_play:
-        plot_square(200,700)
-        plot_x(200,700,'red')
-        plot_o(400,700,'gray')
+        plot_square(150,525)
+        plot_x(150,525,'red')
+        plot_o(300,525,'gray')
     else:
-        plot_square(400,700)
-        plot_x(200,700,'gray')
-        plot_o(400,700,'blue')
+        plot_square(300,525)
+        plot_x(150,525,'gray')
+        plot_o(300,525,'blue')
 
 def score():
     try:
@@ -120,11 +120,11 @@ def score():
     x=str(x_score)
     globals()['x_win']=Canvas(root,width=50,height=50,highlightthickness=0)
     globals()['x_win'].create_text(25,25,text=x,fill='red',anchor='center',font='50')
-    globals()['x_win'].place(x=25,y=675)
+    globals()['x_win'].place(x=25,y=500)
     o=str(o_score)
     globals()['o_win']=Canvas(root,width=50,height=50,highlightthickness=0)
     globals()['o_win'].create_text(25,25,text=o,fill='blue',anchor='center',font='50')
-    globals()['o_win'].place(x=525,y=675)
+    globals()['o_win'].place(x=375,y=500)
 
 def click(event):
     x=root.winfo_pointerx()-root.winfo_rootx()
@@ -159,11 +159,11 @@ def click(event):
     else:
         player()
 
-canva=Canvas(root,width=600,height=600)
-canva.create_line(200,0,200,600,width=2)
-canva.create_line(400,0,400,600,width=2)
-canva.create_line(0,200,600,200,width=2)
-canva.create_line(0,400,600,400,width=2)
+canva=Canvas(root,width=450,height=600)
+canva.create_line(150,0,150,450,width=2)
+canva.create_line(300,0,300,450,width=2)
+canva.create_line(0,150,450,150,width=2)
+canva.create_line(0,300,450,300,width=2)
 canva.place(x=0,y=0)
 player()
 score()
