@@ -33,19 +33,19 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
         x1_num_2='+'+str(x1_num_rt_int)+'\u221A('+str(x1_num_rt)+')'
     if x1_num_int==0:
         if x1_denom==1:
-            L4=prgm.Label(prgm.root,text='x\u2082='+x1_num_2.replace('+','')+'='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
+            L4=prgm.Label(prgm.root,text='x\u2082='+x1_num_2.replace('+','')+'='+str(((-b_num*a_denom*(delta_denom**0.5))+(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
             L4.grid(column=6,row=4,sticky='w')
             prgm.rep[6]=L4.cget('text')
         else:
-            L4=prgm.Label(prgm.root,text='x\u2082=('+x1_num_2.replace('+','')+')/('+x1_denom_str+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
+            L4=prgm.Label(prgm.root,text='x\u2082=('+x1_num_2.replace('+','')+')/('+x1_denom_str+')='+str(((-b_num*a_denom*(delta_denom**0.5))+(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
             L4.grid(column=6,row=4,sticky='w')
             prgm.rep[6]=L4.cget('text')
     else:
         if x1_denom==1:
-            L4=prgm.Label(prgm.root,text='x\u2082='+x1_num_1+x1_num_2+'='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
+            L4=prgm.Label(prgm.root,text='x\u2082='+x1_num_1+x1_num_2+'='+str(((-b_num*a_denom*(delta_denom**0.5))+(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
             L4.grid(column=6,row=4,sticky='w')
             prgm.rep[6]=L4.cget('text')
         else:
-            L4=prgm.Label(prgm.root,text='x\u2082=('+x1_num_1+x1_num_2+')/('+x1_denom_str+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
+            L4=prgm.Label(prgm.root,text='x\u2082=('+x1_num_1+x1_num_2+')/('+x1_denom_str+')='+str(((-b_num*a_denom*(delta_denom**0.5))+(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
             L4.grid(column=6,row=4,sticky='w')
             prgm.rep[6]=L4.cget('text')
