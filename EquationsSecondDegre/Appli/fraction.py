@@ -16,6 +16,12 @@ def main_frac():
     Col7.grid(column=6,row=5)
     if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
         prgm.latest='fraction'
+        prgm.ValeurA_n.set(prgm.ValeurA_n.get())
+        prgm.ValeurA_d.set(prgm.ValeurA_d.get())
+        prgm.ValeurB_n.set(prgm.ValeurB_n.get())
+        prgm.ValeurB_d.set(prgm.ValeurB_d.get())
+        prgm.ValeurC_n.set(prgm.ValeurC_n.get())
+        prgm.ValeurC_d.set(prgm.ValeurC_d.get())
         sec_frac(prgm.ValeurA_n.get(),prgm.ValeurA_d.get(),prgm.ValeurB_n.get(),prgm.ValeurB_d.get(),prgm.ValeurC_n.get(),prgm.ValeurC_d.get())
     else:
         i=0
@@ -64,7 +70,7 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     prgm.fraction_val[3]=b_denom
     prgm.fraction_val[4]=c_num
     prgm.fraction_val[5]=c_denom
-    delta_num=int(b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2+((a_num/a_num)-1))
+    delta_num=int(b_num**2*a_denom*c_denom-4*a_num*c_num*b_denom**2)
     delta_denom=int(a_denom*b_denom**2*c_denom)
     if delta_num>0 and delta_denom<0:
         delta_num=-delta_num
