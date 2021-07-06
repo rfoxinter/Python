@@ -16,6 +16,9 @@ def main_ent():
     Col7.grid(column=6,row=5)
     if prgm.ValeurA.get()!=0:
         prgm.latest='entier'
+        prgm.ValeurA.set(prgm.ValeurA.get())
+        prgm.ValeurB.set(prgm.ValeurB.get())
+        prgm.ValeurC.set(prgm.ValeurC.get())
         sec_ent(prgm.ValeurA.get(),prgm.ValeurB.get(),prgm.ValeurC.get())
     else:
         L1=prgm.Label(prgm.root,text='Erreur\u00A0:\u00A0a\u2208\u2124*')
@@ -44,11 +47,11 @@ def sec_ent(a,b,c):
     prgm.entier_val[0]=a
     prgm.entier_val[1]=b
     prgm.entier_val[2]=c
-    delta=b**2-4*a*c+(int(a/a)-1)
-    alpha_num=-b
-    alpha_denom=2*a
-    beta_num=-delta
-    beta_denom=4*a
+    delta=int(b**2-4*a*c)
+    alpha_num=int(-b)
+    alpha_denom=int(2*a)
+    beta_num=int(-delta)
+    beta_denom=int(4*a)
     L1=prgm.Label(prgm.root,text='\u0394='+str(delta))
     L1.grid(column=6,row=0,sticky='w')
     prgm.rep[2]=L1.cget('text')
