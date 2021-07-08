@@ -1,0 +1,6468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="2616.1616"
+   version="1.1"
+   width="3700"
+   id="svg1460"
+   sodipodi:docname="Tableau.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1462"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.20219432"
+     inkscape:cx="734.44201"
+     inkscape:cy="1649.4034"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1460" />
+  <defs
+     id="defs2" />
+  <g
+     id="g2192"
+     transform="translate(0,8.0808105)">
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="50"
+       id="rect4" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="85"
+       id="text6">1</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="85"
+       id="text8">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="170"
+       id="text10">H</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="220"
+       id="text12">Hydrogène</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="285"
+       id="text14">1,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="50"
+       id="rect16" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="85"
+       id="text18">2</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="85"
+       id="text20" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="170"
+       id="text22">He</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="220"
+       id="text24">Hélium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="285"
+       id="text26">4,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="300"
+       id="rect28" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="335"
+       id="text30">3</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="335"
+       id="text32">1,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="420"
+       id="text34">Li</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="470"
+       id="text36">Lithium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="535"
+       id="text38">6,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="300"
+       id="rect40" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="335"
+       id="text42">4</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="335"
+       id="text44">1,6</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="420"
+       id="text46">Be</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="470"
+       id="text48">Béryllium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="535"
+       id="text50">9,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="300"
+       id="rect52" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="335"
+       id="text54">5</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="335"
+       id="text56">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="420"
+       id="text58">B</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="470"
+       id="text60">Bore</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="535"
+       id="text62">10,8</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="300"
+       id="rect64" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="335"
+       id="text66">6</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="335"
+       id="text68">2,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="420"
+       id="text70">C</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="470"
+       id="text72">Carbone</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="535"
+       id="text74">12,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="300"
+       id="rect76" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="335"
+       id="text78">7</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="335"
+       id="text80">3,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="420"
+       id="text82">N</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="470"
+       id="text84">Azote</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="535"
+       id="text86">14,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="300"
+       id="rect88" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="335"
+       id="text90">8</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="335"
+       id="text92">3,4</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="420"
+       id="text94">O</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="470"
+       id="text96">Oxygène</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="535"
+       id="text98">16,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="300"
+       id="rect100" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="335"
+       id="text102">9</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="335"
+       id="text104">4,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="420"
+       id="text106">F</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="470"
+       id="text108">Fluor</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="535"
+       id="text110">19,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="300"
+       id="rect112" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="335"
+       id="text114">10</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="335"
+       id="text116" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="420"
+       id="text118">Ne</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="470"
+       id="text120">Néon</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="535"
+       id="text122">20,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="550"
+       id="rect124" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="585"
+       id="text126">11</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="585"
+       id="text128">0,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="670"
+       id="text130">Na</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="720"
+       id="text132">Sodium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="785"
+       id="text134">23,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="550"
+       id="rect136" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="585"
+       id="text138">12</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="585"
+       id="text140">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="670"
+       id="text142">Mg</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="720"
+       id="text144">Magnésium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="785"
+       id="text146">24,3</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="550"
+       id="rect148" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="585"
+       id="text150">13</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="585"
+       id="text152">1,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="670"
+       id="text154">Al</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="720"
+       id="text156">Aluminium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="785"
+       id="text158">27,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="550"
+       id="rect160" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="585"
+       id="text162">14</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="585"
+       id="text164">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="670"
+       id="text166">Si</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="720"
+       id="text168">Silicium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="785"
+       id="text170">28,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="550"
+       id="rect172" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="585"
+       id="text174">15</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="585"
+       id="text176">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="670"
+       id="text178">P</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="720"
+       id="text180">Phosphore</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="785"
+       id="text182">31,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="550"
+       id="rect184" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="585"
+       id="text186">16</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="585"
+       id="text188">2,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="670"
+       id="text190">S</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="720"
+       id="text192">Soufre</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="785"
+       id="text194">32,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="550"
+       id="rect196" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="585"
+       id="text198">17</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="585"
+       id="text200">3,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="670"
+       id="text202">Cl</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="720"
+       id="text204">Chlore</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="785"
+       id="text206">35,5</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="550"
+       id="rect208" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="585"
+       id="text210">18</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="585"
+       id="text212" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="670"
+       id="text214">Ar</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="720"
+       id="text216">Argon</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="785"
+       id="text218">39,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="800"
+       id="rect220" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="835"
+       id="text222">19</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="835"
+       id="text224">0,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="920"
+       id="text226">K</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="970"
+       id="text228">Potassium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1035"
+       id="text230">39,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="800"
+       id="rect232" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="835"
+       id="text234">20</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="835"
+       id="text236">1,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="920"
+       id="text238">Ca</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="970"
+       id="text240">Calcium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1035"
+       id="text242">40,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="800"
+       id="rect244" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="835"
+       id="text246">21</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="835"
+       id="text248">1,4</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="920"
+       id="text250">Sc</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="970"
+       id="text252">Scandium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1035"
+       id="text254">45,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="800"
+       id="rect256" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="835"
+       id="text258">22</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="835"
+       id="text260">1,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="920"
+       id="text262">Ti</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="970"
+       id="text264">Titane</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1035"
+       id="text266">47,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="800"
+       id="rect268" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="835"
+       id="text270">23</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="835"
+       id="text272">1,6</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="920"
+       id="text274">V</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="970"
+       id="text276">Vanadium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1035"
+       id="text278">50,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="800"
+       id="rect280" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="835"
+       id="text282">24</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="835"
+       id="text284">1,7</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="920"
+       id="text286">Cr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="970"
+       id="text288">Chrome</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1035"
+       id="text290">52,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="800"
+       id="rect292" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="835"
+       id="text294">25</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="835"
+       id="text296">1,6</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="920"
+       id="text298">Mn</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="970"
+       id="text300">Manganèse</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1035"
+       id="text302">54,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="800"
+       id="rect304" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="835"
+       id="text306">26</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="835"
+       id="text308">1,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="920"
+       id="text310">Fe</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="970"
+       id="text312">Fer</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1035"
+       id="text314">55,8</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="800"
+       id="rect316" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="835"
+       id="text318">27</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="835"
+       id="text320">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="920"
+       id="text322">Co</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="970"
+       id="text324">Cobalt</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1035"
+       id="text326">58,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="800"
+       id="rect328" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="835"
+       id="text330">28</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="835"
+       id="text332">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="920"
+       id="text334">Ni</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="970"
+       id="text336">Nickel</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1035"
+       id="text338">58,7</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="800"
+       id="rect340" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="835"
+       id="text342">29</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="835"
+       id="text344">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="920"
+       id="text346">Cu</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="970"
+       id="text348">Cuivre</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1035"
+       id="text350">63,5</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="800"
+       id="rect352" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="835"
+       id="text354">30</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="835"
+       id="text356">1,7</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="920"
+       id="text358">Zn</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="970"
+       id="text360">Zinc</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1035"
+       id="text362">65,4</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="800"
+       id="rect364" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="835"
+       id="text366">31</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="835"
+       id="text368">1,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="920"
+       id="text370">Ga</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="970"
+       id="text372">Gallium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1035"
+       id="text374">69,7</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="800"
+       id="rect376" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="835"
+       id="text378">32</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="835"
+       id="text380">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="920"
+       id="text382">Ge</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="970"
+       id="text384">Germanium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1035"
+       id="text386">72,6</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="800"
+       id="rect388" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="835"
+       id="text390">33</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="835"
+       id="text392">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="920"
+       id="text394">As</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="970"
+       id="text396">Arsenic</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1035"
+       id="text398">74,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="800"
+       id="rect400" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="835"
+       id="text402">34</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="835"
+       id="text404">2,6</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="920"
+       id="text406">Se</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="970"
+       id="text408">Sélénium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1035"
+       id="text410">79,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="800"
+       id="rect412" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="835"
+       id="text414">35</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="835"
+       id="text416">3,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="920"
+       id="text418">Br</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="970"
+       id="text420">Brome</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1035"
+       id="text422">79,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="800"
+       id="rect424" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="835"
+       id="text426">36</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="835"
+       id="text428" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="920"
+       id="text430">Kr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="970"
+       id="text432">Krypton</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1035"
+       id="text434">83,8</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="1050"
+       id="rect436" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="1085"
+       id="text438">37</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="1085"
+       id="text440">0,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1170"
+       id="text442">Rb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1220"
+       id="text444">Rubidium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1285"
+       id="text446">85,5</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="1050"
+       id="rect448" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="1085"
+       id="text450">38</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="1085"
+       id="text452">1,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1170"
+       id="text454">Sr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1220"
+       id="text456">Strontium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1285"
+       id="text458">87,6</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="1050"
+       id="rect460" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="1085"
+       id="text462">39</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="1085"
+       id="text464">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1170"
+       id="text466">Y</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1220"
+       id="text468">Yttrium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1285"
+       id="text470">88,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="1050"
+       id="rect472" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="1085"
+       id="text474">40</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="1085"
+       id="text476">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1170"
+       id="text478">Zr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1220"
+       id="text480">Zirconium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1285"
+       id="text482">91,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="1050"
+       id="rect484" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="1085"
+       id="text486">41</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="1085"
+       id="text488">1,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1170"
+       id="text490">Nb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1220"
+       id="text492">Niobium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1285"
+       id="text494">92,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="1050"
+       id="rect496" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="1085"
+       id="text498">42</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="1085"
+       id="text500">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1170"
+       id="text502">Mo</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1220"
+       id="text504">Molybdène</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1285"
+       id="text506">95,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="1050"
+       id="rect508" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="1085"
+       id="text510">43</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="1085"
+       id="text512">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1170"
+       id="text514">Tc</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1220"
+       id="text516">Technétium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1285"
+       id="text518">99</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="1050"
+       id="rect520" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="1085"
+       id="text522">44</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="1085"
+       id="text524">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1170"
+       id="text526">Ru</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1220"
+       id="text528">Ruthénium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1285"
+       id="text530">101,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="1050"
+       id="rect532" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="1085"
+       id="text534">45</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="1085"
+       id="text536">2,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1170"
+       id="text538">Rh</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1220"
+       id="text540">Rhodium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1285"
+       id="text542">102,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="1050"
+       id="rect544" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="1085"
+       id="text546">46</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="1085"
+       id="text548">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1170"
+       id="text550">Pd</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1220"
+       id="text552">Palladium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1285"
+       id="text554">106,4</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="1050"
+       id="rect556" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="1085"
+       id="text558">47</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="1085"
+       id="text560">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1170"
+       id="text562">Ag</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1220"
+       id="text564">Argent</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1285"
+       id="text566">107,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="1050"
+       id="rect568" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="1085"
+       id="text570">48</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="1085"
+       id="text572">1,7</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1170"
+       id="text574">Cd</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1220"
+       id="text576">Cadmium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1285"
+       id="text578">112,4</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="1050"
+       id="rect580" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="1085"
+       id="text582">49</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="1085"
+       id="text584">1,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1170"
+       id="text586">In</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1220"
+       id="text588">Indium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1285"
+       id="text590">114,8</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="1050"
+       id="rect592" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="1085"
+       id="text594">50</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="1085"
+       id="text596">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1170"
+       id="text598">Sn</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1220"
+       id="text600">Étain</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1285"
+       id="text602">118,7</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="1050"
+       id="rect604" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="1085"
+       id="text606">51</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="1085"
+       id="text608">2,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1170"
+       id="text610">Sb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1220"
+       id="text612">Antimoine</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1285"
+       id="text614">121,7</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="1050"
+       id="rect616" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="1085"
+       id="text618">52</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="1085"
+       id="text620">2,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1170"
+       id="text622">Te</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1220"
+       id="text624">Tellure</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1285"
+       id="text626">127,6</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="1050"
+       id="rect628" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="1085"
+       id="text630">53</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="1085"
+       id="text632">2,7</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1170"
+       id="text634">I</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1220"
+       id="text636">Iode</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1285"
+       id="text638">126,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="1050"
+       id="rect640" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="1085"
+       id="text642">54</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="1085"
+       id="text644" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1170"
+       id="text646">Xe</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1220"
+       id="text648">Xénon</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1285"
+       id="text650">131,3</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="1300"
+       id="rect652" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="1335"
+       id="text654">55</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="1335"
+       id="text656">0,8</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1420"
+       id="text658">Cs</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1470"
+       id="text660">Césium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1535"
+       id="text662">132,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="1300"
+       id="rect664" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="1335"
+       id="text666">56</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="1335"
+       id="text668">0,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1420"
+       id="text670">Ba</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1470"
+       id="text672">Baryum</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1535"
+       id="text674">137,3</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="1300"
+       id="rect676" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="1335"
+       id="text678">57-71</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="1335"
+       id="text680" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1420"
+       id="text682" />
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1470"
+       id="text684">Lathanides</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1535"
+       id="text686" />
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="1300"
+       id="rect688" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="1335"
+       id="text690">72</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="1335"
+       id="text692">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1420"
+       id="text694">Hf</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1470"
+       id="text696">Hafnium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1535"
+       id="text698">178,5</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="1300"
+       id="rect700" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="1335"
+       id="text702">73</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="1335"
+       id="text704">1,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1420"
+       id="text706">Ta</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1470"
+       id="text708">Tantale</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1535"
+       id="text710">180,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="1300"
+       id="rect712" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="1335"
+       id="text714">74</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="1335"
+       id="text716">2,4</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1420"
+       id="text718">W</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1470"
+       id="text720">Tungstène</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1535"
+       id="text722">183,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="1300"
+       id="rect724" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="1335"
+       id="text726">75</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="1335"
+       id="text728">1,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1420"
+       id="text730">Re</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1470"
+       id="text732">Rhénium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1535"
+       id="text734">186,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="1300"
+       id="rect736" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="1335"
+       id="text738">76</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="1335"
+       id="text740">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1420"
+       id="text742">Os</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1470"
+       id="text744">Osmium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1535"
+       id="text746">190,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="1300"
+       id="rect748" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="1335"
+       id="text750">77</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="1335"
+       id="text752">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1420"
+       id="text754">Ir</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1470"
+       id="text756">Iridium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1535"
+       id="text758">192,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="1300"
+       id="rect760" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="1335"
+       id="text762">78</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="1335"
+       id="text764">2,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1420"
+       id="text766">Pt</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1470"
+       id="text768">Platine</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1535"
+       id="text770">195,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="1300"
+       id="rect772" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="1335"
+       id="text774">79</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="1335"
+       id="text776">2,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1420"
+       id="text778">Au</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1470"
+       id="text780">Or</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1535"
+       id="text782">197,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="1300"
+       id="rect784" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="1335"
+       id="text786">80</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="1335"
+       id="text788">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1420"
+       id="text790">Hg</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1470"
+       id="text792">Mercure</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1535"
+       id="text794">200,6</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="1300"
+       id="rect796" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="1335"
+       id="text798">81</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="1335"
+       id="text800">1,6</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1420"
+       id="text802">Tl</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1470"
+       id="text804">Thallium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1535"
+       id="text806">204,4</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="1300"
+       id="rect808" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="1335"
+       id="text810">82</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="1335"
+       id="text812">2,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1420"
+       id="text814">Pb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1470"
+       id="text816">Plomb</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1535"
+       id="text818">207,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="1300"
+       id="rect820" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="1335"
+       id="text822">83</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="1335"
+       id="text824">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1420"
+       id="text826">Bi</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1470"
+       id="text828">Bismuth</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1535"
+       id="text830">209,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="1300"
+       id="rect832" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="1335"
+       id="text834">84</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="1335"
+       id="text836">2,0</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1420"
+       id="text838">Po</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1470"
+       id="text840">Polonium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1535"
+       id="text842">209</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="1300"
+       id="rect844" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="1335"
+       id="text846">85</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="1335"
+       id="text848">2,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1420"
+       id="text850">At</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1470"
+       id="text852">Astate</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1535"
+       id="text854">210</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="1300"
+       id="rect856" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="1335"
+       id="text858">86</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="1335"
+       id="text860" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1420"
+       id="text862">Rn</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1470"
+       id="text864">Radon</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1535"
+       id="text866">222</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="50"
+       y="1550"
+       id="rect868" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="60"
+       y="1585"
+       id="text870">87</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="240"
+       y="1585"
+       id="text872">0,7</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1670"
+       id="text874">Fr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1720"
+       id="text876">Francium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="150"
+       y="1785"
+       id="text878">223</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="250"
+       y="1550"
+       id="rect880" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="260"
+       y="1585"
+       id="text882">88</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="440"
+       y="1585"
+       id="text884">0,9</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1670"
+       id="text886">Ra</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1720"
+       id="text888">Radium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="350"
+       y="1785"
+       id="text890">226</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="1550"
+       id="rect892" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="1585"
+       id="text894">89-103</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="1585"
+       id="text896" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1670"
+       id="text898" />
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1720"
+       id="text900">Actinides</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="1785"
+       id="text902" />
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="1550"
+       id="rect904" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="1585"
+       id="text906">104</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="1585"
+       id="text908" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1670"
+       id="text910">Rf</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1720"
+       id="text912">Rutherfordium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="1785"
+       id="text914">261</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="1550"
+       id="rect916" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="1585"
+       id="text918">105</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="1585"
+       id="text920" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1670"
+       id="text922">Db</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1720"
+       id="text924">Dubnium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="1785"
+       id="text926">262</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="1550"
+       id="rect928" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="1585"
+       id="text930">106</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="1585"
+       id="text932" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1670"
+       id="text934">Sg</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1720"
+       id="text936">Seaborgium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="1785"
+       id="text938">266</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="1550"
+       id="rect940" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="1585"
+       id="text942">107</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="1585"
+       id="text944" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1670"
+       id="text946">Bh</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1720"
+       id="text948">Bohrium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="1785"
+       id="text950">264</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="1550"
+       id="rect952" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="1585"
+       id="text954">108</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="1585"
+       id="text956" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1670"
+       id="text958">Hs</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1720"
+       id="text960">Hassium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="1785"
+       id="text962">269</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="1550"
+       id="rect964" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="1585"
+       id="text966">109</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="1585"
+       id="text968" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1670"
+       id="text970">Mt</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1720"
+       id="text972">Meitnérium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="1785"
+       id="text974">268</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="1550"
+       id="rect976" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="1585"
+       id="text978">110</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="1585"
+       id="text980" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1670"
+       id="text982">Ds</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1720"
+       id="text984">Darmstadtium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="1785"
+       id="text986">271</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="1550"
+       id="rect988" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="1585"
+       id="text990">111</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="1585"
+       id="text992" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1670"
+       id="text994">Rg</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1720"
+       id="text996">Roentgenium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="1785"
+       id="text998">272</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="1550"
+       id="rect1000" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="1585"
+       id="text1002">112</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="1585"
+       id="text1004" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1670"
+       id="text1006">Cn</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1720"
+       id="text1008">Copernicium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="1785"
+       id="text1010">285</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="1550"
+       id="rect1012" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="1585"
+       id="text1014">113</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="1585"
+       id="text1016" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1670"
+       id="text1018">Nh</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1720"
+       id="text1020">Nihonium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="1785"
+       id="text1022">286</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="1550"
+       id="rect1024" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="1585"
+       id="text1026">114</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="1585"
+       id="text1028" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1670"
+       id="text1030">Fl</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1720"
+       id="text1032">Flérovium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="1785"
+       id="text1034">289</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="1550"
+       id="rect1036" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="1585"
+       id="text1038">115</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="1585"
+       id="text1040" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1670"
+       id="text1042">Mc</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1720"
+       id="text1044">Moscovium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="1785"
+       id="text1046">289</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="1550"
+       id="rect1048" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="1585"
+       id="text1050">116</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="1585"
+       id="text1052" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1670"
+       id="text1054">Lv</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1720"
+       id="text1056">Livermorium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="1785"
+       id="text1058">293</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="1550"
+       id="rect1060" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="1585"
+       id="text1062">117</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="1585"
+       id="text1064" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1670"
+       id="text1066">Ts</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1720"
+       id="text1068">Tennesse</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="1785"
+       id="text1070">294</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3450"
+       y="1550"
+       id="rect1072" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3460"
+       y="1585"
+       id="text1074">118</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3640"
+       y="1585"
+       id="text1076" />
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1670"
+       id="text1078">Og</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1720"
+       id="text1080">Oganesson</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3550"
+       y="1785"
+       id="text1082">294</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="2050"
+       id="rect1084" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="2085"
+       id="text1086">57</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="2085"
+       id="text1088">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2170"
+       id="text1090">La</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2220"
+       id="text1092">Lanthane</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2285"
+       id="text1094">138,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="2050"
+       id="rect1096" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="2085"
+       id="text1098">58</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="2085"
+       id="text1100">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2170"
+       id="text1102">Ce</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2220"
+       id="text1104">Cérium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2285"
+       id="text1106">140,1</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="2050"
+       id="rect1108" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="2085"
+       id="text1110">59</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="2085"
+       id="text1112">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2170"
+       id="text1114">Pr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2220"
+       id="text1116">Praséodyme</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2285"
+       id="text1118">140,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="2050"
+       id="rect1120" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="2085"
+       id="text1122">60</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="2085"
+       id="text1124">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2170"
+       id="text1126">Nd</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2220"
+       id="text1128">Néodyme</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2285"
+       id="text1130">144,2</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="2050"
+       id="rect1132" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="2085"
+       id="text1134">61</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="2085"
+       id="text1136">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2170"
+       id="text1138">Pm</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2220"
+       id="text1140">Prométhium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2285"
+       id="text1142">145</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="2050"
+       id="rect1144" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="2085"
+       id="text1146">62</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="2085"
+       id="text1148">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2170"
+       id="text1150">Sm</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2220"
+       id="text1152">Samarium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2285"
+       id="text1154">150,4</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="2050"
+       id="rect1156" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="2085"
+       id="text1158">63</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="2085"
+       id="text1160">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2170"
+       id="text1162">Eu</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2220"
+       id="text1164">Europium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2285"
+       id="text1166">152,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="2050"
+       id="rect1168" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="2085"
+       id="text1170">64</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="2085"
+       id="text1172">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2170"
+       id="text1174">Gd</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2220"
+       id="text1176">Gadolinium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2285"
+       id="text1178">157,3</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="2050"
+       id="rect1180" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="2085"
+       id="text1182">65</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="2085"
+       id="text1184">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2170"
+       id="text1186">Tb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2220"
+       id="text1188">Terbium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2285"
+       id="text1190">158,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="2050"
+       id="rect1192" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="2085"
+       id="text1194">66</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="2085"
+       id="text1196">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2170"
+       id="text1198">Dy</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2220"
+       id="text1200">Dysprosium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2285"
+       id="text1202">162,5</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="2050"
+       id="rect1204" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="2085"
+       id="text1206">67</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="2085"
+       id="text1208">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2170"
+       id="text1210">Ho</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2220"
+       id="text1212">Holmium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2285"
+       id="text1214">164,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="2050"
+       id="rect1216" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="2085"
+       id="text1218">68</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="2085"
+       id="text1220">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2170"
+       id="text1222">Er</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2220"
+       id="text1224">Erbium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2285"
+       id="text1226">167,3</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="2050"
+       id="rect1228" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="2085"
+       id="text1230">69</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="2085"
+       id="text1232">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2170"
+       id="text1234">Tm</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2220"
+       id="text1236">Thulium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2285"
+       id="text1238">168,9</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="2050"
+       id="rect1240" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="2085"
+       id="text1242">70</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="2085"
+       id="text1244">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2170"
+       id="text1246">Yb</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2220"
+       id="text1248">Ytterbium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2285"
+       id="text1250">173,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="2050"
+       id="rect1252" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="2085"
+       id="text1254">71</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="2085"
+       id="text1256">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2170"
+       id="text1258">Lu</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2220"
+       id="text1260">Lutécium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2285"
+       id="text1262">175,0</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="450"
+       y="2300"
+       id="rect1264" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="460"
+       y="2335"
+       id="text1266">89</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="640"
+       y="2335"
+       id="text1268">1,1</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2420"
+       id="text1270">Ac</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2470"
+       id="text1272">Actinium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="550"
+       y="2535"
+       id="text1274">227</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="650"
+       y="2300"
+       id="rect1276" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="660"
+       y="2335"
+       id="text1278">90</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="840"
+       y="2335"
+       id="text1280">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2420"
+       id="text1282">Th</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2470"
+       id="text1284">Thorium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="750"
+       y="2535"
+       id="text1286">232</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="850"
+       y="2300"
+       id="rect1288" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="860"
+       y="2335"
+       id="text1290">91</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1040"
+       y="2335"
+       id="text1292">1,5</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2420"
+       id="text1294">Pa</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2470"
+       id="text1296">Protactinium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="950"
+       y="2535"
+       id="text1298">231</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1050"
+       y="2300"
+       id="rect1300" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1060"
+       y="2335"
+       id="text1302">92</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1240"
+       y="2335"
+       id="text1304">1,4</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2420"
+       id="text1306">U</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2470"
+       id="text1308">Uranium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1150"
+       y="2535"
+       id="text1310">238</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1250"
+       y="2300"
+       id="rect1312" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1260"
+       y="2335"
+       id="text1314">93</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1440"
+       y="2335"
+       id="text1316">1,4</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2420"
+       id="text1318">Np</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2470"
+       id="text1320">Neptunium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1350"
+       y="2535"
+       id="text1322">237</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1450"
+       y="2300"
+       id="rect1324" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1460"
+       y="2335"
+       id="text1326">94</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1640"
+       y="2335"
+       id="text1328">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2420"
+       id="text1330">Pu</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2470"
+       id="text1332">Plutonium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1550"
+       y="2535"
+       id="text1334">244</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1650"
+       y="2300"
+       id="rect1336" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1660"
+       y="2335"
+       id="text1338">95</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1840"
+       y="2335"
+       id="text1340">1,2</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2420"
+       id="text1342">Am</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2470"
+       id="text1344">Américium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1750"
+       y="2535"
+       id="text1346">243</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1850"
+       y="2300"
+       id="rect1348" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1860"
+       y="2335"
+       id="text1350">96</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2040"
+       y="2335"
+       id="text1352">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2420"
+       id="text1354">Cm</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2470"
+       id="text1356">Curium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1950"
+       y="2535"
+       id="text1358">247</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2050"
+       y="2300"
+       id="rect1360" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2060"
+       y="2335"
+       id="text1362">97</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2240"
+       y="2335"
+       id="text1364">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2420"
+       id="text1366">Bk</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2470"
+       id="text1368">Berkélium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2150"
+       y="2535"
+       id="text1370">247</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2250"
+       y="2300"
+       id="rect1372" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2260"
+       y="2335"
+       id="text1374">98</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2440"
+       y="2335"
+       id="text1376">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2420"
+       id="text1378">Cf</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2470"
+       id="text1380">Californium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2350"
+       y="2535"
+       id="text1382">251</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2450"
+       y="2300"
+       id="rect1384" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2460"
+       y="2335"
+       id="text1386">99</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2640"
+       y="2335"
+       id="text1388">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2420"
+       id="text1390">Es</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2470"
+       id="text1392">Einsteinium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2550"
+       y="2535"
+       id="text1394">252</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2650"
+       y="2300"
+       id="rect1396" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2660"
+       y="2335"
+       id="text1398">100</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="2840"
+       y="2335"
+       id="text1400">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2420"
+       id="text1402">Fm</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2470"
+       id="text1404">Fermium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2750"
+       y="2535"
+       id="text1406">257</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="2850"
+       y="2300"
+       id="rect1408" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="2860"
+       y="2335"
+       id="text1410">101</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3040"
+       y="2335"
+       id="text1412">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2420"
+       id="text1414">Md</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2470"
+       id="text1416">Mendélévium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="2950"
+       y="2535"
+       id="text1418">258</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3050"
+       y="2300"
+       id="rect1420" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3060"
+       y="2335"
+       id="text1422">102</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3240"
+       y="2335"
+       id="text1424">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2420"
+       id="text1426">No</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2470"
+       id="text1428">Nobélium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3150"
+       y="2535"
+       id="text1430">259</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="3250"
+       y="2300"
+       id="rect1432" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="3260"
+       y="2335"
+       id="text1434">103</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="3440"
+       y="2335"
+       id="text1436">1,3</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2420"
+       id="text1438">Lr</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2470"
+       id="text1440">Lawrencium</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="3350"
+       y="2535"
+       id="text1442">262</text>
+    <rect
+       fill="none"
+       height="250"
+       stroke="#000000"
+       width="200"
+       x="1350"
+       y="300"
+       id="rect1444" />
+    <text
+       fill="#ff00ff"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:start"
+       x="1360"
+       y="335.67999"
+       id="text1446">Z</text>
+    <text
+       fill="#00ff00"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="1540"
+       y="326.04001"
+       id="text1448">χ</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1450"
+       y="420"
+       id="text1450">X</text>
+    <text
+       fill="#0000ff"
+       font-family="'CMU Serif'"
+       font-size="30px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1450"
+       y="470"
+       id="text1452">Nom</text>
+    <text
+       fill="#32c8c8"
+       font-family="'CMU Serif'"
+       font-size="40px"
+       stroke-width="2"
+       style="text-anchor:middle"
+       x="1450"
+       y="535"
+       id="text1454">M</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="425"
+       y="2175"
+       id="text1456">Lathanides →</text>
+    <text
+       fill="#000000"
+       font-family="'CMU Serif'"
+       font-size="60px"
+       stroke-width="2"
+       style="text-anchor:end"
+       x="425"
+       y="2425"
+       id="text1458">Actinides →</text>
+  </g>
+</svg>
