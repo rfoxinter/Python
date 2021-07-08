@@ -4,6 +4,7 @@ except ImportError:
     from os import system
     from sys import executable
     system('echo Ce programme doit installer pillow pour fonctionner & timeout 30 & '+executable+' -m pip install --upgrade pillow')
+    from PIL import Image,ImageDraw,ImageFont
 
 img = Image.new('RGBA',(3700,2600),color=(255,255,255,0))
 tableau=[('1','Hydrog\u00E8ne','H','1.0','2.2'),(),(),(),(),(),(),(),(),(),(),(),(),(),(),(),(),('2','H\u00E9lium','He','4.0',''),
