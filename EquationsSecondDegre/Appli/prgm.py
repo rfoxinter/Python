@@ -46,7 +46,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=52
+version=53
 
 root=Tk()
 if not 'DejaVu Sans' in list(font.families()):
@@ -159,7 +159,7 @@ Col7=Label(root,width=100)
 Col7.grid(column=6,row=5)
 
 root.protocol('WM_DELETE_WINDOW',quitter.close)
-root.title('R\u00E9solution des \u00E9quations du second degr\u00E9 par Th\u00E9o')
+root.title('R\u00E9solution des \u00E9quations du second degr\u00E9')
 root.resizable(width=False,height=False)
 if os.name=='nt':
     import ctypes
