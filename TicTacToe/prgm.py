@@ -41,6 +41,8 @@ def clear(event=False):
     old_winner=winner
     print(old_winner,winner)
     winner=('player',False)
+    global moves
+    moves=[]
     player()
 
 def undo(event=False):
@@ -164,7 +166,7 @@ canva.create_line(150,0,150,450,width=2)
 canva.create_line(300,0,300,450,width=2)
 canva.create_line(0,150,450,150,width=2)
 canva.create_line(0,300,450,300,width=2)
-canva.place(x=0,y=0)
+canva.place(x=-1,y=-1)
 player()
 score()
 
