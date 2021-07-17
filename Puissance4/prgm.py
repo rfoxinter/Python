@@ -40,6 +40,8 @@ def clear(event=False):
     boxes_full=0
     old_winner=winner
     winner=('player',False)
+    global moves
+    moves=[]
     player()
 
 def undo(event=False):
@@ -150,7 +152,7 @@ def score():
 def click(event):
     x=root.winfo_pointerx()-root.winfo_rootx()
     box_x,x_val=click_xy(x)
-    if root.winfo_pointery()-root.winfo_rooty()>=700:
+    if root.winfo_pointery()-root.winfo_rooty()>=600:
         return
     global y_play
     global winner
@@ -190,7 +192,7 @@ for i in xy_vals[0:6]:
 for i in xy_vals[0:5]:
     canva.create_line(0,i+50,700,i+50,width=2,fill='blue2')
 canva.create_line(0,600,700,600,width=2,fill='blue2')
-canva.place(x=0,y=0)
+canva.place(x=-1,y=-1)
 player()
 score()
 
