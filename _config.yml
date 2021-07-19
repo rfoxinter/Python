@@ -1,2 +1,4 @@
 include: '_*.pyw'
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-sitemap
