@@ -56,14 +56,6 @@
 2. Lancer le programme python
 
 ## Lancer une application python
-1. Aller sur [GitZip](http://kinolien.github.io/gitzip/) et entrer le l’URL du dossier dans "GitHub repo root URL or sub-folder URL"
-2. Cliquer sur "Download"
-3. Extraire le fichier .zip téléchargé à l'étape 1 avec l'explorateur de fichiers Windows ou [7-Zip](https://www.7-zip.fr/)
-    * Avec l'explorateur de fichiers Windows
-        1. Ouvrir le .zip
-        2. Sélectionner "Extraire tout"
-        3. Sélectionner "Extraire"
-    * Avec 7-Zip
-        1. Sélectionner le .zip et faire un clic-droit
-        2. Sélectionner "Extraire vers "Appli&#92;""
-4. Lancer le fichier &#95;&#95;main&#95;&#95;.pyw du dossier
+1. Télécharger et lancer [GithubDownload.py](https://rfoxinter.github.io/Python/GithubDownload.py)
+2. Entrer le l’URL du dossier
+5. Lancer le fichier &#95;&#95;main&#95;&#95;.pyw du dossier téléchargé
