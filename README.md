@@ -10,7 +10,7 @@
     * [Lancer un programme python](#Lancer-un-programme-python)
     * [Lancer une application python](#Lancer-une-application-python)
 
-\ \
+&nbsp;&nbsp;
 
 # Comment mettre des fichiers Python sur la calculatrice
 
@@ -35,7 +35,7 @@
 3. Sélectionner le fichier python
 4. Cliquer sur "Exéc" (f(x))
 
-\ \
+&nbsp;&nbsp;
 
 # Comment installer python et lancer les programmes
 
