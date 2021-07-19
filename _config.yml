@@ -1,4 +1,2 @@
-include:
-    - '_*.pyw'
-
+include: '_*.pyw'
 theme: jekyll-theme-cayman
