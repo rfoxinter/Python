@@ -4,8 +4,6 @@ from os.path import dirname,exists
 from os import mkdir
 from time import sleep
 
-print('GithubDownload v2\n')
-
 url=input('URL du dossier : ')
 
 print('')
