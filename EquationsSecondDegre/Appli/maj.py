@@ -6,7 +6,7 @@ import edit_pref
 def maj_pref():
     local_pref=open('preferences.py','r')
     local_lines=local_pref.readlines()
-    url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/preferences.py'
+    url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/preferences.py'
     urllib.request.urlretrieve(url,'preferences_maj.py')
     maj_pref=open('preferences_maj.py','r')
     maj_lines=maj_pref.readlines()
@@ -32,7 +32,7 @@ def down():
         #Download the files listed
         for k in range(len(extension)):
             for i in range(len(filename[k])):
-                url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/Appli/'+filename[k][i]+extension[k]
+                url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/'+filename[k][i]+extension[k]
                 urllib.request.urlretrieve(url,filename[k][i]+extension[k])
         maj_pref()
         importlib.reload(edit_pref)
