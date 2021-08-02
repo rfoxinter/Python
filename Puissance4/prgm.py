@@ -19,7 +19,7 @@ def clear(event=False):
     for i in range(len(xy_vals)-1):
         for j in range(len(xy_vals)):
             if not boxes[i][j]:
-                globals()['button%s_%s'%(xy_vals[i],xy_vals[j])].delete('all')
+                canva.delete('button%s_%s'%(xy_vals[i],xy_vals[j]))
                 boxes[i][j]=True
                 board[i][j]=''
     global winner
@@ -47,7 +47,7 @@ def clear(event=False):
 def undo(event=False):
     m=len(moves)
     if m>0:
-        globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete("all")
+        canva.delete('button%s_%s'%(moves[m-1][0],moves[m-1][1]))
         boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
         board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
         moves.pop()
@@ -95,19 +95,16 @@ def check_win(player,y,x):
             messagebox.showinfo(title='Gagn\u00E9',message='Rouge \u00E0 gagn\u00E9')
 
 def plot_y(y,x,c='gold'):
-    globals()['button%s_%s'%(y,x)]=Canvas(root,width=60,height=60,highlightthickness=0)
-    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline=c,fill=c)
-    globals()['button%s_%s'%(y,x)].place(x=x-30,y=y-30)
+    canva.create_oval(x-25,y-25,x+25,y+25,width=5,outline=c,fill=c)
+    canva.addtag_enclosed('button%s_%s'%(y,x),x-28,y-28,x+28,y+28)
 
 def plot_r(y,x,c='red'):
-    globals()['button%s_%s'%(y,x)]=Canvas(root,width=60,height=60,highlightthickness=0)
-    globals()['button%s_%s'%(y,x)].create_oval(5,5,55,55,width=5,outline=c,fill=c)
-    globals()['button%s_%s'%(y,x)].place(x=x-30,y=y-30)
+    canva.create_oval(x-25,y-25,x+25,y+25,width=5,outline=c,fill=c)
+    canva.addtag_enclosed('button%s_%s'%(y,x),x-28,y-28,x+28,y+28)
 
 def plot_square(y,x):
-    globals()['sq%s_%s'%(y,x)]=Canvas(root,width=90,height=90,highlightthickness=0)
-    globals()['sq%s_%s'%(y,x)].create_rectangle(10,10,80,80,width=5,outline='lime green')
-    globals()['sq%s_%s'%(y,x)].place(x=x-45,y=y-45)
+    canva.create_rectangle(x-35,y-35,x+35,y+35,width=5,outline='lime green')
+    canva.addtag_enclosed('sq',x-38,y-38,x+38,y+38)
 
 def click_xy(xy):
     for i in range(len(xy_vals)):
@@ -115,16 +112,10 @@ def click_xy(xy):
             return xy_vals[i],i
 
 def player():
-    try:
-        globals()['button650_200'].delete('all')
-        globals()['button650_500'].delete('all')
-        globals()['sq650_200'].delete('all')
-    except:
-        pass
-    try:
-        globals()['sq650_500'].delete('all')
-    except:
-        pass
+    if canva.find_withtag('sq')!=():
+        canva.delete('button650_200')
+        canva.delete('button650_500')
+        canva.delete('sq')
     if y_play:
         plot_square(650,200)
         plot_y(650,200,'gold')
@@ -135,19 +126,15 @@ def player():
         plot_r(650,500,'red')
 
 def score():
-    try:
-        globals()['y_win'].delete('all')
-        globals()['r_xin'].delete('all')
-    except:
-        pass
+    if canva.find_withtag('y_win')!=():
+        canva.delete('y_win')
+        canva.delete('r_win')
     y=str(y_score)
-    globals()['y_win']=Canvas(root,width=50,height=50,highlightthickness=0)
-    globals()['y_win'].create_text(25,25,text=y,fill='gold',anchor='center',font='50')
-    globals()['y_win'].place(x=75,y=625)
+    canva.create_text(100,650,text=y,fill='gold',anchor='center',font='50')
+    canva.addtag_closest('y_win',100,650)
     r=str(r_score)
-    globals()['r_win']=Canvas(root,width=50,height=50,highlightthickness=0)
-    globals()['r_win'].create_text(25,25,text=r,fill='red',anchor='center',font='50')
-    globals()['r_win'].place(x=575,y=625)
+    canva.create_text(600,650,text=r,fill='red',anchor='center',font='50')
+    canva.addtag_closest('r_win',600,650)
 
 def click(event):
     x=root.winfo_pointerx()-root.winfo_rootx()
