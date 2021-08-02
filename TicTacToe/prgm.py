@@ -19,7 +19,7 @@ def clear(event=False):
     for i in range(len(xy_vals)):
         for j in range(len(xy_vals)):
             if not boxes[i][j]:
-                globals()['button%s_%s'%(xy_vals[i],xy_vals[j])].delete('all')
+                canva.delete('button%s_%s'%(xy_vals[i],xy_vals[j]))
                 boxes[i][j]=True
                 board[i][j]=''
     global winner
@@ -39,7 +39,6 @@ def clear(event=False):
     global boxes_full
     boxes_full=0
     old_winner=winner
-    print(old_winner,winner)
     winner=('player',False)
     global moves
     moves=[]
@@ -48,7 +47,7 @@ def clear(event=False):
 def undo(event=False):
     m=len(moves)
     if m>0:
-        globals()['button%s_%s'%(moves[m-1][0],moves[m-1][1])].delete('all')
+        canva.delete('button%s_%s'%(moves[m-1][0],moves[m-1][1]))
         boxes[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=True
         board[coord_to_val(moves[m-1][0])-1][coord_to_val(moves[m-1][1])-1]=''
         moves.pop()
@@ -73,20 +72,17 @@ def check_win(player):
         messagebox.showinfo(title='Gagn\u00E9',message=player+' \u00E0 gagn\u00E9')
 
 def plot_x(x,y,c='red'):
-    globals()['button%s_%s'%(x,y)]=Canvas(root,width=140,height=140,highlightthickness=0)
-    globals()['button%s_%s'%(x,y)].create_line(20,20,120,120,width=5,fill=c)
-    globals()['button%s_%s'%(x,y)].create_line(120,20,20,120,width=5,fill=c)
-    globals()['button%s_%s'%(x,y)].place(x=x-70,y=y-70)
+    canva.create_line(x-50,y-50,x+50,y+50,width=5,fill=c)
+    canva.create_line(x+50,y-50,x-50,y+50,width=5,fill=c)
+    canva.addtag_enclosed('button%s_%s'%(x,y),x-53,y-53,x+53,y+53)
 
 def plot_o(x,y,c='blue'):
-    globals()['button%s_%s'%(x,y)]=Canvas(root,width=140,height=140,highlightthickness=0)
-    globals()['button%s_%s'%(x,y)].create_oval(20,20,120,120,width=5,outline=c)
-    globals()['button%s_%s'%(x,y)].place(x=x-70,y=y-70)
+    canva.create_oval(x-50,y-50,x+50,y+50,width=5,outline=c)
+    canva.addtag_enclosed('button%s_%s'%(x,y),x-53,y-53,x+53,y+53)
 
 def plot_square(x,y):
-    globals()['sq%s_%s'%(x,y)]=Canvas(root,width=150,height=150,highlightthickness=0)
-    globals()['sq%s_%s'%(x,y)].create_rectangle(5,5,145,145,width=5,outline='yellow')
-    globals()['sq%s_%s'%(x,y)].place(x=x-75,y=y-75)
+    canva.create_rectangle(x-70,y-70,x+70,y+70,width=5,outline='yellow')
+    canva.addtag_enclosed('sq',x-73,y-73,x+73,y+73)
 
 def click_xy(xy):
     for i in range(len(xy_vals)):
@@ -94,16 +90,10 @@ def click_xy(xy):
             return xy_vals[i],i
 
 def player():
-    try:
-        globals()['button150_525'].delete('all')
-        globals()['button300_525'].delete('all')
-        globals()['sq150_525'].delete('all')
-    except:
-        pass
-    try:
-        globals()['sq300_525'].delete('all')
-    except:
-        pass
+    if canva.find_withtag('sq')!=():
+        canva.delete('button150_525')
+        canva.delete('button300_525')
+        canva.delete('sq')
     if x_play:
         plot_square(150,525)
         plot_x(150,525,'red')
@@ -114,19 +104,15 @@ def player():
         plot_o(300,525,'blue')
 
 def score():
-    try:
-        globals()['x_win'].delete('all')
-        globals()['o_xin'].delete('all')
-    except:
-        pass
+    if canva.find_withtag('x_win')!=():
+        canva.delete('x_win')
+        canva.delete('o_win')
     x=str(x_score)
-    globals()['x_win']=Canvas(root,width=50,height=50,highlightthickness=0)
-    globals()['x_win'].create_text(25,25,text=x,fill='red',anchor='center',font='50')
-    globals()['x_win'].place(x=25,y=500)
+    canva.create_text(50,525,text=x,fill='red',anchor='center',font='50')
+    canva.addtag_closest('x_win',50,525)
     o=str(o_score)
-    globals()['o_win']=Canvas(root,width=50,height=50,highlightthickness=0)
-    globals()['o_win'].create_text(25,25,text=o,fill='blue',anchor='center',font='50')
-    globals()['o_win'].place(x=375,y=500)
+    canva.create_text(400,525,text=o,fill='blue',anchor='center',font='50')
+    canva.addtag_closest('o_win',400,525)
 
 def click(event):
     x=root.winfo_pointerx()-root.winfo_rootx()
