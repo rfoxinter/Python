@@ -41,4 +41,5 @@ def diviseurs(nbr):
         nombre+='×'
     nombre=nombre[0:len(nombre)-1]
     print(nombre)
-
+print('Décompositions en facteurs premiers')
+main_div()
