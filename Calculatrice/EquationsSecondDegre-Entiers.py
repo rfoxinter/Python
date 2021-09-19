@@ -191,5 +191,5 @@ def sec_ent(a,b,c):
                     print('x_2='+p_x2_n_int+'+racine('+p_x2_n_rt+')')
                 else:
                     print('x_2=('+p_x2_n_int+'+racine('+p_x2_n_rt+'))/('+p_x2_d+')')
-print('Résolution des équations du second degré par Théo')
+print('Résolution des équations du second degré')
 main_sec()
