@@ -34,13 +34,7 @@ def diviseurs(nbr):
         if diviseurs[i][1]==1:
             nombre+=str(diviseurs[i][0])
         else:
-            nombre+=str(diviseurs[i][0])
-            p=str(diviseurs[i][1])
-            for j in range(len(p)):
-                if int(p[j])<4:
-                    nombre+=chr(ord(p[j])+128)
-                else:
-                    nombre+=chr(ord(p[j])+8256)
+            nombre+=str(diviseurs[i][0])+'^('+str(diviseurs[i][1])+')'
         nombre+='×'
     nombre=nombre[0:len(nombre)-1]
     print(nombre)
