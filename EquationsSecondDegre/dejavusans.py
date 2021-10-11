@@ -2,6 +2,7 @@ from tkinter import Tk,Label,Button,PhotoImage
 import urllib.request
 import zipfile
 import os
+import sys
 
 def install():
     data=urllib.request.urlopen('https://api.github.com/repos/dejavu-fonts/dejavu-fonts/releases/latest').read().decode('utf-8')
