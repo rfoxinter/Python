@@ -1,9 +1,9 @@
 def main_sec():
     reco=1   
     while reco==1:
-        a=int(input('Entrer la valeur de a : '))
-        b=int(input('Entrer la valeur de b : '))
-        c=int(input('Entrer la valeur de c : '))
+        a=int(eval(input('Entrer la valeur de a : ')))
+        b=int(eval(input('Entrer la valeur de b : ')))
+        c=int(eval(input('Entrer la valeur de c : ')))
         sec_ent(a,b,c)
         reco=recommencer()
 def recommencer():
