@@ -1,8 +1,8 @@
 def main_div():
     reco=1   
     while reco==1:
-        de=int(input('Entrer le dividende : '))
-        dr=int(input('Entrer le diviseur : '))
+        de=int(eval(input('Entrer le dividende : ')))
+        dr=int(eval(input('Entrer le diviseur : ')))
         diviseurs(de,dr)
         reco=recommencer()
 def recommencer():
@@ -17,7 +17,9 @@ def recommencer():
             print('Entrer 0 ou 1')
     return recVal
 def diviseurs(de,dr):
-    print('Le quotient est : '+str(de//dr))
-    print('Le reste est : '+str(de%dr))
+    print('Le quotient est : ',end='')
+    print(de//dr)
+    print('Le reste est : ',end='')
+    print(de%dr)
 print('Division euclidienne')
 main_div()
