@@ -9,7 +9,7 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
         prgm.plt.rcParams['pdf.fonttype']=42
         prgm.plt.rcParams['font.family']='DejaVu Sans'
         prgm.plt.rcParams['font.size']='10'
-    L4=prgm.Label(prgm.root,text='L\u2019\u00E9quation n\u2019admet pas de racine.')
+    L4=prgm.Label(prgm.root,text='L\u2019\u00E9quation n\u2019admet pas de racine dans \u211D.')
     prgm.rep[5]=L4.cget('text')
     L4.grid(column=6,row=3,sticky='w')
     if preferences.afficher_graphs==1:
