@@ -2,6 +2,7 @@ import importlib
 import urllib.request
 import os
 import edit_pref
+from version import version
 
 def maj_pref():
     local_pref=open('preferences.py','r')
@@ -29,7 +30,6 @@ def down():
             os.mkdir('extensions/docx')
         if not os.path.exists('images'):
             os.mkdir('images')
-        #Download the files listed
         for k in range(len(extension)):
             for i in range(len(filename[k])):
                 url='https://raw.githubusercontent.com/rfoxinter/Python/master/EquationsSecondDegre/'+filename[k][i]+extension[k]
@@ -40,3 +40,5 @@ def down():
     except:
         importlib.reload(edit_pref)
         edit_pref.main('etat_maj',"'Une erreur est survenue lors de la mise \\u00E0 jour.'",2)
+    if os.path.exists('Appli') and version>=55:
+        os.rmdir('Appli')
