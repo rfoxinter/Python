@@ -41,4 +41,6 @@ def down():
         importlib.reload(edit_pref)
         edit_pref.main('etat_maj',"'Une erreur est survenue lors de la mise \\u00E0 jour.'",2)
     if os.path.exists('Appli') and version>=55:
+        for f in os.listdir('Appli'):
+            os.remove(os.path.join('Appli',f))
         os.rmdir('Appli')
