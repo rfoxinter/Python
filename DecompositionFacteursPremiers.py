@@ -1,7 +1,7 @@
 def main_div():
     reco=1   
     while reco==1:
-        dec=int(input('Entrer le nombre à décomposer : '))
+        dec=int(eval(input('Entrer le nombre à décomposer : ')))
         diviseurs(dec)
         reco=recommencer()
 def recommencer():
@@ -16,7 +16,19 @@ def recommencer():
             print('Entrer 0 ou 1')
     return recVal
 def diviseurs(nbr):
-    n=nbr
+    n=0
+    nombre=str(nbr)+'='
+    if nbr==0:
+        nombre+='0×'
+    elif nbr==1:
+        nombre+='1×'
+    elif nbr==-1:
+        nombre+='-1×'
+    elif nbr<0:
+        nombre+='-1×'
+        n=-nbr
+    else:
+        n=nbr
     d=2
     diviseurs=[]
     while d<=n:
@@ -29,7 +41,6 @@ def diviseurs(nbr):
             else:
                 diviseurs[len(diviseurs)-1][1]+=1
         d+=1
-    nombre=str(nbr)+'='
     for i in range(len(diviseurs)):
         if diviseurs[i][1]==1:
             nombre+=str(diviseurs[i][0])
@@ -37,7 +48,9 @@ def diviseurs(nbr):
             nombre+=str(diviseurs[i][0])
             p=str(diviseurs[i][1])
             for j in range(len(p)):
-                if int(p[j])<4:
+                if p[j]=='1':
+                    nombre+=chr(ord(p[j])+136)
+                elif int(p[j])<4:
                     nombre+=chr(ord(p[j])+128)
                 else:
                     nombre+=chr(ord(p[j])+8256)
