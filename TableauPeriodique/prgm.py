@@ -6,7 +6,6 @@ except ImportError:
     system('echo Ce programme doit installer pillow pour fonctionner & timeout 30 & '+executable+' -m pip install --upgrade pillow')
     from PIL import Image,ImageDraw,ImageFont
 
-img=Image.new('RGBA',(3700,2600),color=(255,255,255,0))
 tableau=[('1','Hydrog\u00E8ne','H','1,0','2,2'),(),(),(),(),(),(),(),(),(),(),(),(),(),(),(),(),('2','H\u00E9lium','He','4,0',''),
     ('3','Lithium','Li','6,9','1,0'),('4','B\u00E9ryllium','Be','9,0','1,6'),(),(),(),(),(),(),(),(),(),(),('5','Bore','B','10,8','2,0'),('6','Carbone','C','12,0','2,6'),('7','Azote','N','14,0','3,0'),('8','Oxyg\u00E8ne','O','16,0','3,4'),('9','Fluor','F','19,0','4,0'),('10','N\u00E9on','Ne','20,2',''),
     ('11','Sodium','Na','23,0','0,9'),('12','Magn\u00E9sium','Mg','24,3','1,3'),(),(),(),(),(),(),(),(),(),(),('13','Aluminium','Al','27,0','1,5'),('14','Silicium','Si','28,1','1,9'),('15','Phosphore','P','31,0','2,2'),('16','Soufre','S','32,1','2,5'),('17','Chlore','Cl','35,5','3,2'),('18','Argon','Ar','39,9',''),
@@ -19,6 +18,7 @@ tableau=[('1','Hydrog\u00E8ne','H','1,0','2,2'),(),(),(),(),(),(),(),(),(),(),()
     (),(),('89','Actinium','Ac','227','1,1'),('90','Thorium','Th','232','1,3'),('91','Protactinium','Pa','231','1,5'),('92','Uranium','U','238','1,4'),('93','Neptunium','Np','237','1,4'),('94','Plutonium','Pu','244','1,3'),('95','Am\u00E9ricium','Am','243','1,2'),('96','Curium','Cm','247','1,3'),('97','Berk\u00E9lium','Bk','247','1,3'),('98','Californium','Cf','251','1,3'),('99','Einsteinium','Es','252','1,3'),('100','Fermium','Fm','257','1,3'),('101','Mend\u00E9l\u00E9vium','Md','258','1,3'),('102','Nob\u00E9lium','No','259','1,3'),('103','Lawrencium','Lr','262','1,3'),()
 ]
 
+img=Image.new('RGBA',(3700,250*(len(tableau)//18)+100),color=(255,255,255,0))
 draw=ImageDraw.Draw(img)
 font=ImageFont.truetype('font.ttf',40)
 font_symbol=ImageFont.truetype('font.ttf',60)
