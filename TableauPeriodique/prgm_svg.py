@@ -41,6 +41,6 @@ dwg.save()
 
 file=open('TableauPeriodique.svg','r')
 t=file.read()
-t=t.replace('height="100%" version="1.1" width="100%"','height="2600" version="1.1" width="3700"')
+t=t.replace('height="100%" version="1.1" width="100%"','height="'+str(250*(len(tableau)//18)+100)+'" version="1.1" width="3700"')
 f=open('TableauPeriodique.svg','w')
 f.write(t)
