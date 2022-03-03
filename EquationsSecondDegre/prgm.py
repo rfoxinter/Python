@@ -46,7 +46,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=57
+version=58
 
 root=Tk()
 if not 'DejaVu Sans' in list(font.families()):
@@ -57,8 +57,8 @@ else:
     root.destroy()
 
 latest=''
-entier_val=[0,0,0]
-fraction_val=[0,0,0,0,0,0]
+entier_val=[1,0,0]
+fraction_val=[1,1,0,1,0,1]
 rep=['','','','','','','']
 
 #Create main window
@@ -74,6 +74,7 @@ Label(root,text='a=').grid(column=0,row=1,sticky='e')
 Label(root,text='b=').grid(column=0,row=3,sticky='e')
 Label(root,text='c=').grid(column=0,row=5,sticky='e')
 ValeurA=IntVar(root)
+ValeurA.set(1)
 ValeurB=IntVar(root)
 ValeurC=IntVar(root)
 ValA=Spinbox(root,textvariable=ValeurA,from_=-inf,to=inf,increment=1,width=10)
@@ -93,6 +94,7 @@ Label(root,text='D\u00E9nominateur de b=').grid(column=3,row=4,sticky='e')
 Label(root,text='Num\u00E9rateur de c=').grid(column=3,row=5,sticky='e')
 Label(root,text='D\u00E9nominateur de c=').grid(column=3,row=6,sticky='e')
 ValeurA_n=IntVar(root)
+ValeurA_n.set(1)
 ValeurA_d=IntVar(root)
 ValeurB_n=IntVar(root)
 ValeurB_d=IntVar(root)
@@ -155,7 +157,7 @@ Col6_Row9.grid(column=5,row=8)
 Col6_Row10=Label(root,width=5)
 Col6_Row10.grid(column=5,row=9)
 
-Col7=Label(root,width=100)
+Col7=Label(root,width=50)
 Col7.grid(column=6,row=5)
 
 root.protocol('WM_DELETE_WINDOW',quitter.close)
