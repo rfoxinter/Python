@@ -5,6 +5,7 @@ import fraction_x1
 import fraction_x2
 import fraction_deux_racines_plt
 import preferences
+import egalite
 
 def main_frac():
     if preferences.afficher_graphs==1:
@@ -12,7 +13,7 @@ def main_frac():
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
-    Col7=prgm.Label(prgm.root,width=100)
+    Col7=prgm.Label(prgm.root,width=50)
     Col7.grid(column=6,row=5)
     if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
         prgm.latest='fraction'
@@ -94,11 +95,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_delta=div_delta+1
         if delta_num<0 and delta_denom<0:
-            L1=prgm.Label(prgm.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')='+str(delta_num/delta_denom).replace('.',','))
+            L1=prgm.Label(prgm.root,text='\u0394='+str(int(-delta_num))+')/('+str(int(-delta_denom))+')'+egalite.main(delta_num/delta_denom)+str(round(delta_num/delta_denom,10)).replace('.',','))
             L1.grid(column=6,row=0,sticky='w')
             prgm.rep[2]=L1.cget('text')
         else:
-            L1=prgm.Label(prgm.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')='+str(delta_num/delta_denom).replace('.',','))
+            L1=prgm.Label(prgm.root,text='\u0394=('+str(int(delta_num))+')/('+str(int(delta_denom))+')'+egalite.main(delta_num/delta_denom)+str(round(delta_num/delta_denom,10)).replace('.',','))
             L1.grid(column=6,row=0,sticky='w')
             prgm.rep[2]=L1.cget('text')
     if alpha_num%alpha_denom==0:
@@ -115,11 +116,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_alpha=div_alpha+1
         if alpha_num<0 and alpha_denom<0:
-            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')='+str(alpha_num/alpha_denom).replace('.',','))
+            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(-alpha_num))+')/('+str(int(-alpha_denom))+')'+egalite.main(alpha_num/alpha_denom)+str(round(alpha_num/alpha_denom,10)).replace('.',','))
             L2.grid(column=6,row=1,sticky='w')
             prgm.rep[3]=L2.cget('text')
         else:
-            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')='+str(alpha_num/alpha_denom).replace('.',','))
+            L2=prgm.Label(prgm.root,text='\u03B1=('+str(int(alpha_num))+')/('+str(int(alpha_denom))+')'+egalite.main(alpha_num/alpha_denom)+str(round(alpha_num/alpha_denom,10)).replace('.',','))
             L2.grid(column=6,row=1,sticky='w')
             prgm.rep[3]=L2.cget('text')
     if beta_num%beta_denom==0:
@@ -136,11 +137,11 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
             else:
                 div_beta=div_beta+1
         if beta_num<0 and beta_denom<0:
-            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')='+str(beta_num/beta_denom).replace('.',','))
+            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(-beta_num))+')/('+str(int(-beta_denom))+')'+egalite.main(beta_num/beta_denom)+str(round(beta_num/beta_denom,10)).replace('.',','))
             L3.grid(column=6,row=2,sticky='w')
             prgm.rep[4]=L3.cget('text')
         else:
-            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')='+str(beta_num/beta_denom).replace('.',','))
+            L3=prgm.Label(prgm.root,text='\u03B2=('+str(int(beta_num))+')/('+str(int(beta_denom))+')'+egalite.main(beta_num/beta_denom)+str(round(beta_num/beta_denom,10)).replace('.',','))
             L3.grid(column=6,row=2,sticky='w')
             prgm.rep[4]=L3.cget('text')
     if delta_num<0:
