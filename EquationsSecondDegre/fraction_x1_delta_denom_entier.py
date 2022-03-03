@@ -1,4 +1,5 @@
 import prgm
+import egalite
 
 def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     x1_num_int=int(-b_num*(delta_denom**0.5)*a_denom)
@@ -46,6 +47,6 @@ def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
         else:
-            L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_1+x1_num_2+')/('+x1_denom_str+')='+str(((-b_num*a_denom*(delta_denom**0.5))-(a_denom*b_denom*(delta_num**0.5)))/(2*a_num*b_denom*(delta_denom**0.5))).replace('.',','))
+            L4=prgm.Label(prgm.root,text='x\u2081=('+x1_num_1+x1_num_2+')/('+x1_denom_str+')'+egalite.main(((-b_num*a_denom*delta_denom**0.5)-(a_denom*b_denom*delta_num**0.5))/(2*a_num*b_denom*delta_denom**0.5))+str(round(((-b_num*a_denom*delta_denom**0.5)-(a_denom*b_denom*delta_num**0.5))/(2*a_num*b_denom*delta_denom**0.5),10)).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
