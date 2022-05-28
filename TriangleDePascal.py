@@ -7,7 +7,7 @@ def factorielle(n):
 def produit(a,b):
     p=1
     for i in range(a,b+1):
-        p=p*i
+        p*=i
     return p
 
 def combinatoire(k,n):
