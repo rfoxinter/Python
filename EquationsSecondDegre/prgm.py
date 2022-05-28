@@ -8,31 +8,34 @@ except:
         packages_linux.tkinter()
         from tkinter import Tk,Label,Spinbox,Button,IntVar,PhotoImage,Menu,messagebox,font
 from math import inf
-import preferences
+file=open('preferences.py','r')
+for i in file.readlines():
+    exec(i.replace('\n',''))
+file.close()
 try:
     from numpy import linspace
 except:
-    if preferences.afficher_graphs==1 or preferences.export_graph==1:
+    if afficher_graphs==1 or export_graph==1:
         import packages
-        packages.main('numpy')
+        packages.main('numpy',["edit_pref.main('afficher_graphs','0',1,False)","edit_pref.main('export_graph','0',3)"])
         from numpy import linspace
 try:
     import matplotlib.pyplot as plt
 except:
-    if preferences.afficher_graphs==1 or preferences.export_graph==1:
+    if afficher_graphs==1 or export_graph==1:
         import packages
-        packages.main('matplotlib')
+        packages.main('matplotlib',["edit_pref.main('afficher_graphs','0',1,False)","edit_pref.main('export_graph','0',3)"])
         import matplotlib.pyplot as plt
 import quitter
 import entier
 import fraction
 
-if preferences.etat_maj!='':
+if etat_maj!='':
     root=Tk()
     if 'DejaVu Sans' in list(font.families()):
         police=font.Font(root,family='DejaVu Sans',size=10)
         root.option_add('*Font',police)
-    Label(root,text=preferences.etat_maj,width=50).grid(column=0,row=0)
+    Label(root,text=etat_maj,width=50).grid(column=0,row=0)
     bouton_fermer=Button(root,text='Fermer',command=root.destroy)
     bouton_fermer.grid(column=0,row=1)
     root.title('Mise \u00E0 jour')
@@ -46,7 +49,7 @@ if preferences.etat_maj!='':
     import edit_pref
     edit_pref.main('etat_maj',"''",2)
 
-version=58
+version=59
 
 root=Tk()
 if not 'DejaVu Sans' in list(font.families()):
