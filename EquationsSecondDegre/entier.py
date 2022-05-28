@@ -4,11 +4,10 @@ import entier_x0
 import entier_x1
 import entier_x2
 import entier_deux_racines_plt
-import preferences
 import egalite
 
 def main_ent():
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
@@ -26,7 +25,7 @@ def main_ent():
         L1.grid(column=6,row=0,sticky='w')
 
 def open_ent(a,b,c):
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
@@ -106,5 +105,5 @@ def sec_ent(a,b,c):
     else:
         entier_x1.main(a,b,delta)
         entier_x2.main(a,b,delta)
-        if preferences.afficher_graphs==1:
+        if prgm.afficher_graphs==1:
             entier_deux_racines_plt.main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,delta,'','')
