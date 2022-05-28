@@ -1,18 +1,17 @@
 import prgm
-import preferences
 import entier_equation
 
 def main(a,b,c,alpha_num,alpha_denom,beta_num,beta_denom,extension,path):
     if extension!='':
         prgm.plt.figure(300)
-    if preferences.afficher_graphs==1 or extension!='':
+    if prgm.afficher_graphs==1 or extension!='':
         prgm.plt.rcParams['pdf.fonttype']=42
         prgm.plt.rcParams['font.family']='DejaVu Sans'
         prgm.plt.rcParams['font.size']='10'
     L4=prgm.Label(prgm.root,text='L\u2019\u00E9quation n\u2019admet pas de racine dans \u211D.')
     L4.grid(column=6,row=3,sticky='w')
     prgm.rep[5]=L4.cget('text')
-    if preferences.afficher_graphs==1 or extension!='':
+    if prgm.afficher_graphs==1 or extension!='':
         pltxmin=alpha_num/alpha_denom-10
         pltxmax=alpha_num/alpha_denom+10
         ymax=0
