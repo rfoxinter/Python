@@ -3,15 +3,14 @@ import quitter
 import a_propos
 import sauvegarder
 import ouvrir
-import preferences
 import exporter
 import exporter_graph
 import edit_pref
 
 ver_maj=prgm.IntVar()
-ver_maj.set(preferences.ver_maj)
+ver_maj.set(prgm.ver_maj)
 afficher_graphs=prgm.IntVar()
-afficher_graphs.set(preferences.afficher_graphs)
+afficher_graphs.set(prgm.afficher_graphs)
 
 a_propos_image=prgm.PhotoImage(file='a_propos_menu.png')
 coller_image=prgm.PhotoImage(file='coller_menu.png')
