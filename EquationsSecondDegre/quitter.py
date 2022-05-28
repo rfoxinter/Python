@@ -1,6 +1,5 @@
 import prgm
 import urllib.request
-import preferences
 import __init__
 
 def download():
@@ -20,13 +19,13 @@ def close(event=None):
         prgm.redemarrage.destroy()
     except:
         pass
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         try:
             prgm.plt.close()
         except:
             pass
     prgm.root.destroy()
-    if preferences.ver_maj==1:
+    if prgm.ver_maj==1:
         download()
         import version
         root=prgm.Tk()
