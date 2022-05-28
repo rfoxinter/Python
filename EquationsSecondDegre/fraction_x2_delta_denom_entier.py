@@ -1,4 +1,5 @@
 import prgm
+import egalite
 
 def main(a_num,a_denom,b_num,b_denom,delta_num,delta_denom):
     x1_num_int=int(-b_num*(delta_denom**0.5)*a_denom)
