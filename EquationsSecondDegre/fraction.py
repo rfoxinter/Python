@@ -4,11 +4,10 @@ import fraction_x0
 import fraction_x1
 import fraction_x2
 import fraction_deux_racines_plt
-import preferences
 import egalite
 
 def main_frac():
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
@@ -42,7 +41,7 @@ def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     prgm.fraction_val[3]=b_denom
     prgm.fraction_val[4]=c_num
     prgm.fraction_val[5]=c_denom
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
@@ -151,5 +150,5 @@ def sec_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     else:
         fraction_x1.x1_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
         fraction_x2.x2_frac(a_num,a_denom,b_num,b_denom,delta_num,delta_denom)
-        if preferences.afficher_graphs==1:
+        if prgm.afficher_graphs==1:
             fraction_deux_racines_plt.main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,delta_num,delta_denom,'','')
