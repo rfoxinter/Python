@@ -1,10 +1,9 @@
 import prgm
 from tkinter.filedialog import asksaveasfile
 import pathlib
-import preferences
 
 def main(event=None):
-    if preferences.export_graph==0:
+    if prgm.export_graph==0:
         import edit_pref
         edit_pref.main('export_graph','1',3)
     file_list=[('Joint Photographic Experts Group','.jpg .jpeg'),('Portable Network Graphics','.png'),('Scalable Vector Graphics','.svg'),('Portable Document Format','.pdf')]
