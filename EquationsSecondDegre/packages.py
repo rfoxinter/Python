@@ -2,7 +2,12 @@ from tkinter import Tk,Label,Button,PhotoImage,font
 import os
 import sys
 
-def main(package_name):
+def main(package_name,cancel):
+    def stop():
+        import edit_pref
+        for i in cancel:
+            eval(i)
+        os.execl(sys.executable,sys.executable,*sys.argv)
     if os.name=='posix':
         head,tail=os.path.split(sys.executable)
         pip_path=''
@@ -21,7 +26,7 @@ def main(package_name):
     Label(root,text='Ce programme a besoin d\u2019installer '+package_name+' pour fonctionner.',width=50).grid(column=0,row=0)
     bouton_maj=Button(root,text='Installer '+package_name,command=lambda:[os.system(python_path+' -m pip install --upgrade '+package_name+' --user'),os.execl(sys.executable,sys.executable,*sys.argv)])
     bouton_maj.grid(column=0,row=1)
-    bouton_fermer=Button(root,text='Ne pas installer '+package_name,command=quit)
+    bouton_fermer=Button(root,text='Ne pas installer '+package_name,command=stop)
     bouton_fermer.grid(column=0,row=2)
     root.title(package_name)
     root.resizable(width=False,height=False)
