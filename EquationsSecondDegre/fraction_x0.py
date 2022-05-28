@@ -1,12 +1,11 @@
 import prgm
-import preferences
 import fraction_equation
 import egalite
 
 def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_num,beta_denom,extension,path):
     if extension!='':
         prgm.plt.figure(300)
-    if preferences.afficher_graphs==1 or extension!='':
+    if prgm.afficher_graphs==1 or extension!='':
         prgm.plt.rcParams['pdf.fonttype']=42
         prgm.plt.rcParams['font.family']='DejaVu Sans'
         prgm.plt.rcParams['font.size']='10'
@@ -33,7 +32,7 @@ def main(a_num,a_denom,b_num,b_denom,c_num,c_denom,alpha_num,alpha_denom,beta_nu
             L4=prgm.Label(prgm.root,text='x\u2080=('+str(int(x0_num))+')/('+str(int(x0_denom))+')'+egalite.main(x0_num/x0_denom)+str(round(x0_num/x0_denom,10)).replace('.',','))
             L4.grid(column=6,row=3,sticky='w')
             prgm.rep[5]=L4.cget('text')
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         pltxmin=alpha_num/alpha_denom-10
         pltxmax=alpha_num/alpha_denom+10
         ymax=0
