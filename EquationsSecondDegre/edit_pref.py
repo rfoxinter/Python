@@ -1,5 +1,4 @@
 import prgm
-import preferences
 
 def redemarrage():
     try:
@@ -20,14 +19,14 @@ def redemarrage():
             prgm.redemarrage.iconbitmap('avertissement.ico')
         prgm.redemarrage.mainloop()
 
-def main(var,val,line):
+def main(var,val,line,restart=True):
     file=open('preferences.py','r')
     list_of_lines=file.readlines()
+    file.close()
     list_of_lines[line]=var+'='+val+'\n'
     file=open('preferences.py','w')
     file.writelines(list_of_lines)
     file.close()
-    import importlib
-    importlib.reload(preferences)
-    if var=='afficher_graphs' or var=='export_graph':
+    exec('prgm.'+var+'='+val)
+    if ((var=='afficher_graphs' and val=='1') or (var=='export_graph' and val=='1')) and restart:
         redemarrage()
