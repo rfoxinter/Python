@@ -1,8 +1,7 @@
 import prgm
-import preferences
 
 def main():
-    if preferences.afficher_graphs==1:
+    if prgm.afficher_graphs==1:
         prgm.plt.close()
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
