@@ -13,7 +13,7 @@ def main(extension):
     prgm.Label(root,text='',width=50).grid(column=0,row=1)
     bouton_fermer=prgm.Button(root,text='Valider',command=root.destroy)
     bouton_fermer.grid(column=0,row=2)
-    root.title('Exporter en png')
+    root.title('Exporter en jpg')
     root.resizable(width=False,height=False)
     if prgm.os.name=='nt':
         root.iconbitmap('python.ico')
