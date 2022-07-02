@@ -31,14 +31,14 @@ def check(value,row,col):
     if not value in values:
         return False
     else:
-        if eval('Val'+row+col+'.get()')=='':
+        if (eval('Val'+row+col+'.get()')=='' and value!='1') or (eval('Val'+row+col+'.get()')=='1' and value!=''):
             R[int(row)-1]+=1
             C[int(col)-1]+=1
             if row==col:
                 D[0]+=1
             if str(6-int(row))==col:
                 D[1]+=1
-        elif value=='':
+        elif (eval('Val'+row+col+'.get()')!='1' and value=='') or (eval('Val'+row+col+'.get()')!='' and value=='1'):
             R[int(row)-1]-=1
             C[int(col)-1]-=1
             if row==col:
