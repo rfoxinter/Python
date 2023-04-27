@@ -31,7 +31,7 @@
 1. Télécharger le fichier python (cliquer sur "Raw" puis Ctrl+S)
 2. Faire glisser le fichier .py sur le nom de la calculatrice
 3. Renommer le fichier (cliquer sur "Personalisé")
-![](https://education.ti.com/html/webhelp/EG_TI83PremCE/FR/Subsystems/EG_83TIC-CE_FR/Content/EG_83_TIConnect/_Images/M_UsePython/SendtoCalc.png)
+![](https://education.ti.com/html/webhelp/EG_TI83PremCEPY/FR/Subsystems/EG_TIC_83_FR/Content/EG_83_TIConnect/_Images/M_UsePython/SendtoCalc.png)
 
 ### Lancer le programme
 1. Cliquez sur "prgm"
