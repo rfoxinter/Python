@@ -30,7 +30,7 @@ def open_ent(a,b,c):
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
-    Col7=prgm.Label(prgm.root,width=100)
+    Col7=prgm.Label(prgm.root,width=50)
     Col7.grid(column=6,row=5)
     if prgm.ValeurA.get()!=0:
         prgm.latest='entier'
