@@ -23,10 +23,14 @@ def main(path):
                 ifin=prgm.rep[k+5].find(")",i)
                 prgm.rep[k+5]=prgm.rep[k+5].replace(prgm.rep[k+5][i:ifin+1],"\\sqrt{"+prgm.rep[k+5][i+2:ifin]+"}")
     for k in range(7):
+        print(prgm.rep[k])
         prgm.rep[k]=prgm.rep[k].replace(")/(","}{")
         prgm.rep[k]=prgm.rep[k].replace(")","}")
         prgm.rep[k]=prgm.rep[k].replace("(","\\frac{")
         prgm.rep[k]=prgm.rep[k].replace("\\frac{x}","(x)")
+        prgm.rep[k]=prgm.rep[k].replace("\\frac{\\frac{","\\frac{")
+        prgm.rep[k]=prgm.rep[k].replace("}}\u2248","}\\approx")
+        prgm.rep[k]=prgm.rep[k].replace("}}=","}=")
         prgm.rep[k]=prgm.rep[k].replace("\u2248","\\approx")
     if prgm.rep[6]=='':
         prgm.rep[6]=' '
