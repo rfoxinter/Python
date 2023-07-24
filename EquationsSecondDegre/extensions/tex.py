@@ -28,9 +28,10 @@ def main(path):
         prgm.rep[k]=prgm.rep[k].replace(")","}")
         prgm.rep[k]=prgm.rep[k].replace("(","\\frac{")
         prgm.rep[k]=prgm.rep[k].replace("\\frac{x}","(x)")
-        prgm.rep[k]=prgm.rep[k].replace("\\frac{\\frac{","\\frac{")
-        prgm.rep[k]=prgm.rep[k].replace("}}\u2248","}\\approx")
-        prgm.rep[k]=prgm.rep[k].replace("}}=","}=")
+        if "\\frac{\\frac{" in prgm.rep[k]:
+            prgm.rep[k]=prgm.rep[k].replace("\\frac{\\frac{","\\frac{")
+            prgm.rep[k]=prgm.rep[k].replace("}}\u2248","}\\approx")
+            prgm.rep[k]=prgm.rep[k].replace("}}=","}=")
         prgm.rep[k]=prgm.rep[k].replace("\u2248","\\approx")
     if prgm.rep[6]=='':
         prgm.rep[6]=' '
