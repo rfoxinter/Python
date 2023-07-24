@@ -46,7 +46,7 @@ def open_frac(a_num,a_denom,b_num,b_denom,c_num,c_denom):
     for label in prgm.root.grid_slaves():
         if int(label.grid_info()['column'])==6:
             label.destroy()
-    Col7=prgm.Label(prgm.root,width=100)
+    Col7=prgm.Label(prgm.root,width=50)
     Col7.grid(column=6,row=5)
     if prgm.ValeurA_n.get()!=0 and prgm.ValeurA_d.get()>0 and prgm.ValeurB_d.get()>0 and prgm.ValeurC_d.get()>0:
         prgm.latest='fraction'
