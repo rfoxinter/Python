@@ -1,4 +1,4 @@
-from tchar_py.numbers.rational import r, itor
+from tchar_py.numbers.rational import rat
 from pypdf import PdfReader, PdfWriter, Transformation, PageObject, PaperSize
 
 def pgord(n: int) -> list[int]:
@@ -18,24 +18,12 @@ def main(flnm: str, outnm: str, size: str, flip: str):
     out = PdfWriter()
     inp = PdfReader(flnm)
     l = len(inp.pages)
-    pw = itor(getattr(PaperSize, size).width)
-    ph = itor(getattr(PaperSize, size).height)
+    pw = rat(getattr(PaperSize, size).width)
+    ph = rat(getattr(PaperSize, size).height)
     for pos, pg in enumerate(pgord(l)):
         page = inp.pages[pg] if pg < l else PageObject.create_blank_page(width = float(pw), height = float(ph))
-        h = page.mediabox.height
-        if isinstance(h, int):
-            h = itor(h)
-        else:
-            d = 10 ** (len(str(h)) - len(str(int(h))) - 1)
-            h = r(h * d, d)
-            del d
-        w = page.mediabox.width
-        if isinstance(w, int):
-            w = itor(w)
-        else:
-            d = 10 ** (len(str(w)) - len(str(int(w))) - 1)
-            w = r(w * d, d)
-            del d
+        h = rat(page.mediabox.height)
+        w = rat(page.mediabox.width)
         sc = min(pw / h, ph / (2 * w))
         nh = h * sc
         nw = w * sc
