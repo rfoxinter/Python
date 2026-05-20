@@ -7,7 +7,7 @@ from tools import booklet, extract, merge, mult, resize
 from icon import icon, quiticon, docicon, dimicon
 from pypdf import PdfReader, PdfWriter, Transformation, PageObject, PaperSize
 from pypdf.papersizes import Dimensions
-from tchar_py.numbers.rational import r, itor
+from tchar_py.numbers.rational import rat
 from re import sub
 from sys import exit
 import menu, dimensions
@@ -22,7 +22,7 @@ def tl(*args, **kwargs) -> Label:
     return Label(*args, **kwargs, bg="#333333", fg="#DDDDDD")
 
 def tcb(*args, **kwargs) -> Checkbutton:
-    return Checkbutton(*args, **kwargs, indicatoron=0, bg="#333333", fg="#DDDDDD", activebackground="#1F6B8D", activeforeground="#FFF", selectcolor="#2A4868", offrelief="solid", borderwidth=1)
+    return Checkbutton(*args, **kwargs, indicatoron=False, bg="#333333", fg="#DDDDDD", activebackground="#1F6B8D", activeforeground="#FFF", selectcolor="#2A4868", offrelief="solid", borderwidth=1)
 
 def tom(*args, **kwargs) -> OptionMenu:
     om = OptionMenu(*args, **kwargs)
@@ -92,9 +92,11 @@ def main():
     root.mainloop()
 
 if __name__ == '__main__':
-    if not exists(getenv('APPDATA') + '\\pdf_toolkit'):
-        mkdir(getenv('APPDATA') + '\\pdf_toolkit')
-    chdir(getenv('APPDATA') + '\\pdf_toolkit')
+    appdata = getenv('APPDATA')
+    assert appdata
+    if not exists( appdata + '\\pdf_toolkit'):
+        mkdir(appdata + '\\pdf_toolkit')
+    chdir(appdata + '\\pdf_toolkit')
     PaperSize.Letter = Dimensions(612, 792)
     PaperSize.Legal = Dimensions(612, 1008)
     sizes, _ = dimensions.load()
