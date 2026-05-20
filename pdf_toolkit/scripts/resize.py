@@ -1,4 +1,4 @@
-from tchar_py.numbers.rational import r, itor
+from tchar_py.numbers.rational import rat
 from pypdf import PdfReader, PdfWriter, Transformation, PageObject, PaperSize
 
 def main(flnm: str, size: str, rettr: bool = False) -> PdfWriter:
@@ -7,24 +7,13 @@ def main(flnm: str, size: str, rettr: bool = False) -> PdfWriter:
     else:
         out = PdfWriter()
     inp = PdfReader(flnm)
-    pw = itor(getattr(PaperSize, size).width)
-    ph = itor(getattr(PaperSize, size).height)
+    pw = rat(getattr(PaperSize, size).width)
+    ph = rat(getattr(PaperSize, size).height)
     for page in inp.pages:
-        h = page.mediabox.height
-        if isinstance(h, int):
-            h = itor(h)
-        else:
-            d = 10 ** (len(str(h)) - len(str(int(h))) - 1)
-            h = r(h * d, d)
-            del d
-        w = page.mediabox.width
-        if isinstance(w, int):
-            w = itor(w)
-        else:
-            d = 10 ** (len(str(w)) - len(str(int(w))) - 1)
-            w = r(w * d, d)
-            del d
+        h = rat(page.mediabox.height)
+        w = rat(page.mediabox.width)
         scale_factor = min(ph/h, pw/w)
+        print("sf = " + str(scale_factor))
         tr = Transformation().scale(float(scale_factor), float(scale_factor)).translate(float((pw - w * scale_factor) / 2), float((ph - h * scale_factor) / 2))
         if rettr:
             trs.append(tr)
