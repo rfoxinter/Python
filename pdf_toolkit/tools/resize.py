@@ -65,5 +65,5 @@ def main(root, sizes):
     rt.title('Resize PDF')
     img=prgm.PhotoImage(data=prgm.icon)
     rt.tk.call('wm','iconphoto',rt._w,img)
-    rt.resizable(width=False, height=False)
+    # rt.resizable(width=False, height=False)
     rt.mainloop()
