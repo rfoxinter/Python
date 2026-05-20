@@ -19,9 +19,9 @@ def mainextract(flnm, outnm, pgs, bl, size, rt):
             file.close()
             error.main('Error when extracting pages')
 
-def getpages(pgs: str) -> list[int]:
+def getpages(_pgs: str) -> list[int]:
     try:
-        pgs = pgs.split(',')
+        pgs = _pgs.split(',')
         pg = []
         for p in pgs:
             if '-' in p:
@@ -32,7 +32,7 @@ def getpages(pgs: str) -> list[int]:
         return pg
     except:
         error.main('Invalid pages range')
-        return None
+        return []
 
 def change_value(root) -> None:
     fl = opn.main()
