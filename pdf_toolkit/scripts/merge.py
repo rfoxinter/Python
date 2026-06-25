@@ -1,4 +1,4 @@
-from scripts.resize import main as rmain
+from scripts.resize import main_fit as rmain
 from pypdf import PdfWriter, PageObject
 
 def main(files: list[str], outnm: str, res: bool, size: str):
