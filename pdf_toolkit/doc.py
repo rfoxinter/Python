@@ -1,7 +1,7 @@
 import prgm
 
 def main(root):
-    doctext='''Warning things may crash.
+    doctext='''Warning: things may crash!
 
 To add paper sizes, go to "File" -> "Edit paper sizes" and add a dimension with the format Dimension_name,Width,Height and one per line.
 The width and height are at 72 ppi, which corresponds to roughly 284 pixels per millimetre.
