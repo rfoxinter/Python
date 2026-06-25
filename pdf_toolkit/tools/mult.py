@@ -36,7 +36,7 @@ def change_out(root) -> None:
         root.update_idletasks()
 
 def main(root, sizes):
-    flip = ['Short edge', 'Long edge']
+    flip = ['Long edge', 'Short edge']
     pps = [2,4]#,6,8]
     global flnm, outnm
     rt = prgm.Toplevel(root)
@@ -50,7 +50,7 @@ def main(root, sizes):
     size.set('LandA4')
     flnm.set('')
     nbr.set(2)
-    flp.set('Short edge')
+    flp.set('Long edge')
     rt.transient(root)
     rt.geometry('500x500')
     prgm.tl(rt, text='File: ', anchor='e', width=34).grid(column=0, row=0)
