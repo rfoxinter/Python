@@ -7,9 +7,9 @@ from os.path import splitext
 global flnm, outnm, inpbl, outbl, btn
 inpbl, outbl = False, False
 
-def mainresize(flnm, outnm, size, rt):
+def mainresize(flnm, outnm, size, crp, rt):
     try:
-        resize.save(flnm, outnm, size)
+        resize.save(flnm, outnm, size, crp)
         message.main('PDF resized successfully')
         rt.destroy()
     except Exception as e:
@@ -46,6 +46,7 @@ def main(root, sizes):
     rt.configure(bg='#333333')
     rt.focus_set()
     flnm = prgm.StringVar()
+    crp = prgm.IntVar()
     size = prgm.StringVar()
     outnm = prgm.StringVar()
     size.set('A4')
@@ -55,13 +56,14 @@ def main(root, sizes):
     prgm.tl(rt, text='File: ', anchor='e', width=34).grid(column=0, row=0)
     prgm.tbutton(rt, text='Open file', command=lambda:change_value(rt), width=34).grid(column=1, row=0)
     prgm.tl(rt, textvariable=flnm).grid(column=0, row=1, columnspan=2)
-    prgm.tl(rt, text='Size: ', anchor='e', width=34).grid(column=0, row=2)
-    prgm.tom(rt, size, *sizes).grid(column=1, row=2)
-    prgm.tl(rt, text='Output: ', anchor='e', width=34).grid(column=0, row=3)
-    prgm.tbutton(rt, text='Output file', command=lambda:change_out(rt), width=34).grid(column=1, row=3)
-    prgm.tl(rt, textvariable=outnm).grid(column=0, row=4, columnspan=2)
-    btn = prgm.tbutton(rt, text='Resize', state='disabled', command=lambda:mainresize(flnm.get(), outnm.get(), size.get(), rt), width=34)
-    btn.grid(column=0, row=5, columnspan=2)
+    prgm.tcb(rt, text='Crop', variable=crp).grid(column=0, row=2, columnspan=2)
+    prgm.tl(rt, text='Size: ', anchor='e', width=34).grid(column=0, row=3)
+    prgm.tom(rt, size, *sizes).grid(column=1, row=3)
+    prgm.tl(rt, text='Output: ', anchor='e', width=34).grid(column=0, row=4)
+    prgm.tbutton(rt, text='Output file', command=lambda:change_out(rt), width=34).grid(column=1, row=4)
+    prgm.tl(rt, textvariable=outnm).grid(column=0, row=5, columnspan=2)
+    btn = prgm.tbutton(rt, text='Resize', state='disabled', command=lambda:mainresize(flnm.get(), outnm.get(), size.get(), bool(crp.get()), rt), width=34)
+    btn.grid(column=0, row=6, columnspan=2)
     rt.title('Resize PDF')
     img=prgm.PhotoImage(data=prgm.icon)
     rt.tk.call('wm','iconphoto',rt._w,img)
